@@ -1,0 +1,1870 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Festival Narrazione Industriale - Coming Soon Page
+ * Pagina di Coming Soon per la seconda edizione del Festival
+ *
+ * @project     Festival Narrazione Industriale 2025
+ * @version     1.0.0
+ * @date        2025
+ * @company     Unsocials
+ * @developer   Marcello Galli
+ * @website     festivalnarrazioneindustriale.it
+ *
+ * Descrizione:
+ * Landing page responsive con animazioni per la promozione della seconda
+ * edizione del Festival della Narrazione Industriale (24-29 Novembre 2025).
+ * Include GIF animata di background, sidebar informativa e design ottimizzato
+ * per tutti i dispositivi.
+ */
+-->
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Festival della Narrazione Industriale 2025 - Seconda Edizione. Dal 24 al 29 Novembre a Parma. Tema: Per un Umanesimo Industriale. Un evento che esplora il rapporto tra impresa, lavoro e società attraverso cinema, letteratura e arte.">
+    <meta name="keywords" content="festival narrazione industriale, festival parma 2025, umanesimo industriale, adriano olivetti, narrazione impresa, cultura industriale, festival novembre parma, economia cultura, storytelling aziendale, festival umanesimo, impresa società">
+    <meta name="author" content="Festival della Narrazione Industriale">
+    
+    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+    <meta name="googlebot" content="index, follow">
+    <link rel="canonical" href="https://www.festivalnarrazioneindustriale.it/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.festivalnarrazioneindustriale.it/">
+    <meta property="og:title" content="Festival della Narrazione Industriale 2025 - Per un Umanesimo Industriale">
+    <meta property="og:description" content="Seconda Edizione del Festival. Dal 24 al 29 Novembre 2025 a Parma. Un evento che esplora la responsabilità sociale dell'industria e l'utopia olivettiana di una dimensione umanista del lavoro.">
+    <meta property="og:image" content="https://www.festivalnarrazioneindustriale.it/src/og-image.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:locale" content="it_IT">
+    <meta property="og:site_name" content="Festival della Narrazione Industriale">
+
+    <!-- Additional SEO -->
+    <meta name="theme-color" content="#E94D34">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="icon" type="image/svg+xml" href="src/logo-icon.svg">
+    <link rel="alternate icon" href="src/logo-icon.svg">
+    <link rel="preload" href="video/FNI_ORIZZONTALE.gif" as="image" type="image/gif">
+    <link rel="preload" href="video/FNI_VERTICALE.gif" as="image" type="image/gif">
+    <link rel="preload" href="src/logo.svg" as="image">
+    <link rel="dns-prefetch" href="//www.instagram.com">
+    <link rel="dns-prefetch" href="//www.facebook.com">
+
+    <!-- Structured Data - Schema.org Event -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "Festival della Narrazione Industriale 2025 - Per un Umanesimo Industriale",
+      "description": "Seconda edizione del Festival della Narrazione Industriale. A partire dalla celebre visione di Adriano Olivetti, il festival propone un ragionamento plurale e corale sulla responsabilità sociale dell'industria, sull'utopia olivettiana di una dimensione umanista e umanizzata del lavoro.",
+      "startDate": "2025-11-24",
+      "endDate": "2025-11-29",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Parma",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Parma",
+          "addressRegion": "Emilia-Romagna",
+          "addressCountry": "IT"
+        }
+      },
+      "organizer": {
+        "@type": "Organization",
+        "name": "Festival della Narrazione Industriale",
+        "url": "https://www.festivalnarrazioneindustriale.it",
+        "sameAs": [
+          "https://www.instagram.com/festivalnarrazioneindustriale/",
+          "https://www.facebook.com/festivalnarrazioneindustriale/"
+        ]
+      },
+      "performer": {
+        "@type": "Organization",
+        "name": "Festival della Narrazione Industriale"
+      },
+      "inLanguage": "it-IT",
+      "image": "https://www.festivalnarrazioneindustriale.it/src/og-image.jpg",
+      "url": "https://www.festivalnarrazioneindustriale.it",
+      "keywords": "narrazione industriale, umanesimo industriale, adriano olivetti, cultura impresa, festival parma"
+    }
+    </script>
+
+    <title>Festival della Narrazione Industriale 2025 | Per un Umanesimo Industriale | 24-29 Novembre Parma</title>
+    <style>
+        /* ============================================
+           RESET E CONFIGURAZIONE BASE
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* ============================================
+           FONT FAMILIES
+           ============================================ */
+
+        /* Helvetica Neue - Font di sistema */
+        @font-face {
+            font-family: 'Helvetica Neue';
+            src: local('Helvetica Neue'), local('HelveticaNeue'), local('Helvetica');
+        }
+
+        /* Halenoir Font Family - Font principale del progetto */
+        @font-face {
+            font-family: 'Halenoir';
+            src: url('fonts/Halenoir Font/HalenoirCompact-Light.otf') format('opentype');
+            font-weight: 300;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Halenoir';
+            src: url('fonts/Halenoir Font/Halenoir-DemiBold.otf') format('opentype');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Halenoir';
+            src: url('fonts/Halenoir Font/Halenoir-Bold.otf') format('opentype');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Halenoir';
+            src: url('fonts/Halenoir Font/HalenoirExpanded-Bold.otf') format('opentype');
+            font-weight: 800;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Variabili CSS per i font */
+        :root {
+            --font-light: 'Halenoir', Arial, sans-serif;
+            --font-regular: 'Halenoir', Arial, sans-serif;
+            --font-bold: 'Halenoir', Arial, sans-serif;
+            --font-secondary: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        }
+
+        /* ============================================
+           BODY E STRUTTURA PRINCIPALE
+           ============================================ */
+        body {
+            font-family: 'Halenoir', Arial, sans-serif;
+            overflow: hidden;
+            position: relative;
+            height: 100vh;
+            background: #E94D34;
+        }
+
+        /* ============================================
+           HEADER E NAVIGAZIONE
+           ============================================ */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 117px;
+            z-index: 1000;
+            height: 120px;
+        }
+
+        /* Wrapper per le icone social */
+        .social-icons-wrapper {
+            position: absolute;
+            right: 380px;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        /* Wrapper per il toggle del banner laterale */
+        .banner-toggle-wrapper {
+            position: absolute;
+            right: calc(380px / 2 - 24px);
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Logo mobile - visibile solo su dispositivi mobili */
+        .mobile-logo-icon {
+            display: none; /* Nascosto di default su desktop */
+            position: fixed;
+            left: 50%;
+            margin-left: calc(clamp(44px, 11vw, 60px) / -2); /* Centra basandosi sulla larghezza */
+            z-index: 100;
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            width: clamp(44px, 11vw, 60px);
+        }
+
+        .mobile-logo-icon img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+            display: block;
+            opacity: 1; /* Sempre visibile */
+        }
+
+        /* Animazione pulsazione professionale e sottile */
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.06);
+            }
+        }
+
+        @keyframes pulseGlow {
+            0%, 100% {
+                filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+            }
+            50% {
+                filter: drop-shadow(0 3px 15px rgba(255, 255, 255, 0.4))
+                        drop-shadow(0 0 20px rgba(247, 244, 244, 0.25))
+                        brightness(1.08);
+            }
+        }
+
+        /* Animazione iniziale elegante e professionale */
+        @keyframes pulseIntro {
+            0% {
+                transform: scale(0.9);
+            }
+            50% {
+                transform: scale(1.08);
+            }
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        @keyframes glowIntro {
+            0%, 10% {
+                filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+            }
+            50% {
+                filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.6))
+                        drop-shadow(0 0 30px rgba(247, 244, 244, 0.4))
+                        brightness(1.15);
+            }
+            100% {
+                filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+            }
+        }
+
+        /* Le animazioni pulse vengono applicate dopo l'intro via JS */
+
+        /* Pausa animazione al hover/focus con effetto elegante */
+        .mobile-logo-icon:hover,
+        .mobile-logo-icon:focus {
+            animation-play-state: paused;
+            transform: scale(1.1);
+            transition: transform 0.3s ease-out;
+        }
+
+        .mobile-logo-icon:hover img,
+        .mobile-logo-icon:focus img {
+            animation-play-state: paused;
+            filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.6))
+                    drop-shadow(0 0 30px rgba(247, 244, 244, 0.4))
+                    brightness(1.12);
+        }
+
+        .mobile-logo-icon:focus {
+            outline: 3px solid #FFFFFF;
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        /* Active state quando il banner è aperto */
+        .mobile-logo-icon.active,
+        .mobile-logo-icon.active.intro-complete {
+            animation: none !important;
+            transform: scale(0.92) rotate(180deg);
+            opacity: 0.6;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .mobile-logo-icon.active img,
+        .mobile-logo-icon.active.intro-complete img {
+            animation: none !important;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)) brightness(0.85);
+        }
+
+        .logo-fni {
+            position: relative;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            background: none;
+            border: none;
+            padding: 0;
+            align-self: center; /* Si allinea al centro dell'header */
+        }
+
+        .logo-fni img {
+            height: 65px; /* Più grande su desktop */
+            width: auto;
+        }
+
+        .logo-fni:focus {
+            outline: 2px solid #FFFFFF;
+            outline-offset: 2px;
+        }
+
+        .logo-fni:hover {
+            transform: scale(1.05);
+        }
+
+        .social-icons {
+            position: relative;
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .social-icon {
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon img {
+            width: 28px !important; /* Ridotte */
+            height: 28px !important;
+            object-fit: contain;
+        }
+
+        .social-icon a {
+            display: block;
+            text-decoration: none;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icon a:hover {
+            transform: scale(1.1);
+        }
+
+
+        .banner-toggle {
+            cursor: pointer;
+            background: none;
+            border: none;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0; /* Reset margin */
+            vertical-align: baseline; /* Reset vertical-align */
+            transition: transform 0.3s ease-out;
+        }
+
+        .banner-toggle:focus {
+            outline: 3px solid #FFFFFF;
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+
+        .banner-toggle img {
+            width: 48px !important; /* Ancora più grande su desktop */
+            height: 48px !important;
+            object-fit: contain;
+            display: block; /* Rimuove spazi extra inline */
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3));
+        }
+
+        /* Animazione pulse per desktop banner toggle */
+        .banner-toggle {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .banner-toggle img {
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+
+        /* Pausa animazione al hover/focus */
+        .banner-toggle:hover,
+        .banner-toggle:focus {
+            animation-play-state: paused;
+            transform: scale(1.1);
+        }
+
+        .banner-toggle:hover img,
+        .banner-toggle:focus img {
+            animation-play-state: paused;
+            filter: drop-shadow(0 4px 20px rgba(255, 255, 255, 0.6))
+                    drop-shadow(0 0 30px rgba(247, 244, 244, 0.4))
+                    brightness(1.12);
+        }
+
+        /* Active state quando il banner è aperto */
+        .banner-toggle.active {
+            animation: none;
+            transform: scale(0.92) rotate(180deg);
+            opacity: 0.6;
+            transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+
+        .banner-toggle.active img {
+            animation: none;
+            filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.3)) brightness(0.85);
+        }
+
+        /* Side Banner */
+        .side-banner {
+            position: fixed;
+            top: 162px;
+            right: -380px;
+            width: 380px;
+            height: calc(100vh - 162px);
+            background: #D9D9D9;
+            z-index: 999;
+            transition: right 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+            overflow-y: auto; /* Scrollabile verticalmente */
+            overflow-x: hidden;
+        }
+
+        /* Close button */
+        .close-banner {
+            position: absolute;
+            top: 15px; /* In alto con spazio dal bordo */
+            right: 20px;
+            width: 24px;
+            height: 24px;
+            cursor: pointer;
+            z-index: 1001;
+            opacity: 0.7;
+            transition: opacity 0.3s ease;
+        }
+
+        .close-banner:hover {
+            opacity: 1;
+        }
+
+        .close-banner::before,
+        .close-banner::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 2px;
+            background: #282828;
+            transform: translate(-50%, -50%) rotate(45deg);
+        }
+
+        .close-banner::after {
+            transform: translate(-50%, -50%) rotate(-45deg);
+        }
+
+        .close-banner:focus {
+            outline: 2px solid #282828;
+            outline-offset: 2px;
+        }
+
+        .side-banner.active {
+            right: 0;
+        }
+
+        .banner-content {
+            padding: 42px 35px 80px 35px;
+            position: relative;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .banner-logo {
+            margin-bottom: 35px;
+            width: calc(100% - 50px); /* Larghezza del testo meno spazio per X */
+        }
+
+        .banner-logo img {
+            width: 100% !important; /* Riempie il contenitore */
+            height: auto !important;
+            max-width: none !important;
+        }
+
+        .banner-text {
+            color: #282828;
+            font-size: 20px;
+            font-weight: 300;
+            line-height: 1.4;
+            text-align: justify;
+            text-align-last: left;
+            font-family: 'Halenoir'; /* Font Halenoir */
+            word-spacing: -0.3px;
+            letter-spacing: 0.1px;
+            hyphens: auto;
+            width: calc(100% - 50px);
+        }
+
+        .banner-text p {
+            margin-bottom: 0;
+        }
+
+        .banner-quote {
+            font-size: 22px;
+            font-weight: 400;
+            color: #282828;
+            margin-bottom: 20px;
+            line-height: 1.3;
+            text-align: left;
+            width: 100%; /* Riempie il contenitore banner-text */
+        }
+
+        .star-icon {
+            position: absolute;
+            bottom: 30px;
+            right: 30px;
+        }
+
+        .star-icon img {
+            width: 19px;
+            height: 16px;
+        }
+
+        /* GIF Background - Centrato e responsive */
+        #gif-bg {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            object-fit: cover;
+            object-position: center center;
+            z-index: -1;
+            opacity: 1;
+            transition: opacity 0.3s ease-in-out;
+        }
+
+        /* Ottimizzazione GIF per aspect ratio diversi */
+        @media (aspect-ratio > 16/9) {
+            #gif-bg {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        @media (aspect-ratio < 16/9) {
+            #gif-bg {
+                width: auto;
+                height: 100%;
+            }
+        }
+
+        /* Mobile - GIF verticale con logo più in alto */
+        @media (max-width: 768px) {
+            #gif-bg {
+                object-position: center 30%; /* Logo spostato più in alto */
+            }
+        }
+
+        /* Main Content Container - Responsive senza scroll */
+        .main-content {
+            position: fixed;
+            z-index: 100;
+            width: min(850px, 90vw);
+            max-width: 850px;
+            left: 50%;
+            transform: translateX(-50%);
+            bottom: clamp(30px, 4vh, 50px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-height: calc(50vh - 40px);
+            overflow: visible;
+        }
+
+        /* Info Section */
+        .info-section {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            margin-bottom: clamp(12px, 2vh, 18px); /* Ridotto per desktop */
+        }
+
+        .left-info {
+            flex: 1;
+            padding-right: clamp(15px, 3vw, 25px);
+        }
+
+        .right-info {
+            flex: 1;
+            text-align: right;
+            padding-left: clamp(15px, 3vw, 25px);
+        }
+
+        .separator {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-90deg);
+            width: clamp(80px, 12vw, 120px);
+            height: 2px;
+            border: 2px solid #F7F4F4; /* Ridotto a 2px */
+            background: transparent;
+        }
+
+        .location {
+            font-family: 'Halenoir';
+            font-style: normal;
+            font-weight: 800; /* Expanded Bold */
+            font-size: clamp(20px, 4vw, 32px);
+            line-height: clamp(24px, 4.5vw, 38px);
+            text-transform: uppercase;
+            color: #F7F4F4;
+            margin-bottom: clamp(3px, 0.8vh, 6px);
+        }
+
+        .dates {
+            font-family: 'Halenoir';
+            font-style: normal;
+            font-weight: 300; /* Light */
+            font-size: clamp(20px, 4vw, 32px);
+            line-height: clamp(24px, 4.5vw, 38px);
+            text-transform: uppercase;
+            color: #F7F4F4;
+        }
+
+        .edition {
+            font-family: 'Halenoir';
+            font-style: normal;
+            font-weight: 300; /* Light come dates */
+            font-size: clamp(16px, 3vw, 24px);
+            line-height: clamp(19px, 3.5vw, 28px);
+            text-transform: uppercase;
+            color: #282828;
+            margin-bottom: clamp(3px, 0.8vh, 6px);
+        }
+
+        .theme {
+            font-family: 'Halenoir';
+            font-style: normal;
+            font-weight: 800; /* Expanded Bold */
+            font-size: clamp(20px, 4vw, 32px);
+            line-height: clamp(24px, 4.5vw, 38px);
+            text-transform: uppercase;
+            color: #F7F4F4;
+        }
+
+        /* Description Text */
+        .description {
+            width: 100%;
+            font-family: 'Halenoir';
+            font-style: normal;
+            font-weight: 800; /* Bold */
+            font-size: clamp(24px, 4vw, 40px); /* Più grande */
+            line-height: clamp(28px, 4.5vw, 45px);
+            text-align: center; /* Centrato */
+            text-transform: uppercase;
+            color: #F7F4F4; /* Bianco/crema per più contrasto */
+            margin: clamp(15px, 2.5vh, 25px) 0 clamp(15px, 2.5vh, 25px);
+            letter-spacing: 0.02em; /* Spaziatura tra lettere per impatto */
+        }
+
+        /* Miglioramento per schermi intermedi tablet */
+        @media (min-width: 481px) and (max-width: 768px) {
+            .description {
+                text-align: center;
+                font-size: clamp(22px, 3.5vw, 32px);
+            }
+        }
+
+        /* CTA Buttons Container */
+        .cta-container {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center; /* Centra il contenuto */
+        }
+
+        /* CTA Button */
+        .cta-button {
+            width: 100%; /* Occupa tutta la larghezza disponibile */
+            padding: clamp(8px, 1vh, 12px) clamp(8px, 1.5vw, 12px); /* Padding bilanciato */
+            box-sizing: border-box;
+            background: transparent;
+            border: 3px solid #FFFFFF;
+            font-family: 'Halenoir';
+            font-style: normal;
+            font-weight: 400; /* Regular */
+            font-size: clamp(14px, 2vw, 22px); /* Font leggermente ridotto per sicurezza */
+            line-height: clamp(16px, 2.5vw, 26px);
+            display: flex;
+            align-items: center;
+            text-align: center;
+            text-transform: uppercase;
+            color: #FFFFFF;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            justify-content: center;
+            text-shadow: none; /* Rimuove ombre dal testo */
+            box-shadow: none; /* Rimuove ombre dal bottone */
+            white-space: nowrap; /* Previene wrap del testo */
+            min-height: clamp(36px, 5vh, 50px); /* Altezza minima per contenere il testo */
+        }
+
+        /* Email Button - Trasparente come il principale */
+        .email-button {
+            background: transparent;
+            border: 3px solid #FFFFFF;
+        }
+
+        .cta-button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
+            transition: left 0.5s ease;
+        }
+
+        .cta-button:hover::before {
+            left: 100%;
+        }
+
+        .cta-button:focus {
+            outline: 2px solid #FFFFFF;
+            outline-offset: 4px;
+        }
+
+        /* Animazioni di apertura eleganti */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(15px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes expandWidth {
+            from {
+                width: 0;
+                opacity: 0;
+            }
+            to {
+                width: 100px;
+                opacity: 1;
+            }
+        }
+
+        @keyframes subtleBounce {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Animazioni che partono dal separator */
+        @keyframes expandFromSeparator {
+            from {
+                opacity: 0;
+                transform: scaleX(0);
+                transform-origin: center center;
+            }
+            to {
+                opacity: 1;
+                transform: scaleX(1);
+            }
+        }
+
+        @keyframes growFromSeparatorLeft {
+            from {
+                opacity: 0;
+                transform: scaleX(0) translateX(50%);
+                transform-origin: right center;
+            }
+            to {
+                opacity: 1;
+                transform: scaleX(1) translateX(0);
+            }
+        }
+
+        @keyframes growFromSeparatorRight {
+            from {
+                opacity: 0;
+                transform: scaleX(0) translateX(-50%);
+                transform-origin: left center;
+            }
+            to {
+                opacity: 1;
+                transform: scaleX(1) translateX(0);
+            }
+        }
+
+        /* Stati iniziali - nascosti per l'animazione - Ancora più lente */
+        .animate-header-logo {
+            opacity: 0;
+            animation: fadeInScale 1.8s cubic-bezier(0.4, 0, 0.2, 1) 0.5s forwards;
+        }
+
+        .animate-social-1 {
+            opacity: 0;
+            animation: slideInRight 1.3s cubic-bezier(0.4, 0, 0.2, 1) 0.8s forwards;
+        }
+
+        .animate-social-2 {
+            opacity: 0;
+            animation: slideInRight 1.3s cubic-bezier(0.4, 0, 0.2, 1) 1.1s forwards;
+        }
+
+        .animate-social-3 {
+            opacity: 0;
+            animation: slideInRight 1.3s cubic-bezier(0.4, 0, 0.2, 1) 1.4s forwards;
+        }
+
+
+
+
+
+        .animate-left-info {
+            opacity: 0;
+            animation: slideInLeft 1.4s cubic-bezier(0.4, 0, 0.2, 1) 2.0s forwards;
+        }
+
+        .animate-right-info {
+            opacity: 0;
+            animation: slideInRight 1.4s cubic-bezier(0.4, 0, 0.2, 1) 2.3s forwards;
+        }
+
+        .animate-separator {
+            width: 0;
+            opacity: 0;
+            animation: expandWidth 1.6s cubic-bezier(0.4, 0, 0.2, 1) 2.6s forwards;
+        }
+
+        .animate-description {
+            opacity: 0;
+            animation: fadeInUp 1.4s cubic-bezier(0.4, 0, 0.2, 1) 2.9s forwards;
+        }
+
+        .animate-cta {
+            opacity: 0;
+            animation: subtleBounce 1.6s cubic-bezier(0.4, 0, 0.2, 1) 3.2s forwards;
+        }
+
+        .animate-mobile-logo {
+            /* Visibile fin da subito, animazione elegante e rapida */
+            animation: pulseIntro 1.2s ease-out 3.5s forwards;
+        }
+
+        .animate-mobile-logo img {
+            /* Fade in con glow */
+            animation: glowIntro 1.2s ease-out 3.5s forwards;
+        }
+
+        /* Dopo l'animazione iniziale, avvia il pulse continuo sottile */
+        .mobile-logo-icon.intro-complete {
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        .mobile-logo-icon.intro-complete img {
+            animation: pulseGlow 3s ease-in-out infinite;
+        }
+
+
+        /* Reduced motion support */
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after {
+                animation-duration: 0.01ms !important;
+                animation-iteration-count: 1 !important;
+                transition-duration: 0.01ms !important;
+            }
+
+            #gif-bg {
+                display: none;
+            }
+
+            .animate-header-logo,
+            .animate-social-1,
+            .animate-social-2,
+            .animate-social-3,
+            .animate-left-info,
+            .animate-right-info,
+            .animate-separator,
+            .animate-description,
+            .animate-cta,
+            .animate-mobile-logo {
+                opacity: 1 !important;
+                transform: none !important;
+                width: auto !important;
+                animation: none !important;
+            }
+
+            /* Disabilita animazione pulse su mobile logo e banner toggle */
+            .mobile-logo-icon,
+            .mobile-logo-icon img,
+            .banner-toggle,
+            .banner-toggle img {
+                animation: none !important;
+            }
+        }
+
+
+        .cta-button:hover {
+            background: rgba(255, 255, 255, 0.1);
+            transform: translateY(-2px);
+        }
+
+        /* Desktop e tablet - Dimensioni aumentate */
+        @media (min-width: 1025px) {
+            header {
+                height: 140px; /* Aumentato per logo e icona più grandi */
+                padding: 0 117px;
+                align-items: center; /* Centra tutto verticalmente */
+            }
+
+            .logo-fni img {
+                height: 75px; /* Logo ancora più grande su desktop */
+                width: auto;
+            }
+
+            .banner-toggle img {
+                width: 56px !important; /* Icona ancora più grande su desktop */
+                height: 56px !important;
+            }
+
+            .banner-toggle-wrapper {
+                right: calc(380px / 2 - 28px); /* Aggiustato per icona 56px */
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .social-icons-wrapper {
+                right: 380px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+
+        /* Tablet intermedio - Risolve sovrapposizione tra 769px e 1024px */
+        @media (min-width: 769px) and (max-width: 1024px) {
+            header {
+                height: 120px;
+                padding: 0 clamp(40px, 6vw, 80px); /* Padding ridotto e responsive */
+                align-items: center;
+            }
+
+            .logo-fni img {
+                height: clamp(56px, 7vw, 65px); /* Logo ridotto */
+                width: auto;
+            }
+
+            .social-icon img {
+                width: 24px !important; /* Icone social ridotte */
+                height: 24px !important;
+            }
+
+            .social-icons {
+                gap: 15px; /* Gap ridotto tra icone */
+            }
+
+            .social-icons-wrapper {
+                right: clamp(300px, 35vw, 350px); /* Posizione responsive */
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .banner-toggle img {
+                width: 44px !important; /* Banner toggle ridotto */
+                height: 44px !important;
+            }
+
+            .banner-toggle-wrapper {
+                right: calc(clamp(300px, 35vw, 350px) / 2 - 22px); /* Centrato rispetto al nuovo valore */
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .side-banner {
+                width: clamp(300px, 35vw, 350px); /* Banner laterale ridotto */
+                right: calc(-1 * clamp(300px, 35vw, 350px));
+                top: 140px; /* Sotto l'header */
+                height: calc(100vh - 140px);
+            }
+
+            .side-banner.active {
+                right: 0;
+            }
+
+            .banner-content {
+                padding: 35px 30px 60px 30px; /* Padding ridotto per banner più stretto */
+            }
+
+            .banner-text {
+                font-size: 18px; /* Testo leggermente ridotto */
+                width: calc(100% - 40px);
+            }
+
+            .banner-quote {
+                font-size: 20px; /* Quote leggermente ridotta */
+            }
+        }
+
+        /* Header Responsive */
+        @media (max-width: 768px) {
+            header {
+                padding: 0 20px;
+                height: 80px;
+                align-items: center;
+            }
+
+            .social-icons-wrapper {
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .banner-toggle-wrapper {
+                right: calc(50vw - 18px); /* Aggiustato per icona 36px */
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            /* Mobile logo icon visibile su tablet */
+            .mobile-logo-icon {
+                display: block;
+                bottom: clamp(20px, 4vh, 40px);
+            }
+
+            /* Aumenta margine main content per fare spazio al logo */
+            .main-content {
+                bottom: clamp(90px, 12vh, 120px);
+            }
+
+            .logo-fni img {
+                height: 48px; /* Più grande su tablet */
+                width: auto;
+            }
+
+            .social-icons {
+                gap: 15px;
+            }
+
+            .social-icon img {
+                width: 24px !important;
+                height: 24px !important;
+            }
+
+            .social-icon a:hover {
+                transform: scale(1.1);
+            }
+
+            .banner-toggle img {
+                width: 36px !important; /* Ancora più grande */
+                height: 36px !important;
+            }
+
+            .side-banner {
+                width: 100%;
+                right: -100%;
+                top: 110px;
+            }
+
+            .banner-content {
+                padding: 30px 45px 60px 45px; /* Ulteriormente aumentato padding laterale */
+            }
+
+            .banner-logo {
+                width: calc(100% - 50px);
+            }
+
+            .banner-logo img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .banner-text {
+                font-size: 20px; /* Mantiene dimensione desktop */
+                text-align: justify;
+                text-align-last: left;
+                word-spacing: -0.3px;
+                letter-spacing: 0.1px;
+                width: calc(100% - 50px);
+            }
+
+            .banner-quote {
+                font-size: 22px; /* Mantiene dimensione desktop */
+                margin-bottom: 20px;
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+        /* Media query rimossa - manteniamo dimensione fissa */
+
+        @media (max-width: 480px) {
+            header {
+                padding: 0 15px;
+                height: 70px;
+            }
+
+            .social-icons-wrapper {
+                right: 15px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+
+            .banner-toggle-wrapper {
+                display: none; /* Nascosta su mobile per evitare sovrapposizioni */
+            }
+
+            /* Mobile logo icon - posizione ottimizzata per mobile piccolo */
+            .mobile-logo-icon {
+                display: block;
+                bottom: clamp(15px, 3vh, 30px);
+            }
+
+            /* Aumenta margine main content per fare spazio al logo */
+            .main-content {
+                bottom: clamp(80px, 12vh, 130px);
+            }
+
+            .logo-fni img {
+                height: 42px; /* Più grande su mobile */
+                width: auto;
+            }
+
+            .social-icons {
+                gap: 8px; /* Gap ridotto per icone più piccole */
+            }
+
+            .social-icon img {
+                width: 20px !important;
+                height: 20px !important;
+            }
+
+            .social-icon a:hover {
+                transform: scale(1.1);
+            }
+
+            /* Banner toggle nascosto su mobile */
+
+            .side-banner {
+                top: 90px;
+            }
+
+            .banner-content {
+                padding: 25px 45px 45px 45px; /* Padding aumentato per testo più grande */
+            }
+
+            .banner-logo {
+                width: calc(100% - 50px);
+            }
+
+            .banner-logo img {
+                width: 100% !important;
+                height: auto !important;
+            }
+
+            .banner-text {
+                font-size: 20px; /* Mantiene dimensione desktop */
+                text-align: justify;
+                text-align-last: left;
+                word-spacing: -0.3px;
+                letter-spacing: 0.1px;
+                width: calc(100% - 50px);
+            }
+
+            .banner-quote {
+                font-size: 22px; /* Mantiene dimensione desktop */
+                margin-bottom: 20px;
+                text-align: left;
+                width: 100%;
+            }
+        }
+
+        /* Main Content Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                width: min(600px, 85vw);
+                max-height: calc(55vh - 20px);
+                /* bottom gestito nella sezione mobile-logo-icon */
+            }
+
+            .info-section {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px;
+            }
+
+            .left-info {
+                flex: 1;
+                text-align: left;
+                padding-right: clamp(12px, 2.5vw, 18px);
+            }
+
+            .right-info {
+                flex: 1;
+                text-align: right;
+                padding-left: clamp(12px, 2.5vw, 18px);
+            }
+
+            .separator {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%) rotate(-90deg);
+                width: clamp(60px, 10vw, 80px);
+                height: 2px;
+                border: 2px solid #F7F4F4; /* Aggiornato */
+                background: transparent;
+            }
+
+            .location {
+                font-size: 28px; /* Più grande per migliore leggibilità */
+                font-weight: 900;
+                line-height: 1.2;
+            }
+
+            .dates {
+                font-size: 28px; /* Più grande per migliore leggibilità */
+                font-weight: 300;
+                line-height: 1.2;
+            }
+
+            .theme {
+                font-size: 28px; /* Più grande per migliore leggibilità */
+                font-weight: 900;
+                line-height: 1.2;
+            }
+
+            .edition {
+                font-size: 20px; /* Più grande per migliore leggibilità */
+                line-height: 1.2;
+            }
+
+            .description {
+                font-size: 22px; /* Aumentato per migliore leggibilità */
+                margin: 20px 0 20px;
+                text-align: center;
+            }
+
+            .cta-container {
+                gap: 15px;
+            }
+
+            .cta-button {
+                font-size: 18px; /* Sicuro per tablet */
+                padding: 10px 15px; /* Padding bilanciato */
+                min-height: 42px; /* Altezza fissa per tablet */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .main-content {
+                width: min(350px, 90vw);
+                max-height: calc(50vh - 15px);
+                position: fixed;
+                /* bottom gestito nella sezione mobile-logo-icon */
+                transform: translateX(-50%);
+                left: 50%;
+            }
+
+            /* Nascondere icona banner toggle su mobile piccolo */
+            .banner-toggle-wrapper {
+                display: none;
+            }
+
+            /* Nascondere separator su mobile */
+            .separator {
+                display: none;
+            }
+
+            .info-section {
+                margin-bottom: 15px;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .left-info {
+                flex: 1;
+                text-align: left;
+                padding-right: 0;
+            }
+
+            .right-info {
+                flex: 1;
+                text-align: right;
+                padding-left: 0;
+            }
+
+            /* Separator nascosto su mobile - definito nella media query principale */
+
+            .location {
+                font-size: 24px; /* Ancora più grande per mobile */
+                font-weight: 900;
+                line-height: 1.2;
+            }
+
+            .dates {
+                font-size: 24px; /* Ancora più grande per mobile */
+                font-weight: 300;
+                line-height: 1.2;
+            }
+
+            .theme {
+                font-size: 24px; /* Ancora più grande per mobile */
+                font-weight: 900;
+                line-height: 1.2;
+            }
+
+            .edition {
+                font-size: 18px; /* Più grande per mobile */
+                line-height: 1.2;
+            }
+
+            .description {
+                font-size: 20px; /* Grande anche per mobile */
+                margin: 15px 0 18px;
+                text-align: center;
+            }
+
+            .cta-container {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .cta-button {
+                font-size: 14px; /* Sicuro per mobile */
+                padding: 8px 12px; /* Padding bilanciato */
+                min-height: 38px; /* Altezza fissa per mobile */
+            }
+        }
+
+        /* Landscape mobile - Ottimizzato per testi leggibili, GIF spostata molto in alto */
+        @media (max-width: 900px) and (max-height: 600px) {
+            /* Sposta GIF molto più in alto su landscape basso */
+            #gif-bg {
+                object-position: center 10%; /* Logo molto più in alto */
+            }
+
+            .main-content {
+                max-height: calc(75vh - 10px);
+                bottom: clamp(55px, 10vh, 75px); /* Spazio per logo */
+            }
+
+            .info-section {
+                margin-bottom: clamp(10px, 2vh, 14px);
+            }
+
+            .location, .dates, .theme {
+                font-size: clamp(20px, 3.5vw, 26px) !important;
+                line-height: 1.2 !important;
+            }
+
+            .edition {
+                font-size: clamp(16px, 3vw, 20px) !important;
+                line-height: 1.2 !important;
+            }
+
+            .description {
+                font-size: clamp(18px, 3.5vw, 24px);
+                line-height: clamp(22px, 4vw, 28px);
+                margin: clamp(10px, 2vh, 14px) 0 clamp(10px, 2vh, 14px);
+                text-align: center;
+            }
+
+            .cta-button {
+                font-size: clamp(14px, 2.8vw, 17px);
+                padding: clamp(10px, 2vh, 14px) clamp(18px, 3.5vw, 26px);
+                min-height: clamp(40px, 8vh, 48px);
+            }
+
+            .cta-container {
+                gap: clamp(10px, 2vh, 14px);
+            }
+
+            /* Mobile logo icon ben visibile in landscape */
+            .mobile-logo-icon {
+                bottom: clamp(12px, 2.5vh, 18px);
+                width: clamp(38px, 7.5vw, 48px);
+                margin-left: calc(clamp(38px, 7.5vw, 48px) / -2);
+            }
+        }
+
+        /* Very small screens */
+        @media (max-width: 320px) {
+            .main-content {
+                width: min(300px, 95vw);
+                max-height: calc(48vh - 10px); /* Ridotto ulteriormente */
+                bottom: clamp(70px, 12vh, 140px); /* Margin ancora maggiore per piccoli schermi */
+            }
+
+            /* Separator sempre nascosto */
+            .separator {
+                display: none;
+            }
+
+            /* Mobile logo icon ancora più compatto */
+            .mobile-logo-icon {
+                bottom: clamp(12px, 2vh, 20px);
+                width: clamp(38px, 9.5vw, 50px);
+                margin-left: calc(clamp(38px, 9.5vw, 50px) / -2);
+            }
+
+            .main-content {
+                bottom: clamp(80px, 13vh, 140px);
+            }
+        }
+
+        /* Schermi bassi - GIF spostata molto in alto */
+        @media (max-height: 680px) and (min-height: 581px) {
+            /* Sposta GIF molto più in alto per evitare sovrapposizioni */
+            #gif-bg {
+                object-position: center 8%; /* Logo ancora più in alto */
+            }
+
+            .main-content {
+                max-height: calc(80vh - 10px);
+                bottom: clamp(50px, 9vh, 70px); /* Spazio per logo mobile */
+            }
+
+            .info-section {
+                margin-bottom: clamp(10px, 2vh, 14px);
+            }
+
+            .location, .dates, .theme {
+                font-size: clamp(20px, 3.5vw, 26px) !important;
+                line-height: 1.2 !important;
+            }
+
+            .edition {
+                font-size: clamp(16px, 3vw, 20px) !important;
+                line-height: 1.2 !important;
+            }
+
+            .description {
+                font-size: clamp(18px, 3.5vw, 24px);
+                line-height: clamp(22px, 4vw, 28px);
+                margin: clamp(10px, 2vh, 14px) 0 clamp(10px, 2vh, 14px);
+                text-align: center;
+            }
+
+            .cta-button {
+                font-size: clamp(14px, 2.6vw, 17px);
+                padding: clamp(10px, 2vh, 14px) clamp(16px, 3vw, 22px);
+                min-height: clamp(40px, 8vh, 48px);
+            }
+
+            .cta-container {
+                gap: clamp(10px, 2vh, 14px);
+            }
+
+            /* Mobile logo icon ben visibile */
+            .mobile-logo-icon {
+                bottom: clamp(10px, 2vh, 16px);
+                width: clamp(36px, 7.5vw, 44px);
+                margin-left: calc(clamp(36px, 7.5vw, 44px) / -2);
+            }
+        }
+
+        /* Schermi veramente molto bassi - GIF nascosta completamente */
+        @media (max-height: 580px) {
+            /* Nascondi GIF su schermi estremamente bassi */
+            #gif-bg {
+                display: none;
+            }
+
+            /* Sfondo solido di backup */
+            body {
+                background: #E94D34;
+            }
+
+            .main-content {
+                max-height: calc(85vh - 10px);
+                bottom: clamp(50px, 9vh, 70px);
+            }
+
+            .info-section {
+                margin-bottom: clamp(10px, 2vh, 14px);
+            }
+
+            .location, .dates, .theme {
+                font-size: clamp(20px, 3.5vw, 26px) !important;
+                line-height: 1.2 !important;
+            }
+
+            .edition {
+                font-size: clamp(16px, 3vw, 20px) !important;
+                line-height: 1.2 !important;
+            }
+
+            .description {
+                font-size: clamp(18px, 3.5vw, 24px);
+                line-height: clamp(22px, 4vw, 28px);
+                margin: clamp(10px, 2vh, 14px) 0 clamp(10px, 2vh, 14px);
+                text-align: center;
+            }
+
+            .cta-button {
+                font-size: clamp(14px, 2.6vw, 17px);
+                padding: clamp(10px, 2vh, 14px) clamp(16px, 3vw, 22px);
+                min-height: clamp(40px, 8vh, 48px);
+            }
+
+            .cta-container {
+                gap: clamp(10px, 2vh, 14px);
+            }
+
+            /* Mobile logo icon ben visibile */
+            .mobile-logo-icon {
+                bottom: clamp(10px, 2vh, 16px);
+                width: clamp(36px, 7.5vw, 44px);
+                margin-left: calc(clamp(36px, 7.5vw, 44px) / -2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- GIF Background -->
+    <img id="gif-bg" src="video/FNI_ORIZZONTALE.gif" alt="Animazione Festival della Narrazione Industriale 2025 - Per un Umanesimo Industriale, dal 24 al 29 novembre a Parma" loading="eager">
+
+    <!-- Header -->
+    <header role="banner">
+        <button class="logo-fni animate-header-logo" onclick="toggleBanner()" aria-label="Apri informazioni sul Festival della Narrazione Industriale">
+            <img src="src/logo.svg" alt="Logo Festival della Narrazione Industriale - Seconda Edizione 2025" width="auto" height="65">
+        </button>
+
+        <div class="social-icons-wrapper">
+            <div class="social-icons" role="navigation" aria-label="Social media">
+                <div class="social-icon animate-social-1">
+                    <a href="https://www.instagram.com/festivalnarrazioneindustriale/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Instagram">
+                        <img src="src/ig-icon.svg" alt="Profilo Instagram Festival Narrazione Industriale" style="width: 34px; height: 34px;" width="34" height="34">
+                    </a>
+                </div>
+                <div class="social-icon animate-social-2">
+                    <a href="https://www.facebook.com/festivalnarrazioneindustriale/" target="_blank" rel="noopener noreferrer" aria-label="Seguici su Facebook">
+                        <img src="src/fb-icon.svg" alt="Pagina Facebook Festival Narrazione Industriale" style="width: 34px; height: 34px;" width="34" height="34">
+                    </a>
+                </div>
+                <div class="social-icon animate-social-3">
+                    <a href="mailto:segreteria@festivalnarrazioneindustriale.it" aria-label="Contattaci via email">
+                        <img src="src/mail-icon.svg" alt="Contatta Festival Narrazione Industriale via email" style="width: 34px; height: 34px;" width="34" height="34">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="banner-toggle-wrapper">
+            <button class="banner-toggle" onclick="toggleBanner()" aria-label="Apri/chiudi pannello informazioni sul festival" aria-expanded="false">
+                <img src="src/logo-icon.svg" alt="Icona menu informazioni festival" style="width: 34px; height: 34px;" width="34" height="34">
+            </button>
+        </div>
+    </header>
+
+    <main class="main-content" role="main">
+        <!-- Info Section -->
+        <section class="info-section" aria-label="Informazioni festival">
+            <div class="left-info animate-left-info">
+                <div class="location">Parma</div>
+                <div class="dates">Dal 24 al 29<br>Novembre<br>2025</div>
+            </div>
+
+            <div class="separator animate-separator"></div>
+
+            <div class="right-info animate-right-info">
+                <div class="edition">SECONDA EDIZIONE</div>
+                <div class="theme">Per un<br>Umanesimo<br>Industriale</div>
+            </div>
+        </section>
+
+        <!-- Description -->
+        <p class="description animate-description">
+            PRESTO ONLINE
+        </p>
+
+        <!-- CTA Buttons -->
+        <div class="cta-container animate-cta">
+            <button class="cta-button email-button" aria-label="Contattaci via email per maggiori informazioni">
+                Contattaci per info
+            </button>
+        </div>
+    </main>
+
+    <!-- Mobile Logo Icon (visibile solo su mobile) -->
+    <button class="mobile-logo-icon animate-mobile-logo" onclick="toggleBanner()" aria-label="Apri/chiudi informazioni sul Festival della Narrazione Industriale" aria-expanded="false">
+        <img src="src/logo-icon.svg" alt="Logo icona Festival della Narrazione Industriale" width="44" height="44">
+    </button>
+
+    <!-- Side Banner -->
+    <aside class="side-banner" id="sideBanner" role="complementary" aria-label="Informazioni dettagliate sul Festival della Narrazione Industriale - Tema Umanesimo Industriale">
+        <button class="close-banner" onclick="closeBanner()" aria-label="Chiudi pannello informazioni"></button>
+        <div class="banner-content">
+            <div class="banner-logo">
+                <img src="src/f-n-i.svg" alt="Festival della Narrazione Industriale - Logo completo FNI" width="100%" height="auto">
+            </div>
+
+            <div class="banner-text">
+                <blockquote class="banner-quote" cite="Adriano Olivetti">
+                    «Io penso la fabbrica per l'uomo, non l'uomo per la fabbrica»
+                </blockquote>
+                <p>A partire da questa celebre visione di <strong>Adriano Olivetti</strong>, il <em>Festival della Narrazione Industriale</em>, giunto alla <strong>seconda edizione</strong>, propone un ragionamento plurale e corale sulla <strong>responsabilità sociale dell'industria</strong>, sull'utopia olivettiana di una dimensione umanista e umanizzata del lavoro, e restituisce al contempo uno sguardo sul nostro presente, su come le nuove generazioni reinterpretano il senso di quel messaggio, arricchendolo di nuovi significati.</p>
+            </div>
+
+            <div class="star-icon" aria-hidden="true">
+                <img src="src/star-icon.svg" alt="" width="19" height="16">
+            </div>
+        </div>
+    </aside>
+
+    <script>
+        // Handle responsive GIF source
+        function setGifSource() {
+            const gif = document.getElementById('gif-bg');
+
+            if (window.innerWidth < 768) {
+                gif.src = 'video/FNI_VERTICALE.gif';
+                gif.style.objectPosition = 'center 30%'; /* Logo più in alto su mobile */
+            } else {
+                gif.src = 'video/FNI_ORIZZONTALE.gif';
+                gif.style.objectPosition = 'center center'; /* Centrato su desktop */
+            }
+        }
+
+        // Set initial GIF source
+        setGifSource();
+
+        // Update GIF source on resize
+        let resizeTimer;
+        window.addEventListener('resize', function() {
+            clearTimeout(resizeTimer);
+            resizeTimer = setTimeout(setGifSource, 250);
+        });
+
+        // Prevent GIF context menu
+        document.getElementById('gif-bg').addEventListener('contextmenu', function(e) {
+            e.preventDefault();
+            return false;
+        });
+
+        /**
+         * GIF loop pause management - Mostra il primo frame per 3.5 secondi
+         *
+         * Nota: Per utilizzare questa funzionalità, è necessario creare due immagini
+         * statiche del primo frame dei GIF:
+         * - video/FNI_ORIZZONTALE_frame1.png (primo frame del GIF orizzontale)
+         * - video/FNI_VERTICALE_frame1.png (primo frame del GIF verticale)
+         *
+         * Se le immagini non esistono, il sistema ricade sul comportamento standard
+         * ricaricando semplicemente il GIF.
+         *
+         * IMPORTANTE: Regola gifDuration in base alla durata reale del tuo GIF.
+         * Per trovare la durata esatta:
+         * 1. Apri il GIF in un editor o visualizzatore
+         * 2. Conta i frame e calcola: (numero_frame × delay_per_frame)
+         * 3. Oppure usa un tool online come ezgif.com per vedere la durata
+         */
+        let gifLoopCount = 0;
+        const gifDuration = 12000; // Durata del GIF in millisecondi (12 secondi - aumentato)
+        const pauseDuration = 3500; // Pausa tra i loop in millisecondi
+
+        function pauseAndRestartGif() {
+            const gif = document.getElementById('gif-bg');
+            gifLoopCount++;
+
+            // Dopo il primo loop, mostra il primo frame durante la pausa
+            if (gifLoopCount > 0) {
+                const isMobile = window.innerWidth < 768;
+                const gifPath = isMobile ? 'video/FNI_VERTICALE.gif' : 'video/FNI_ORIZZONTALE.gif';
+                const framePath = isMobile ? 'video/FNI_VERTICALE_frame1.png' : 'video/FNI_ORIZZONTALE_frame1.png';
+
+                // Prova a usare il primo frame statico
+                const testImage = new Image();
+                testImage.onload = function() {
+                    // L'immagine del primo frame esiste, usala
+                    gif.src = framePath;
+
+                    // Dopo la pausa, ricarica il GIF
+                    setTimeout(function() {
+                        gif.src = gifPath + '?t=' + Date.now();
+                    }, pauseDuration);
+                };
+
+                testImage.onerror = function() {
+                    // L'immagine del primo frame non esiste, ricarica semplicemente il GIF
+                    gif.src = gifPath + '?t=' + Date.now();
+                };
+
+                testImage.src = framePath;
+            }
+
+            // Programma il prossimo ciclo
+            setTimeout(pauseAndRestartGif, gifDuration + pauseDuration);
+        }
+
+        // Avvia il ciclo dopo la prima riproduzione
+        setTimeout(pauseAndRestartGif, gifDuration);
+
+        // Avvia animazione pulse continua dopo l'intro del mobile logo
+        setTimeout(function() {
+            const mobileLogoIcon = document.querySelector('.mobile-logo-icon');
+            if (mobileLogoIcon) {
+                mobileLogoIcon.classList.add('intro-complete');
+            }
+        }, 3500 + 1200); // delay intro (3.5s) + durata intro (1.2s)
+
+        // Banner toggle function
+        function toggleBanner() {
+            const banner = document.getElementById('sideBanner');
+            const bannerToggle = document.querySelector('.banner-toggle');
+            const mobileLogoIcon = document.querySelector('.mobile-logo-icon');
+            const isOpen = banner.classList.contains('active');
+
+            console.log('Toggle banner called, current state:', isOpen);
+            banner.classList.toggle('active');
+
+            // Update aria-expanded e stato attivo per banner toggle desktop
+            if (bannerToggle) {
+                bannerToggle.setAttribute('aria-expanded', !isOpen);
+                bannerToggle.classList.toggle('active');
+            }
+
+            // Gestisci stato attivo del logo mobile
+            if (mobileLogoIcon) {
+                mobileLogoIcon.classList.toggle('active');
+                mobileLogoIcon.setAttribute('aria-expanded', !isOpen);
+            }
+
+            console.log('Banner classes after toggle:', banner.className);
+        }
+
+        // Close banner function
+        function closeBanner() {
+            const banner = document.getElementById('sideBanner');
+            const bannerToggle = document.querySelector('.banner-toggle');
+            const mobileLogoIcon = document.querySelector('.mobile-logo-icon');
+
+            console.log('Close banner called');
+            banner.classList.remove('active');
+
+            if (bannerToggle) {
+                bannerToggle.setAttribute('aria-expanded', 'false');
+                bannerToggle.classList.remove('active');
+            }
+
+            if (mobileLogoIcon) {
+                mobileLogoIcon.classList.remove('active');
+                mobileLogoIcon.setAttribute('aria-expanded', 'false');
+            }
+        }
+
+        // Close banner when clicking outside
+        document.addEventListener('click', function(event) {
+            const banner = document.getElementById('sideBanner');
+            const logoFni = document.querySelector('.logo-fni');
+            const bannerToggle = document.querySelector('.banner-toggle');
+            const mobileLogoIcon = document.querySelector('.mobile-logo-icon');
+            const closeButton = document.querySelector('.close-banner');
+
+            if (banner.classList.contains('active') &&
+                !banner.contains(event.target) &&
+                !logoFni.contains(event.target) &&
+                (!bannerToggle || !bannerToggle.contains(event.target)) &&
+                (!mobileLogoIcon || !mobileLogoIcon.contains(event.target)) &&
+                !closeButton.contains(event.target)) {
+                closeBanner();
+            }
+        });
+
+        // Email contact button
+        document.querySelector('.email-button').addEventListener('click', function() {
+            try {
+                // Crea un mailto con oggetto precompilato
+                const subject = encodeURIComponent('Richiesta informazioni Festival Narrazione Industriale 2025');
+                const body = encodeURIComponent('Gentile segreteria,\n\nvorrei ricevere maggiori informazioni sul Festival Narrazione Industriale 2025.\n\nGrazie');
+                const mailtoLink = `mailto:segreteria@festivalnarrazioneindustriale.it?subject=${subject}&body=${body}`;
+
+                window.location.href = mailtoLink;
+            } catch (error) {
+                console.error('Errore nell\'apertura del client email:', error);
+                // Fallback - copia email negli appunti se supportato
+                if (navigator.clipboard) {
+                    navigator.clipboard.writeText('segreteria@festivalnarrazioneindustriale.it')
+                        .then(() => alert('Email copiata negli appunti: segreteria@festivalnarrazioneindustriale.it'))
+                        .catch(() => alert('Email di contatto: segreteria@festivalnarrazioneindustriale.it'));
+                } else {
+                    alert('Email di contatto: segreteria@festivalnarrazioneindustriale.it');
+                }
+            }
+        });
+    </script>
+</body>
+</html>
