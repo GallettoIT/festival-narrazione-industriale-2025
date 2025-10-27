@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'halenoirexpanded-regularRg';
+    src: url('halenoirexpanded-regular-webfont.woff2') format('woff2'),
+         url('halenoirexpanded-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'halenoircompact-extralightRg';
+    src: url('halenoircompact-extralight-webfont.woff2') format('woff2'),
+         url('halenoircompact-extralight-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'halenoirexpanded-boldregular';
+    src: url('halenoirexpanded-bold-webfont.woff2') format('woff2'),
+         url('halenoirexpanded-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}

@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Halenoir Font Faces */
+@font-face {
+  font-family: 'halenoirexpanded-regularRg';
+  src: url('../assets/fonts/halenoirexpanded-regular-webfont.woff2') format('woff2'),
+       url('../assets/fonts/halenoirexpanded-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'halenoircompact-extralightRg';
+  src: url('../assets/fonts/halenoircompact-extralight-webfont.woff2') format('woff2'),
+       url('../assets/fonts/halenoircompact-extralight-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'halenoirexpanded-boldregular';
+  src: url('../assets/fonts/halenoirexpanded-bold-webfont.woff2') format('woff2'),
+       url('../assets/fonts/halenoirexpanded-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* Reset e Base Styles */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'halenoirexpanded-regularRg', sans-serif;
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
