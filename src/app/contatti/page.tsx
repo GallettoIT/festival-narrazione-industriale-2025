@@ -99,7 +99,7 @@ export default function ContattiPage() {
               </h2>
 
               {/* Descrizione */}
-              <p className="font-halenoir-regular text-[#282828] text-[20px] md:text-[22px] lg:text-[24px] leading-[25px]">
+              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed">
                 Per maggiori informazioni compila il form.
               </p>
             </div>
@@ -125,7 +125,7 @@ export default function ContattiPage() {
 
             {/* Testo e Social */}
             <div className="space-y-8">
-              <p className="font-halenoir-regular text-[#282828] text-[20px] md:text-[22px] lg:text-[24px] leading-[25px]">
+              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed">
                 Resta aggiornato su tutti gli eventi e news sui nostri canali social.
               </p>
 

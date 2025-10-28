@@ -30,7 +30,7 @@ export default function Footer() {
 
             {/* Center: Content + Button */}
             <div className="flex flex-col gap-4 lg:gap-5 items-center lg:items-start">
-              <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] leading-relaxed text-center lg:text-left">
+              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed text-center lg:text-left">
                 Scarica la rassegna stampa
               </p>
               <div className="flex justify-center lg:justify-start">
@@ -67,7 +67,7 @@ export default function Footer() {
               <h2 className="font-halenoir-regular text-[#282828] text-[28px] md:text-[36px] lg:text-[40px] leading-tight">
                 Iscriviti alla newsletter
               </h2>
-              <p className="font-halenoir-regular text-[#282828] text-[16px] md:text-[20px] lg:text-[24px] leading-relaxed">
+              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed">
                 L'invio del modulo implica<br className="hidden md:block" /> l'accettazione delle nostre{' '}
                 <a href="#" className="underline decoration-[#282828] underline-offset-2 hover:text-fni-red transition-colors">
                   Privacy policy
@@ -141,7 +141,7 @@ export default function Footer() {
               </div>
 
               {/* Association Info */}
-              <p className="font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] lg:text-[20px] leading-normal">
+              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
                 FESTIVAL DELLA NARRAZIONE INDUSTRIALE è realizzato<br />
                 da Associazione Festival Narrazione A.p.s.
               </p>
@@ -190,7 +190,7 @@ export default function Footer() {
               <div className="hidden lg:block"></div>
 
               {/* Contact Email */}
-              <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] leading-normal lg:text-right">
+              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal lg:text-right">
                 Per info <a
                   href="mailto:segreteria@festivalnarrazioneindustriale.it"
                   className="hover:text-fni-red transition-colors"

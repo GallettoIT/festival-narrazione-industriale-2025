@@ -45,7 +45,7 @@ export default function InfoEdizione2024() {
 
           {/* Colonna Destra - Testo descrittivo */}
           <div className="text-white flex flex-col justify-center text-center md:text-left">
-            <p className="font-halenoir-regular text-[18px] md:text-[22px] lg:text-[25px] leading-normal">
+            <p className="font-halenoir-regular text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
               <span>Attraverso opere letterarie, cinematografiche e fotografiche, la prima edizione del </span>
               <span className="font-halenoir-bold">Festival della Narrazione Industriale ha indagato le trasformazioni del mondo del lavoro </span>
               <span>e il loro impatto sulla società, sui rapporti umani e sui modelli di comportamento, </span>

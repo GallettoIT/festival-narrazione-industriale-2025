@@ -33,7 +33,7 @@ export default function UmanesimoIndustriale() {
           </div>
 
           {/* Colonna destra: Testo descrittivo */}
-          <div className="font-halenoir-regular text-white text-[18px] md:text-[22px] lg:text-[25px] leading-normal">
+          <div className="font-halenoir-regular text-white text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
             <p className="mb-6 md:mb-8">
               Il tema di questa seconda edizione è l&apos;<span className="font-halenoir-bold">Umanesimo industriale</span>: un approccio che, promosso tra gli altri anche da Adriano Olivetti, imprenditore e innovatore sociale, <span className="font-halenoir-bold">pone l&apos;individuo al centro della progettazione del lavoro industriale</span>.
             </p>

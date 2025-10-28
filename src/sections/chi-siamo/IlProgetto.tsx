@@ -15,7 +15,7 @@ export default function IlProgetto() {
             IL PROGETTO
           </h2>
 
-          <div className="space-y-6 md:space-y-8 text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] leading-relaxed">
+          <div className="space-y-6 md:space-y-8 text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed">
             <p>
               Il <span className="font-halenoir-bold">Festival della Narrazione Industriale</span> nasce con l'obiettivo di{' '}
               <span className="font-halenoir-bold">esplorare il rapporto profondo e dinamico tra industria e società</span>, mostrando non solo l'aspetto produttivo, ma anche il ruolo culturale che l'impresa riveste.

@@ -18,7 +18,7 @@ export default function OrganiDirettivi() {
             </h2>
 
             <div className="space-y-6">
-              <div className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] leading-relaxed uppercase">
+              <div className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed uppercase">
                 <p>L'Organo direttivo è formato da:</p>
                 <p>Giuseppe Iotti e Oreste Bergamaschi</p>
                 <p className="mt-4">Direzione organizzativa:</p>
@@ -36,80 +36,80 @@ export default function OrganiDirettivi() {
             <div className="space-y-6">
               {/* Isotta Piazza */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Isotta Piazza
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Università di Parma
                 </p>
               </div>
 
               {/* Giancarlo Gonizzi */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Giancarlo Gonizzi
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Curatore Archivio Storico Barilla
                 </p>
               </div>
 
               {/* Katia Golini */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Katia Golini
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Giornalista Gazzetta di Parma
                 </p>
               </div>
 
               {/* Giuseppe Lupo */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Giuseppe Lupo
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Università Cattolica del Sacro Cuore di Milano
                 </p>
               </div>
 
               {/* Claudio Rinaldi */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Claudio Rinaldi
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Direttore Gazzetta di Parma
                 </p>
               </div>
 
               {/* Tiziano Toracca */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Tiziano Toracca
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Università degli Studi di Udine
                 </p>
               </div>
 
               {/* Diego Varini */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Diego Varini
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Università di Parma
                 </p>
               </div>
 
               {/* Carlo Varotti */}
               <div>
-                <p className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-bold text-fni-red text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Carlo Varotti
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[25px] uppercase leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] uppercase leading-normal">
                   Università di Parma
                 </p>
               </div>

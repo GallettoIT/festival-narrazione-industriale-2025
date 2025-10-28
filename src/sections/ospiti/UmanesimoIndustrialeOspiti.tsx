@@ -33,7 +33,7 @@ export default function UmanesimoIndustrialeOspiti() {
           </div>
 
           {/* Colonna destra: Citazione + Testo descrittivo */}
-          <div className="font-halenoir-regular text-white text-[18px] md:text-[22px] lg:text-[25px] leading-normal space-y-6 md:space-y-8">
+          <div className="font-halenoir-regular text-white text-[15px] lg:text-[18px] xl:text-[22px] leading-normal space-y-6 md:space-y-8">
             {/* Citazione */}
             <p className="font-halenoir-bold">
               «Io penso la fabbrica per l&apos;uomo, non l&apos;uomo per la fabbrica».

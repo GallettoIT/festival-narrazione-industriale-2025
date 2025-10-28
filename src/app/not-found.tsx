@@ -20,7 +20,7 @@ export default function NotFound() {
           <h2 className="font-halenoir-bold text-white text-[32px] md:text-[40px] lg:text-[48px] uppercase mb-6 md:mb-8">
             PAGINA NON TROVATA
           </h2>
-          <p className="font-halenoir-regular text-[#282828] text-[20px] md:text-[22px] lg:text-[24px] leading-[27px] mb-12 md:mb-16 max-w-2xl mx-auto">
+          <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed mb-12 md:mb-16 max-w-2xl mx-auto">
             La pagina che stai cercando non esiste o è stata spostata.
           </p>
 
