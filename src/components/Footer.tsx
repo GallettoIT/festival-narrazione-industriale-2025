@@ -22,21 +22,21 @@ export default function Footer() {
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-8 lg:gap-12 xl:gap-16 items-center">
             {/* Left: PRESS AREA Title */}
-            <div>
+            <div className="text-center lg:text-left">
               <h2 className="font-halenoir-bold text-fni-red text-[32px] md:text-[40px] lg:text-[48px] uppercase leading-none">
                 PRESS AREA
               </h2>
             </div>
 
             {/* Center: Content + Button */}
-            <div className="flex flex-col gap-4 lg:gap-5">
-              <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] leading-relaxed">
+            <div className="flex flex-col gap-4 lg:gap-5 items-center lg:items-start">
+              <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] leading-relaxed text-center lg:text-left">
                 Scarica la rassegna stampa
               </p>
-              <div className="flex justify-start">
+              <div className="flex justify-center lg:justify-start">
                 <a
                   href="#"
-                  className="inline-block font-halenoir-regular text-fni-red text-[18px] md:text-[20px] lg:text-[24px] uppercase border-[3px] border-fni-red px-6 md:px-8 lg:px-10 py-2.5 md:py-3 lg:py-4 hover:bg-fni-red hover:text-white transition-colors duration-300"
+                  className="inline-block font-halenoir-regular text-fni-red text-[18px] md:text-[20px] lg:text-[24px] uppercase border-[3px] border-fni-red px-4 md:px-5 lg:px-6 py-1.5 md:py-2 lg:py-2.5 hover:bg-fni-red hover:text-white transition-colors duration-300"
                 >
                   NEWS E STAMPA
                 </a>
@@ -112,7 +112,7 @@ export default function Footer() {
                 <div className="flex justify-start mt-2 md:mt-3">
                   <button
                     type="submit"
-                    className="inline-block font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] uppercase border border-[#282828] px-8 md:px-10 lg:px-12 py-2.5 md:py-3 lg:py-4 hover:bg-[#282828] hover:text-white transition-colors duration-300"
+                    className="inline-block font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] uppercase border border-[#282828] px-4 md:px-5 lg:px-6 py-1.5 md:py-2 lg:py-2.5 hover:bg-[#282828] hover:text-white transition-colors duration-300"
                   >
                     INVIA
                   </button>
@@ -130,13 +130,13 @@ export default function Footer() {
             {/* Top Row: Logo + Association Info */}
             <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 lg:gap-8 xl:gap-10 items-start">
               {/* Logo */}
-              <div className="relative w-[150px] h-[55px] lg:w-[183px] lg:h-[67px]">
+              <div className="flex items-start">
                 <Image
                   src="/images/footer/logo-festival-text.svg"
                   alt="Festival Narrazione Industriale"
-                  fill
-                  className="object-contain object-left"
-                  sizes="183px"
+                  width={183}
+                  height={67}
+                  className="w-[150px] lg:w-[183px] h-auto object-contain object-left"
                 />
               </div>
 
@@ -152,7 +152,7 @@ export default function Footer() {
               {/* Social Icons */}
               <div className="flex gap-3 justify-start">
                 <a
-                  href="#"
+                  href="https://www.facebook.com/festivalnarrazioneindustriale/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-fni-red hover:opacity-70 transition-opacity"
@@ -163,7 +163,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.instagram.com/festivalnarrazioneindustriale/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-fni-red hover:opacity-70 transition-opacity"

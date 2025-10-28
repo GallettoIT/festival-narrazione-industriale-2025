@@ -71,7 +71,7 @@ export default function HeroSection() {
         <div className="relative w-full h-[450px] sm:h-[600px] md:h-[725px] overflow-hidden">
           {/* Background Image - Scaricata da Figma */}
           <img
-            src="/images/hero-robot.png"
+            src="/images/hero-robot.jpg"
             alt="Robot industriale"
             className="absolute inset-0 w-full h-full object-cover"
           />
@@ -86,7 +86,7 @@ export default function HeroSection() {
 
               {/* CTA Button - Link to Chi Siamo */}
               <Link
-                href="#chi-siamo"
+                href="/chi-siamo"
                 className="inline-block font-halenoir-regular text-fni-white text-base sm:text-lg md:text-xl uppercase px-4 py-1.5 border-[3px] border-fni-white hover:bg-fni-white hover:text-fni-dark transition-all duration-300"
                 aria-label="Scopri di più sul festival"
               >

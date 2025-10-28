@@ -14,7 +14,7 @@ export default function ChiSiamoHero() {
   return (
     <>
       {/* Titolo [CHI SIAMO] */}
-      <section className="relative w-full bg-white pt-12 md:pt-20 pb-8 md:pb-12">
+      <section className="relative w-full bg-white py-12 md:py-16 lg:py-20">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           <h1 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl lg:text-[64px] uppercase">
             [CHI SIAMO]
@@ -22,34 +22,30 @@ export default function ChiSiamoHero() {
         </div>
       </section>
 
-      {/* Hero section con GIF */}
-      <section className="relative w-full bg-fni-red py-16 md:py-24 lg:py-32">
-        <div className="max-w-container-fni mx-auto px-6 md:px-8">
-          <div className="flex items-center justify-center">
-            {/* GIF orizzontale - visibile solo su lg+ */}
-            <div className="hidden lg:block relative w-full aspect-video max-w-5xl">
-              <Image
-                src="/gif/FNI_ORIZZONTALE.gif"
-                alt="Logo FNI animato"
-                fill
-                className="object-contain"
-                unoptimized
-                priority
-              />
-            </div>
+      {/* Hero section con GIF - Full width con altezza ridotta */}
+      <section className="relative w-full bg-fni-red overflow-hidden">
+        {/* GIF orizzontale 16:9 - visibile solo su lg+ */}
+        <div className="hidden lg:block relative w-full h-[400px] xl:h-[500px]">
+          <Image
+            src="/gif/FNI_ORIZZONTALE.gif"
+            alt="Logo FNI animato"
+            fill
+            className="object-cover"
+            unoptimized
+            priority
+          />
+        </div>
 
-            {/* GIF verticale - visibile solo su mobile/tablet */}
-            <div className="lg:hidden relative w-full max-w-md aspect-[9/16]">
-              <Image
-                src="/gif/FNI_VERTICALE.gif"
-                alt="Logo FNI animato"
-                fill
-                className="object-contain"
-                unoptimized
-                priority
-              />
-            </div>
-          </div>
+        {/* GIF verticale 9:16 - visibile solo su mobile/tablet */}
+        <div className="lg:hidden relative w-full h-[500px] md:h-[600px]">
+          <Image
+            src="/gif/FNI_VERTICALE.gif"
+            alt="Logo FNI animato"
+            fill
+            className="object-cover"
+            unoptimized
+            priority
+          />
         </div>
       </section>
     </>

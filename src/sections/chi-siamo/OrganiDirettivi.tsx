@@ -8,7 +8,7 @@
 
 export default function OrganiDirettivi() {
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 lg:py-32">
+    <section className="relative w-full bg-white pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-24 lg:pb-32">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
           {/* Organo Direttivo */}

@@ -20,7 +20,6 @@ const menuItems = [
   { label: 'CHI SIAMO', href: '/chi-siamo' },
   { label: 'PROGRAMMA', href: '/programma' },
   { label: 'OSPITI', href: '/ospiti' },
-  { label: 'NEWS E STAMPA', href: '/news-stampa' },
   { label: 'EDIZIONI', href: '/edizioni' },
   { label: 'LAB', href: '/lab' },
   { label: 'CONTATTI', href: '/contatti' },
@@ -40,7 +39,7 @@ export default function Header() {
               {/* Logo FNI SVG - Scaricato da Figma */}
               <div className="relative w-[140px] md:w-[180px] h-[52px] md:h-[67px]">
                 <Image
-                  src="/images/logo-fni-festival-full.svg"
+                  src="/images/logo-fni.svg"
                   alt="Festival Narrazione Industriale"
                   fill
                   className="object-contain object-left"

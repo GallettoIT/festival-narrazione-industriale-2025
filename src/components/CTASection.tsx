@@ -33,7 +33,7 @@ export default function CTASection({
         <div className="flex items-center justify-center">
           <Link
             href={href}
-            className={`inline-block font-halenoir-regular text-[18px] md:text-[24px] lg:text-[36px] uppercase border-[3px] ${buttonColor} px-8 md:px-12 lg:px-16 py-3 md:py-4 lg:py-5 transition-colors duration-300 text-center`}
+            className={`inline-block font-halenoir-regular text-[18px] md:text-[24px] lg:text-[36px] uppercase border-[3px] ${buttonColor} px-4 md:px-6 lg:px-8 py-2 md:py-2.5 lg:py-3 transition-colors duration-300 text-center`}
           >
             {buttonText}
           </Link>

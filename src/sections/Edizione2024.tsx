@@ -123,8 +123,8 @@ export default function Edizione2024() {
           className="flex justify-center mt-12 lg:mt-16"
         >
           <a
-            href="#"
-            className="inline-block font-halenoir-bold text-fni-red text-[20px] lg:text-[24px] uppercase border-[3px] border-fni-red px-8 lg:px-12 py-4 lg:py-5 hover:bg-fni-red hover:text-white transition-colors duration-300"
+            href="/edizioni"
+            className="inline-block font-halenoir-bold text-fni-red text-[20px] lg:text-[24px] uppercase border-[3px] border-fni-red px-4 lg:px-6 py-2 lg:py-2.5 hover:bg-fni-red hover:text-white transition-colors duration-300"
           >
             Ripercorri l'edizione 2024
           </a>

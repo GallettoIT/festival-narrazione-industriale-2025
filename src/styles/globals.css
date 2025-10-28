@@ -55,3 +55,56 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* Leaflet Map Custom Styles */
+
+/* Popup styles */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  border: 2px solid #e94d34;
+  box-shadow: 0 3px 14px rgba(233, 77, 52, 0.3);
+}
+
+.leaflet-popup-tip {
+  border-top-color: #e94d34 !important;
+}
+
+/* Tooltip al hover - nomi luoghi visibili al passaggio mouse */
+.custom-tooltip-fni.leaflet-tooltip {
+  background-color: rgba(255, 255, 255, 0.98);
+  border: 2px solid #e94d34;
+  border-radius: 4px;
+  padding: 6px 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  font-weight: bold;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.custom-tooltip-fni.leaflet-tooltip::before {
+  border-top-color: #e94d34;
+}
+
+/* Pin marker personalizzati */
+.custom-marker-fni {
+  background: transparent;
+  border: none;
+  transition: transform 0.2s ease;
+}
+
+.custom-marker-fni:hover {
+  transform: scale(1.1);
+}
+
+/* Zoom controls */
+.leaflet-control-zoom a {
+  background-color: white;
+  border: 2px solid #e94d34;
+  color: #e94d34;
+  font-weight: bold;
+}
+
+.leaflet-control-zoom a:hover {
+  background-color: #e94d34;
+  color: white;
+}

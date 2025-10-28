@@ -8,7 +8,7 @@
 
 export default function IlProgetto() {
   return (
-    <section className="relative w-full bg-white py-16 md:py-24 lg:py-32">
+    <section className="relative w-full bg-white pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-24 lg:pb-32">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         <div className="max-w-4xl">
           <h2 className="font-halenoir-bold text-fni-red text-[32px] md:text-[40px] lg:text-[48px] uppercase mb-8 md:mb-12">

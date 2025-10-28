@@ -39,12 +39,12 @@ export default function Separator({
       data-component="separator"
     >
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
-        {/* SVG Container - Mantiene proporzioni originali */}
+        {/* SVG Container - Mantiene proporzioni originali con dimensioni molto ridotte e responsive */}
         <div className="flex items-center justify-center">
           <img
             src={svgPath}
             alt={alt}
-            className="w-full max-w-4xl h-auto"
+            className="w-full max-w-xs md:max-w-sm lg:max-w-md h-auto"
             style={{ objectFit: 'contain' }}
           />
         </div>
