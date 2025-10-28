@@ -4,7 +4,7 @@
       "id": 1,
       "nome": "Oratorio Novo Biblioteca Civica",
       "indirizzo": "Vicolo Santa Maria, 5, 43121 Parma PR",
-      "lat": 4.8041161,
+      "lat": 44.8041161,
       "lng": 10.3153494,
       "eventi": ["Inaugurazione Festival", "Mostra Il sistema culturale Olivetti", "Olivetti e la Cultura"]
     },
@@ -28,8 +28,8 @@
       "id": 4,
       "nome": "Spazio 51 Palazzo Giordani",
       "indirizzo": "Strada della Repubblica, 51, 43121 Parma PR",
-      "lat": 44.8025,
-      "lng": 10.3318,
+      "lat": 44.7997747,
+      "lng": 10.3335444,
       "eventi": ["Storia d'amore e macchine da scrivere", "Laboratorio Raccontare l'impresa"]
     },
     {

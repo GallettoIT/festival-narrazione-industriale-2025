@@ -122,6 +122,7 @@ export default function Partners() {
             <PartnerLogo src="/images/partners/isomec-green.svg" alt="Isomec Green" width={187} height={35} />
             <PartnerLogo src="/images/partners/sercal.svg" alt="Sercal" width={180} height={40} />
             <PartnerLogo src="/images/partners/salvatore-robuschi.svg" alt="Salvatore Robuschi" width={172} height={34} />
+            <PartnerLogo src="/images/partners/grenti.svg" alt="Grenti" width={150} height={50} />
           </div>
         </PartnerCategory>
 
