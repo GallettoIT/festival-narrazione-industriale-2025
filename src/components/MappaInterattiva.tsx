@@ -29,13 +29,34 @@ const PARMA_BOUNDS: L.LatLngBoundsExpression = [
 ];
 
 // Componente per centrare la mappa su un luogo specifico e gestire i bounds
-function MapController({ center, zoom }: { center: [number, number]; zoom: number }) {
+function MapController({ center, zoom, isActive }: { center: [number, number]; zoom: number; isActive: boolean }) {
   const map = useMap();
+
   useEffect(() => {
     map.setView(center, zoom, { animate: true });
     // Imposta i limiti massimi della mappa a Parma città
     map.setMaxBounds(PARMA_BOUNDS);
   }, [center, zoom, map]);
+
+  // Gestisce l'attivazione/disattivazione dei controlli della mappa
+  useEffect(() => {
+    if (isActive) {
+      map.scrollWheelZoom.enable();
+      map.dragging.enable();
+      map.touchZoom.enable();
+      map.doubleClickZoom.enable();
+      map.boxZoom.enable();
+      map.keyboard.enable();
+    } else {
+      map.scrollWheelZoom.disable();
+      map.dragging.disable();
+      map.touchZoom.disable();
+      map.doubleClickZoom.disable();
+      map.boxZoom.disable();
+      map.keyboard.disable();
+    }
+  }, [isActive, map]);
+
   return null;
 }
 
@@ -225,19 +246,19 @@ export default function MappaInterattiva({ luoghi, centro }: MappaInterattivaPro
         <MapContainer
           center={mapCenter}
           zoom={mapZoom}
-          scrollWheelZoom={isMapActive}
-          dragging={isMapActive}
-          touchZoom={isMapActive}
-          doubleClickZoom={isMapActive}
-          boxZoom={isMapActive}
-          keyboard={isMapActive}
+          scrollWheelZoom={false}
+          dragging={false}
+          touchZoom={false}
+          doubleClickZoom={false}
+          boxZoom={false}
+          keyboard={false}
           maxBounds={PARMA_BOUNDS}
           maxBoundsViscosity={1.0}
           style={{ height: '100%', width: '100%' }}
           className="z-0"
           zoomControl={true}
         >
-          <MapController center={mapCenter} zoom={mapZoom} />
+          <MapController center={mapCenter} zoom={mapZoom} isActive={isMapActive} />
 
           {/* Mappa con stile CartoDB Positron - simile a Figma (colori tenui/grigi) */}
           <TileLayer
