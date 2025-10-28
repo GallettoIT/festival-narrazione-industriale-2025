@@ -66,7 +66,7 @@ export default function OspitiSlider() {
 
           {/* Embla Viewport */}
           <div className="overflow-hidden" ref={emblaRef}>
-            <div className="flex gap-6 md:gap-8">
+            <div className="flex">
               {ospiti.map((ospite) => {
                 // Aspect ratio:
                 // Mobile: tutte uguali (380) per uniformità e semplicità
@@ -78,7 +78,7 @@ export default function OspitiSlider() {
                 return (
                   <div
                     key={ospite.id}
-                    className="flex-none w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 min-w-0"
+                    className="flex-none w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 min-w-0 pr-6 md:pr-8"
                   >
                     {/* Card Ospite */}
                     <div className="group cursor-pointer">
