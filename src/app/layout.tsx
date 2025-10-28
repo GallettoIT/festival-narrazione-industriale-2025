@@ -1,10 +1,74 @@
 import type { Metadata } from 'next'
 import '../styles/globals.css'
 import Header from '@/components/Header'
+import Script from 'next/script'
 
+/**
+ * Metadata SEO ottimizzato per il Festival della Narrazione Industriale
+ */
 export const metadata: Metadata = {
-  title: 'Festival Narrazione Industriale',
-  description: 'Festival Narrazione Industriale - Parma 2025',
+  metadataBase: new URL('https://www.festivalnarrazioneindustriale.it'),
+  title: {
+    default: 'Festival della Narrazione Industriale | Parma',
+    template: '%s | Festival Narrazione Industriale',
+  },
+  description: 'Festival della Narrazione Industriale esplora il rapporto tra lavoro e società attraverso cinema, letteratura e arte. Parma, 24-29 Novembre.',
+  keywords: [
+    'festival narrazione industriale',
+    'festival parma',
+    'umanesimo industriale',
+    'adriano olivetti',
+    'narrazione impresa',
+    'cultura industriale',
+    'economia cultura',
+    'storytelling aziendale',
+    'eventi parma'
+  ],
+  authors: [{ name: 'Festival della Narrazione Industriale' }],
+  creator: 'Festival della Narrazione Industriale',
+  publisher: 'Festival della Narrazione Industriale',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'it_IT',
+    url: 'https://www.festivalnarrazioneindustriale.it',
+    siteName: 'Festival della Narrazione Industriale',
+    title: 'Festival della Narrazione Industriale | Parma',
+    description: 'Festival della Narrazione Industriale esplora il rapporto tra lavoro e società attraverso cinema, letteratura e arte. Parma, 24-29 Novembre.',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Festival della Narrazione Industriale - Parma',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Festival della Narrazione Industriale | Parma',
+    description: 'Festival della Narrazione Industriale esplora il rapporto tra lavoro e società attraverso cinema, letteratura e arte.',
+    images: ['/images/og-image.jpg'],
+  },
+  formatDetection: {
+    telephone: false,
+  },
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+    apple: '/icon.svg',
+  },
+  manifest: '/manifest.json',
 }
 
 export default function RootLayout({
@@ -12,8 +76,40 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  // Structured Data - Organization Schema
+  const organizationSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: 'Festival della Narrazione Industriale',
+    url: 'https://www.festivalnarrazioneindustriale.it',
+    logo: 'https://www.festivalnarrazioneindustriale.it/images/logo.svg',
+    description: 'Festival della Narrazione Industriale esplora il rapporto tra lavoro e società attraverso cinema, letteratura e arte.',
+    sameAs: [
+      'https://www.instagram.com/festivalnarrazioneindustriale/',
+      'https://www.facebook.com/festivalnarrazioneindustriale/',
+    ],
+    contactPoint: {
+      '@type': 'ContactPoint',
+      contactType: 'Customer Service',
+      email: 'segreteria@festivalnarrazioneindustriale.it',
+    },
+  }
+
   return (
     <html lang="it">
+      <head>
+        {/* Theme Color */}
+        <meta name="theme-color" content="#E94D34" />
+
+        {/* Structured Data - Organization */}
+        <Script
+          id="organization-schema"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(organizationSchema),
+          }}
+        />
+      </head>
       <body>
         <Header />
         <div className="pt-20 md:pt-24">

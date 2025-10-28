@@ -1,0 +1,38 @@
+# Festival della Narrazione Industriale - Robots.txt
+# Configurazione ottimizzata per SEO
+
+# User-agent: * indica che le regole si applicano a tutti i crawler
+User-agent: *
+# Allow: permette l'indicizzazione di tutto il sito
+Allow: /
+
+# Disallow: blocca l'accesso a risorse che non devono essere indicizzate
+Disallow: /api/
+Disallow: /_next/static/
+Disallow: /admin/
+
+# Sitemap: indica la posizione del file sitemap XML
+Sitemap: https://www.festivalnarrazioneindustriale.it/sitemap.xml
+
+# Google-specific directives
+User-agent: Googlebot
+Allow: /
+User-agent: Googlebot-Image
+Allow: /
+
+# Bing-specific directives
+User-agent: Bingbot
+Allow: /
+
+# Social media crawlers - assicura che possano accedere per preview
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
