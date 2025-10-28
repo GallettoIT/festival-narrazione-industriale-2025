@@ -22,11 +22,19 @@ interface MappaInterattivaProps {
   };
 }
 
-// Componente per centrare la mappa su un luogo specifico
+// Bounds per limitare la mappa alla città di Parma
+const PARMA_BOUNDS: L.LatLngBoundsExpression = [
+  [44.77, 10.28], // Sud-Ovest
+  [44.84, 10.37]  // Nord-Est
+];
+
+// Componente per centrare la mappa su un luogo specifico e gestire i bounds
 function MapController({ center, zoom }: { center: [number, number]; zoom: number }) {
   const map = useMap();
   useEffect(() => {
     map.setView(center, zoom, { animate: true });
+    // Imposta i limiti massimi della mappa a Parma città
+    map.setMaxBounds(PARMA_BOUNDS);
   }, [center, zoom, map]);
   return null;
 }
@@ -53,6 +61,7 @@ export default function MappaInterattiva({ luoghi, centro }: MappaInterattivaPro
   const [mapCenter, setMapCenter] = useState<[number, number]>([centro.lat, centro.lng]);
   const [mapZoom, setMapZoom] = useState(centro.zoom);
   const [isListOpen, setIsListOpen] = useState(false);
+  const [isMapActive, setIsMapActive] = useState(false);
   const markerRefs = useRef<{ [key: number]: L.Marker }>({});
 
   useEffect(() => {
@@ -69,6 +78,7 @@ export default function MappaInterattiva({ luoghi, centro }: MappaInterattivaPro
     setSelectedLuogo(luogo.id);
     setMapCenter([luogo.lat, luogo.lng]);
     setMapZoom(16);
+    setIsMapActive(true); // Attiva la mappa quando si clicca un luogo
 
     // Chiudi la lista su mobile per vedere meglio il popup
     setIsListOpen(false);
@@ -198,10 +208,31 @@ export default function MappaInterattiva({ luoghi, centro }: MappaInterattivaPro
 
       {/* Mappa */}
       <div className="flex-1 relative">
+        {/* Overlay per richiedere click su desktop */}
+        {!isMapActive && (
+          <div
+            onClick={() => setIsMapActive(true)}
+            className="absolute inset-0 z-[400] bg-black bg-opacity-5 backdrop-blur-[0.5px] cursor-pointer flex items-center justify-center group hover:bg-opacity-10 transition-all duration-300"
+          >
+            <div className="bg-white px-6 py-3 rounded-lg shadow-lg border-2 border-fni-red group-hover:scale-105 transition-transform duration-300">
+              <p className="font-halenoir-bold text-fni-red text-[14px] md:text-[16px] uppercase text-center">
+                Clicca per esplorare la mappa
+              </p>
+            </div>
+          </div>
+        )}
+
         <MapContainer
           center={mapCenter}
           zoom={mapZoom}
-          scrollWheelZoom={true}
+          scrollWheelZoom={isMapActive}
+          dragging={isMapActive}
+          touchZoom={isMapActive}
+          doubleClickZoom={isMapActive}
+          boxZoom={isMapActive}
+          keyboard={isMapActive}
+          maxBounds={PARMA_BOUNDS}
+          maxBoundsViscosity={1.0}
           style={{ height: '100%', width: '100%' }}
           className="z-0"
           zoomControl={true}
