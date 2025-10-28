@@ -1,0 +1,65 @@
+{
+  "luoghi": [
+    {
+      "id": 1,
+      "nome": "Oratorio Novo Biblioteca Civica",
+      "indirizzo": "Vicolo Santa Maria, 5, 43121 Parma PR",
+      "lat": 4.8041161,
+      "lng": 10.3153494,
+      "eventi": ["Inaugurazione Festival", "Mostra Il sistema culturale Olivetti", "Olivetti e la Cultura"]
+    },
+    {
+      "id": 2,
+      "nome": "Centro Congressi Santa Elisabetta",
+      "indirizzo": "Parco Area delle Scienze, Campus Universitario, 43124 Parma PR",
+      "lat": 44.7662296,
+      "lng": 10.3069518,
+      "eventi": ["Conferenza Architettura Biblioteca Centrale Olivetti"]
+    },
+    {
+      "id": 3,
+      "nome": "Museo Glauco Lombardi",
+      "indirizzo": "Strada Garibaldi, 15, 43121 Parma PR",
+      "lat": 44.8037716,
+      "lng": 10.3253819,
+      "eventi": ["Laboratorio Lo scrittore residente"]
+    },
+    {
+      "id": 4,
+      "nome": "Spazio 51 Palazzo Giordani",
+      "indirizzo": "Strada della Repubblica, 51, 43121 Parma PR",
+      "lat": 44.8025,
+      "lng": 10.3318,
+      "eventi": ["Storia d'amore e macchine da scrivere", "Laboratorio Raccontare l'impresa"]
+    },
+    {
+      "id": 5,
+      "nome": "Auditorium Carlo Mattioli",
+      "indirizzo": "Palazzo del Governatore, Piazza Garibaldi, 43121 Parma PR",
+      "lat": 44.8019109,
+      "lng": 10.3254848,
+      "eventi": ["Dal modello industriale all'intelligenza artificiale"]
+    },
+    {
+      "id": 6,
+      "nome": "Palazzo Soragna",
+      "indirizzo": "Unione Parmense degli Industriali, Strada XXII Luglio, 30, 43121 Parma PR",
+      "lat": 44.8042,
+      "lng": 10.3265,
+      "eventi": ["La letteratura e l'industria americana - Beppe Severgnini"]
+    },
+    {
+      "id": 7,
+      "nome": "Teatro Europa",
+      "indirizzo": "Viale Basetti, 12a, 43123 Parma PR",
+      "lat": 44.7995,
+      "lng": 10.3410,
+      "eventi": ["La chiave a stella - Reading Primo Levi"]
+    }
+  ],
+  "centro": {
+    "lat": 44.8015,
+    "lng": 10.3289,
+    "zoom": 14
+  }
+}

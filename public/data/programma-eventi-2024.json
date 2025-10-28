@@ -1,0 +1,88 @@
+{
+  "anno": 2024,
+  "descrizione": "Prima edizione del Festival della Narrazione Industriale",
+  "date": "28-30 NOVEMBRE 2024",
+  "luogo": "A PARMA",
+  "eventi": [
+    {
+      "id": 1,
+      "giorno": "GIOVEDÌ",
+      "data": "28",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "17.30",
+          "luogo": "GRAND HOTEL DE LA VILLE",
+          "descrizione": "Inaugurazione"
+        },
+        {
+          "ora": "17.45",
+          "luogo": "GRAND HOTEL DE LA VILLE",
+          "descrizione": "Aldo Grasso \"La società italiana attraverso la narrazione della pubblicità: il caso Barilla\".",
+          "note": "Introduce: Patrizia Ginepri"
+        },
+        {
+          "ora": "21.00",
+          "luogo": "CINEMA ASTRA",
+          "descrizione": "Proiezione film \"Il capo perfetto\" con Giulio Sangiorgio e Ilaria Feole.",
+          "note": "Moderatrice: Sara Martin"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "giorno": "VENERDÌ",
+      "data": "29",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "10.00 e 15.00",
+          "luogo": "ARCHIVIO STORICO BARILLA - PEDRIGNANO",
+          "descrizione": "Visita guidata alla mostra \"Pasta Diva - moda e comunicazione Barilla negli anni sessanta\"."
+        },
+        {
+          "ora": "17.00",
+          "luogo": "GRAND HOTEL DE LA VILLE",
+          "descrizione": "Presentazione del libro di Giuseppe Lupo, \"La modernità malintesa\" (con libreria diari di bordo).",
+          "note": "Moderatrice: Katia Golini"
+        },
+        {
+          "ora": "17.45",
+          "luogo": "GRAND HOTEL DE LA VILLE",
+          "descrizione": "Restituzione e premiazione del laboratorio universitario con aperitivo a cura di Luca Signaroldi, Isotta Piazza e Marco Gualazzini"
+        },
+        {
+          "ora": "21.00",
+          "luogo": "APE MUSEO - FONDAZIONE MONTE PARMA",
+          "descrizione": "Racconto di racconti. Edoardo Nesi con Dario di Vico \"Storia della mia gente\".",
+          "note": "Introduce: Isotta Piazza. Narratrice: Franca Tragni"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "giorno": "SABATO",
+      "data": "30",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "11.00",
+          "luogo": "AUDITORIUM C. MATTIOLI - PALAZZO DEL GOVERNATORE",
+          "descrizione": "Raccontare la fabbrica, oggi? Tavola rotonda con Francesca Coin, Corrado Beldì, Stefano Salis.",
+          "note": "Moderatore: Giuseppe Lupo"
+        },
+        {
+          "ora": "16.00",
+          "luogo": "CINEMA D'AZEGLIO",
+          "descrizione": "Proiezione del docu-film sulle pubblicità Barilla a cura di Sara Martin."
+        },
+        {
+          "ora": "21.00",
+          "luogo": "APE MUSEO - FONDAZIONE MONTE PARMA",
+          "descrizione": "Racconto di racconti. Carlo Varotti \"Rocco e i suoi fratelli\".",
+          "note": "Leo Caligiuri - pianoforte"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "anno": 2025,
+  "eventi": [
+    {
+      "id": 1,
+      "giorno": "LUNEDÌ",
+      "data": "24",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "11.00",
+          "durata": 120,
+          "luogo": "ORATORIO NOVO BIBLIOTECA CIVICA",
+          "indirizzoCompleto": "Oratorio Novo Biblioteca Civica, Vicolo Santa Maria 5, 43121 Parma PR",
+          "descrizione": "Inaugurazione ufficiale del Festival della Narrazione Industriale con la partecipazione delle autorità e della stampa.\nA seguire: apertura della mostra Il sistema culturale Olivetti *.",
+          "note": "* La mostra sarà visitabile presso l'Oratorio Novo della Biblioteca Civica dal 24 al 29 novembre nei seguenti orari:\nLunedì: 11:00-13:00 / 15:00-18:30\nMartedì e Sabato: 10:00-13:00 / 15:00-18:30\nVenerdì: 10:30-13:00 / 15:00-18:30"
+        },
+        {
+          "ora": "17.30",
+          "durata": 90,
+          "luogo": "CENTRO CONGRESSI SANTA ELISABETTA",
+          "indirizzoCompleto": "Centro Congressi Santa Elisabetta, Parco Area delle Scienze, Campus Universitario, 43124 Parma PR",
+          "descrizione": "Conferenza L'architettura della Biblioteca Centrale Olivetti con Alessandro Tassi Carboni, Daniele Boltri e Marcella Turchetti.\nModera: Katia Golini."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "giorno": "MARTEDÌ",
+      "data": "25",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "18.00",
+          "durata": 90,
+          "luogo": "MUSEO GLAUCO LOMBARDI",
+          "indirizzoCompleto": "Museo Glauco Lombardi, Strada Garibaldi 15, 43121 Parma PR",
+          "descrizione": "Restituzione del laboratorio di scrittura Lo scrittore residente: l'esperienza alla Laterlite S.p.A. con Emanuele Aldrovandi, Corrado Beldì e Alberto Albertini."
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "giorno": "MERCOLEDÌ",
+      "data": "26",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "17.00",
+          "durata": 60,
+          "luogo": "SPAZIO 51 PALAZZO GIORDANI",
+          "indirizzoCompleto": "Spazio 51 Palazzo Giordani, Strada della Repubblica 51, 43121 Parma PR",
+          "descrizione": "Presentazione del libro di Giuseppe Lupo Storia d'amore e macchine da scrivere con la Libreria Diari di Bordo.\nModera: Aldo Tagliaferro."
+        },
+        {
+          "ora": "18.00",
+          "durata": 90,
+          "luogo": "SPAZIO 51 PALAZZO GIORDANI",
+          "indirizzoCompleto": "Spazio 51 Palazzo Giordani, Strada della Repubblica 51, 43121 Parma PR",
+          "descrizione": "Restituzione dell'esito del laboratorio universitario Raccontare l'impresa – Premio 2025 con Luca Signaroldi e Marco Gualazzini.\nCoordina: Isotta Piazza."
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "giorno": "GIOVEDÌ",
+      "data": "27",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "18.00",
+          "durata": 90,
+          "luogo": "ORATORIO NOVO BIBLIOTECA CIVICA",
+          "indirizzoCompleto": "Oratorio Novo Biblioteca Civica, Vicolo Santa Maria 5, 43121 Parma PR",
+          "descrizione": "Olivetti e la Cultura: le biblioteche e le riviste Olivetti con la presentazione di Cristina Accornero e Anna Maria Viotto.\nModera: Giuseppe Lupo."
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "giorno": "VENERDÌ",
+      "data": "28",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "18.00",
+          "durata": 120,
+          "luogo": "AUDITORIUM CARLO MATTIOLI",
+          "indirizzoCompleto": "Auditorium Carlo Mattioli, Palazzo del Governatore, Piazza Garibaldi, 43121 Parma PR",
+          "descrizione": "Dal modello industriale all'intelligenza artificiale a cura del Premio Biella Letteratura e Industria, con Alberto Sinigaglia, Mariangela Gasparetto, Antonio Franchini e Tiziano Toracca."
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "giorno": "SABATO",
+      "data": "29",
+      "mese": "NOVEMBRE",
+      "eventi": [
+        {
+          "ora": "11:00",
+          "durata": 120,
+          "luogo": "PALAZZO SORAGNA\nUNIONE PARMENSE DEGLI INDUSTRIALI",
+          "indirizzoCompleto": "Palazzo Soragna, Unione Parmense degli Industriali, Strada XXII Luglio 30, 43121 Parma PR",
+          "descrizione": "Beppe Severgnini, La letteratura e l'industria americana.\nModera: Patrizia Ginepri.",
+          "note": "Evento realizzato con il supporto e il contributo del Gruppo Barilla"
+        },
+        {
+          "ora": "21.00",
+          "durata": 90,
+          "luogo": "TEATRO EUROPA",
+          "indirizzoCompleto": "Teatro Europa, Viale Basetti 12a, 43121 Parma PR",
+          "descrizione": "Racconto di racconti: La chiave a stella tratto dal romanzo di Primo Levi.\nReading a cura di Carlo Varotti."
+        }
+      ]
+    }
+  ]
+}
