@@ -100,9 +100,7 @@ export default function Edizione2024() {
               transition={{ duration: 0.7, delay: 0.3 }}
             >
               <p className="font-halenoir-regular text-[#282828] text-[16px] lg:text-[20px] leading-relaxed opacity-90">
-                Un viaggio tra parole, immagini e visioni: dalla spinta del boom economico alle rivoluzioni del nuovo millennio, l'industria italiana come specchio dei tempi.
-                <br /><br />
-                Ogni racconto – letterario, cinematografico, fotografico – diventa un'immagine viva di identità, sogni e futuro. Un'edizione che ci invita a guardare, riflettere e immaginare insieme il ruolo dell'industria nel cambiamento del nostro Paese.
+                Un viaggio tra parole, immagini e visioni: l&apos;industria italiana come specchio dei tempi. Un&apos;edizione che ci invita a riflettere e immaginare insieme il ruolo dell&apos;industria nell&apos;evoluzione del nostro Paese.
               </p>
             </motion.div>
 

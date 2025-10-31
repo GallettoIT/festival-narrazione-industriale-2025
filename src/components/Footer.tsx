@@ -6,11 +6,16 @@ import { useState } from 'react';
 export default function Footer() {
   const [formData, setFormData] = useState({
     name: '',
-    email: ''
+    email: '',
+    privacyAccepted: false
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    if (!formData.privacyAccepted) {
+      alert('Per iscriverti alla newsletter devi accettare la Privacy Policy');
+      return;
+    }
     // TODO: Implement newsletter subscription
     console.log('Newsletter subscription:', formData);
   };
@@ -31,7 +36,7 @@ export default function Footer() {
             {/* Center: Content + Button */}
             <div className="flex flex-col gap-4 lg:gap-5 items-center lg:items-start">
               <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed text-center lg:text-left">
-                Scarica la rassegna stampa
+                Resta aggiornato sulle notizie del Festival della Narrazione Industriale
               </p>
               <div className="flex justify-center lg:justify-start">
                 <a
@@ -62,16 +67,13 @@ export default function Footer() {
       <section className="bg-white py-16 md:py-24 lg:py-32">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-20 xl:gap-24">
-            {/* Left: Newsletter Title + Privacy */}
+            {/* Left: Newsletter Title + Info */}
             <div className="flex flex-col gap-4 lg:gap-6">
               <h2 className="font-halenoir-regular text-[#282828] text-[28px] md:text-[36px] lg:text-[40px] leading-tight">
                 Iscriviti alla newsletter
               </h2>
               <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed">
-                L'invio del modulo implica<br className="hidden md:block" /> l'accettazione delle nostre{' '}
-                <a href="#" className="underline decoration-[#282828] underline-offset-2 hover:text-fni-red transition-colors">
-                  Privacy policy
-                </a>
+                Resta sempre aggiornato sulle novità del Festival della Narrazione Industriale
               </p>
             </div>
 
@@ -108,11 +110,45 @@ export default function Footer() {
                   />
                 </div>
 
+                {/* Privacy Policy Checkbox */}
+                <div className="flex items-start gap-3 mt-2">
+                  <input
+                    type="checkbox"
+                    id="privacy"
+                    checked={formData.privacyAccepted}
+                    onChange={(e) => setFormData({ ...formData, privacyAccepted: e.target.checked })}
+                    className="mt-1 w-5 h-5 border-2 border-[#282828] rounded-none accent-fni-red cursor-pointer focus:ring-2 focus:ring-fni-red focus:ring-offset-2"
+                    required
+                  />
+                  <label htmlFor="privacy" className="font-halenoir-regular text-[#282828] text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed cursor-pointer">
+                    Accetto la{' '}
+                    <a
+                      href="https://www.iubenda.com/privacy-policy/17171870"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-[#282828] underline-offset-2 hover:text-fni-red hover:decoration-fni-red transition-colors"
+                    >
+                      Privacy Policy
+                    </a>
+                    {' '}e la{' '}
+                    <a
+                      href="https://www.iubenda.com/privacy-policy/17171870/cookie-policy"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="underline decoration-[#282828] underline-offset-2 hover:text-fni-red hover:decoration-fni-red transition-colors"
+                    >
+                      Cookie Policy
+                    </a>
+                    {' '}*
+                  </label>
+                </div>
+
                 {/* Submit Button */}
                 <div className="flex justify-start mt-2 md:mt-3">
                   <button
                     type="submit"
-                    className="inline-block font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] uppercase border border-[#282828] px-4 md:px-5 lg:px-6 py-1.5 md:py-2 lg:py-2.5 hover:bg-[#282828] hover:text-white transition-colors duration-300"
+                    className="inline-block font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] uppercase border border-[#282828] px-4 md:px-5 lg:px-6 py-1.5 md:py-2 lg:py-2.5 hover:bg-[#282828] hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    disabled={!formData.privacyAccepted}
                   >
                     INVIA
                   </button>
@@ -141,10 +177,11 @@ export default function Footer() {
               </div>
 
               {/* Association Info */}
-              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
-                FESTIVAL DELLA NARRAZIONE INDUSTRIALE è realizzato<br />
-                da Associazione Festival Narrazione A.p.s.
-              </p>
+              <div className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
+                <p>FESTIVAL NARRAZIONE INDUSTRIALE A.P.S</p>
+                <p>VIA STRASBURGO, 23/A</p>
+                <p>P.IVA 03106750346</p>
+              </div>
             </div>
 
             {/* Bottom Row: Social Icons + Contact Email */}
@@ -174,7 +211,7 @@ export default function Footer() {
                   </svg>
                 </a>
                 <a
-                  href="#"
+                  href="https://www.linkedin.com/company/festival-narrazione-industriale/about/?viewAsMember=true"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-fni-red hover:opacity-70 transition-opacity"
@@ -189,15 +226,28 @@ export default function Footer() {
               {/* Spacer - solo su lg+ */}
               <div className="hidden lg:block"></div>
 
-              {/* Contact Email */}
-              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal lg:text-right">
-                Per info <a
-                  href="mailto:segreteria@festivalnarrazioneindustriale.it"
-                  className="hover:text-fni-red transition-colors"
-                >
-                  segreteria@festivalnarrazioneindustriale.it
-                </a>
-              </p>
+              {/* Contact Email + Credits */}
+              <div className="flex flex-col gap-3 lg:text-right">
+                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
+                  Per info <a
+                    href="mailto:segreteria@festivalnarrazioneindustriale.it"
+                    className="hover:text-fni-red transition-colors"
+                  >
+                    segreteria@festivalnarrazioneindustriale.it
+                  </a>
+                </p>
+                <p className="font-halenoir-regular text-[#282828] text-[14px] lg:text-[16px] xl:text-[18px] leading-normal">
+                  credit:{' '}
+                  <a
+                    href="https://unsocials.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-fni-red transition-colors"
+                  >
+                    unsocials.com
+                  </a>
+                </p>
+              </div>
             </div>
           </div>
         </div>

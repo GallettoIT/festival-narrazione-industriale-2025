@@ -50,7 +50,7 @@ function PartnerLogo({ src, alt, width = 150, height = 60, className = '' }: Log
           src={src}
           alt={alt}
           fill
-          className="object-contain"
+          className="object-contain brightness-0 opacity-80"
           sizes={`${width}px`}
         />
       </div>
@@ -61,7 +61,7 @@ function PartnerLogo({ src, alt, width = 150, height = 60, className = '' }: Log
 export default function Partners() {
   return (
     <section
-      className="relative w-full bg-white py-16 md:py-24 lg:py-32"
+      className="relative w-full bg-[#f7f4f4] py-16 md:py-24 lg:py-32"
       data-section="partners"
     >
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
@@ -76,112 +76,102 @@ export default function Partners() {
           [PARTNER]
         </motion.h2>
 
-        {/* MAIN SPONSOR - Barilla */}
+        {/* 1. CON IL CONTRIBUTO DI */}
+        <PartnerCategory title="CON IL CONTRIBUTO DI:" id="contributo">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10">
+            <PartnerLogo src="/images/partners/CONTRIBUTO/COMUNE.svg" alt="Comune di Parma" width={120} height={110} />
+            <PartnerLogo src="/images/partners/CONTRIBUTO/REGIONE.svg" alt="Regione Emilia-Romagna" width={100} height={120} />
+          </div>
+        </PartnerCategory>
+
+        {/* 2. CON IL PATROCINIO DI */}
+        <PartnerCategory title="CON IL PATROCINIO DI:" id="patrocinio">
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 gap-6 lg:gap-8">
+            <PartnerLogo src="/images/partners/PATROCINIO/BIBLIOTECHE.svg" alt="Biblioteche di Parma" width={140} height={100} />
+            <PartnerLogo src="/images/partners/PATROCINIO/BORGO.svg" alt="Il Borgo" width={200} height={60} />
+            <PartnerLogo src="/images/partners/PATROCINIO/IOCISTO.svg" alt="Parma, io ci sto!" width={100} height={100} />
+            <PartnerLogo src="/images/partners/PATROCINIO/MIC.svg" alt="MIC" width={100} height={100} />
+            <PartnerLogo src="/images/partners/PATROCINIO/MUSEIMPRESA.svg" alt="Museimpresa" width={150} height={60} />
+            <PartnerLogo src="/images/partners/PATROCINIO/OLIVETTI.svg" alt="Archivi Olivetti" width={100} height={35} />
+            <PartnerLogo src="/images/partners/PATROCINIO/ORDINE_ARCHITETTI.svg" alt="Ordine Architetti" width={100} height={100} />
+            <PartnerLogo src="/images/partners/PATROCINIO/PROVINCIA.svg" alt="Provincia di Parma" width={110} height={100} />
+            <PartnerLogo src="/images/partners/PATROCINIO/UNIVERSITA.svg" alt="Università di Parma" width={115} height={105} />
+          </div>
+        </PartnerCategory>
+
+        {/* 3. MAIN SPONSOR */}
         <PartnerCategory title="MAIN SPONSOR" id="main-sponsor">
           <div className="flex items-center justify-start">
             <PartnerLogo
-              src="/images/partners/barilla.svg"
+              src="/images/partners/MAIN SPONSOR/BARILLA.svg"
               alt="Barilla"
-              width={280}
-              height={100}
+              width={220}
+              height={80}
             />
           </div>
         </PartnerCategory>
 
-        {/* SPONSOR */}
+        {/* 4. SPONSOR */}
         <PartnerCategory title="SPONSOR" id="sponsor">
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6 lg:gap-8">
-            <PartnerLogo src="/images/partners/chiesi.svg" alt="Chiesi" width={180} height={44} />
-            <PartnerLogo src="/images/partners/opem.svg" alt="Opem" width={140} height={60} />
-            <PartnerLogo src="/images/partners/gia.png" alt="GIA" width={150} height={70} />
-            <PartnerLogo src="/images/partners/bcc.svg" alt="BCC" width={140} height={55} />
-            <PartnerLogo src="/images/partners/emilbanca.svg" alt="Emilbanca" width={220} height={26} />
-            <PartnerLogo src="/images/partners/cisita.svg" alt="Cisita" width={150} height={65} />
-            <PartnerLogo src="/images/partners/verlingue.svg" alt="Verlingue" width={240} height={57} />
-            <PartnerLogo src="/images/partners/fondazione-monteparma.svg" alt="Fondazione Monteparma" width={220} height={80} />
-            <PartnerLogo src="/images/partners/bia.svg" alt="BIA" width={98} height={33} />
+            <PartnerLogo src="/images/partners/SPONSOR/BIA.svg" alt="BIA" width={110} height={40} />
+            <PartnerLogo src="/images/partners/SPONSOR/CHIESI.svg" alt="Chiesi" width={190} height={50} />
+            <PartnerLogo src="/images/partners/SPONSOR/CISITA.svg" alt="Cisita" width={160} height={70} />
+            <PartnerLogo src="/images/partners/SPONSOR/EMILBANCA.svg" alt="Emilbanca" width={230} height={30} />
+            <PartnerLogo src="/images/partners/SPONSOR/GIA.svg" alt="GIA" width={160} height={75} />
+            <PartnerLogo src="/images/partners/SPONSOR/MONTEPARMA.svg" alt="Fondazione Monteparma" width={230} height={85} />
+            <PartnerLogo src="/images/partners/SPONSOR/OPEM.svg" alt="Opem" width={150} height={65} />
+            <PartnerLogo src="/images/partners/SPONSOR/UPI.svg" alt="Unione Parmense Industriali" width={150} height={65} />
+            <PartnerLogo src="/images/partners/SPONSOR/VERLINGUE.svg" alt="Verlingue" width={250} height={60} />
           </div>
         </PartnerCategory>
 
-        {/* SOSTENITORI */}
+        {/* 5. SOSTENITORI */}
         <PartnerCategory title="SOSTENITORI" id="sostenitori">
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-6 lg:gap-8">
-            <PartnerLogo src="/images/partners/techcab.png" alt="Techcab" width={100} height={50} />
-            <PartnerLogo src="/images/partners/seraco.svg" alt="Seraco" width={160} height={44} />
-            <PartnerLogo src="/images/partners/studiomm.png" alt="Studio MM" width={150} height={35} />
-            <PartnerLogo src="/images/partners/proges.png" alt="Proges" width={145} height={42} />
-            <PartnerLogo src="/images/partners/maldy-italiana.svg" alt="Maldy Italiana" width={80} height={50} />
-            <PartnerLogo src="/images/partners/koppel.png" alt="Koppel" width={68} height={68} />
-            <PartnerLogo src="/images/partners/laumas.svg" alt="Laumas" width={174} height={21} />
-            <PartnerLogo src="/images/partners/casappa.svg" alt="Casappa" width={143} height={30} />
-            <PartnerLogo src="/images/partners/laterlite.svg" alt="Laterlite" width={146} height={41} />
-            <PartnerLogo src="/images/partners/archivi-olivetti.png" alt="Archivi Olivetti" width={88} height={29} />
-            <PartnerLogo src="/images/partners/infotec.svg" alt="InfoTec" width={165} height={41} />
-            <PartnerLogo src="/images/partners/elcos.svg" alt="Elcos" width={139} height={28} />
-            <PartnerLogo src="/images/partners/pilogen-carezza.svg" alt="Pilogen Carezza" width={75} height={49} />
-            <PartnerLogo src="/images/partners/isomec-green.svg" alt="Isomec Green" width={187} height={35} />
-            <PartnerLogo src="/images/partners/sercal.svg" alt="Sercal" width={180} height={40} />
-            <PartnerLogo src="/images/partners/salvatore-robuschi.svg" alt="Salvatore Robuschi" width={172} height={34} />
-            <PartnerLogo src="/images/partners/grenti.svg" alt="Grenti" width={150} height={50} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/CANEPARI.svg" alt="Canepari" width={120} height={50} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/CASAPPA.svg" alt="Casappa" width={150} height={35} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/CAVOZZA.svg" alt="Cavozza" width={140} height={50} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/CGI.svg" alt="CGI" width={100} height={50} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/ELCOS.svg" alt="Elcos" width={145} height={30} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/FIASA.svg" alt="Fiasa" width={130} height={50} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/GOUP.svg" alt="Goup" width={120} height={50} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/GRENTI.svg" alt="Grenti" width={160} height={55} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/INFOTECH.svg" alt="InfoTech" width={175} height={45} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/ISOMEC.svg" alt="Isomec Green" width={195} height={40} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/KOPPEL.svg" alt="Koppel" width={75} height={75} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/LATERLITE.svg" alt="Laterlite" width={155} height={45} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/LAUMAS.svg" alt="Laumas" width={180} height={25} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/MALDY.svg" alt="Maldy Italiana" width={85} height={55} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/MM.svg" alt="Studio MM" width={160} height={40} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/PILOGEN.svg" alt="Pilogen Carezza" width={80} height={55} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/PROGES.svg" alt="Proges" width={155} height={45} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/SERACO.svg" alt="Seraco" width={170} height={48} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/SR.svg" alt="Salvatore Robuschi" width={180} height={38} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/TECHCAB.svg" alt="Techcab" width={110} height={55} />
+            <PartnerLogo src="/images/partners/SOSTENITORI/VEREL.svg" alt="Verel" width={140} height={50} />
           </div>
         </PartnerCategory>
 
-        {/* MEDIA PARTNER */}
+        {/* 6. MEDIA PARTNER */}
         <PartnerCategory title="MEDIA PARTNER" id="media-partner">
           <div className="flex items-center justify-start">
             <PartnerLogo
-              src="/images/partners/gazzetta.svg"
+              src="/images/partners/MEDIA PARTNER/GAZZETTA.svg"
               alt="Gazzetta di Parma"
-              width={260}
-              height={20}
+              width={280}
+              height={25}
             />
           </div>
         </PartnerCategory>
 
-        {/* SOSTENITORE TECNICO */}
-        <PartnerCategory title="SOSTENITORE TECNICO" id="sostenitore-tecnico">
-          <div className="flex items-center justify-start">
-            <PartnerLogo
-              src="/images/partners/digigraph.svg"
-              alt="Digigraph"
-              width={116}
-              height={43}
-            />
+        {/* 7. SPONSOR TECNICI */}
+        <PartnerCategory title="SPONSOR TECNICI" id="sponsor-tecnici">
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-8 lg:gap-10">
+            <PartnerLogo src="/images/partners/SPONSOR TECNICI/DIGIGRAPH.svg" alt="Digigraph" width={125} height={48} />
+            <PartnerLogo src="/images/partners/SPONSOR TECNICI/UNSOCIALS.svg" alt="Unsocials" width={200} height={50} />
           </div>
         </PartnerCategory>
-
-        {/* PARTNER ISTITUZIONALI */}
-        <PartnerCategory title="PARTNER ISTITUZIONALI" id="partner-istituzionali">
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 lg:gap-8">
-            <PartnerLogo src="/images/partners/museimpresa.png" alt="Museimpresa" width={142} height={52} />
-            <PartnerLogo src="/images/partners/unione-industriali.svg" alt="Unione Parmense degli Industriali" width={143} height={59} />
-          </div>
-        </PartnerCategory>
-
-        {/* CON IL PATROCINIO DI */}
-        <div className="grid grid-cols-1 lg:grid-cols-[220px_1fr] gap-8 lg:gap-12">
-          {/* Left: Category Label */}
-          <div className="flex flex-col">
-            <h3 className="font-halenoir-bold text-fni-red text-[16px] lg:text-[18px] uppercase mb-2">
-              Con il patrocinio di:
-            </h3>
-            <div className="w-full lg:w-[180px] h-[2px] bg-fni-red"></div>
-          </div>
-
-          {/* Right: Institutional Logos */}
-          <div>
-            {/* Patrocinio logos */}
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-7 gap-6 lg:gap-8">
-              <PartnerLogo src="/images/partners/comune-parma.svg" alt="Comune di Parma" width={98} height={90} />
-              <PartnerLogo src="/images/partners/provincia-parma.png" alt="Provincia di Parma" width={99} height={90} />
-              <PartnerLogo src="/images/partners/regione-emilia.svg" alt="Regione Emilia-Romagna" width={78} height={93} />
-              <PartnerLogo src="/images/partners/universita-parma.svg" alt="Università di Parma" width={104} height={94} />
-              <PartnerLogo src="/images/partners/biblioteche.png" alt="Biblioteche di Parma" width={126} height={94} />
-              <PartnerLogo src="/images/partners/parma-io-ci-sto.svg" alt="Parma, io ci sto!" width={91} height={91} />
-              <PartnerLogo src="/images/partners/il-borgo.png" alt="Il Borgo" width={183} height={52} />
-            </div>
-          </div>
-        </div>
       </div>
     </section>
   );

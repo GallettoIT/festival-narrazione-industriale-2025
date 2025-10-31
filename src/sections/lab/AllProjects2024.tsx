@@ -100,7 +100,7 @@ export default function AllProjects2024() {
               {/* Titolo con linea decorativa a destra */}
               <div className="flex items-start gap-4 md:gap-6">
                 <h3 className="font-halenoir-bold text-fni-red text-[18px] md:text-[19px] lg:text-[20px] uppercase leading-[27px] flex-shrink-0 max-w-[312px]">
-                  IL PROGETTO Delicius: Sostenibilità e Tradizione Marinara
+                  DELICIUS: SOSTENIBILITà E TRADIZIONE
                 </h3>
                 <div className="flex-1 flex items-center mt-3">
                   <div className="w-full max-w-[282px] h-[2px] bg-fni-red"></div>
@@ -110,10 +110,10 @@ export default function AllProjects2024() {
               {/* Testo descrittivo */}
               <div className="font-halenoir-regular text-[#282828] text-[18px] md:text-[19px] lg:text-[20px] leading-[27px]">
                 <p className="mb-0">
-                  Delicius, azienda specializzata nella produzione di conserve ittiche di alta qualità, ha fatto della sostenibilità il valore centrale della propria attività. La strategia comunicativa sviluppata dal team ha posto al centro proprio questo tema, raccontando l'impegno dell'azienda nella gestione responsabile delle risorse marine e nella tutela dell'ambiente, senza perdere di vista la tradizione marinara che accompagna ogni fase della produzione.
+                  Delicius Rizzoli SpA, Società Benefit è un&apos;impresa specializzata nella produzione di conserve ittiche di alta qualità che ha fatto della sostenibilità cuore della propria vision aziendale. La strategia comunicativa sviluppata dal gruppo di lavoro ha posto al centro proprio questo tema, raccontando l&apos;impegno dell&apos;azienda nella gestione responsabile della pesca e nella tutela dell&apos;ambiente, senza perdere di vista la tradizione ed il prezioso saper fare aziendale.
                 </p>
                 <p className="mb-0">
-                  Attraverso interviste approfondite con chi quotidianamente incarna e pratica questi valori — dai pescatori agli operatori aziendali — la comunicazione ha dato voce alle persone che rendono concreta la sostenibilità, trasformando principi e buone pratiche in storie accessibili e coinvolgenti. La strategia ha valorizzato la coesione tra etica aziendale e rispetto dell'ambiente, raccontando come Delicius riesca a integrare responsabilità ambientale, qualità del prodotto e legame con il territorio, facendo emergere un modello di impresa che guarda al futuro senza perdere il legame con la propria identità e tradizione.
+                  La strategia ha valorizzato la coesione tra etica aziendale e rispetto dell&apos;ambiente, raccontando come Delicius riesca a integrare responsabilità ambientale, qualità del prodotto e legame con il territorio, facendo emergere un modello di impresa che guarda al futuro senza perdere il legame con la propria identità e tradizione.
                 </p>
                 <p>&nbsp;</p>
               </div>

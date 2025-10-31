@@ -20,9 +20,11 @@ export default function OrganiDirettivi() {
             <div className="space-y-6">
               <div className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed uppercase">
                 <p>L'Organo direttivo è formato da:</p>
-                <p>Giuseppe Iotti e Oreste Bergamaschi</p>
+                <p>
+                  <span className="font-halenoir-bold text-fni-red">Giuseppe Iotti</span> e <span className="font-halenoir-bold text-fni-red">Oreste Bergamaschi</span>
+                </p>
                 <p className="mt-4">Direzione organizzativa:</p>
-                <p>Antonio Iamiglio</p>
+                <p className="font-halenoir-bold text-fni-red">Antonio Iamiglio</p>
               </div>
             </div>
           </div>

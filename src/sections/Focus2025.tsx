@@ -35,28 +35,22 @@ export default function Focus2025() {
           {/* Colonna Sinistra */}
           <div className="text-[#282828] text-xl md:text-2xl leading-relaxed space-y-6">
             <p>
-              <span className="font-halenoir-bold">Il Festival della Narrazione Industriale torna a Parma</span>
-              {' '}con una prospettiva rinnovata, ponendo al centro l&apos;Umanesimo Industriale: un approccio all&apos;impresa autentico, dinamico e profondamente umano. E&apos; molto di più di un Festival: è un punto d&apos;incontro tra chi immagina, chi realizza e chi contribuisce a scrivere{' '}
-              <span className="font-halenoir-bold">la storia del saper fare</span>.
+              Il ruolo della narrazione d&apos;autore, in particolar modo quella letteraria e giornalistica, rappresenta uno strumento fondamentale per analizzare e interpretare il mondo dell&apos;industria. Non si limita a descriverla, ma riflette profondamente su come le sue evoluzioni plasmino le trasformazioni sociali, i modelli relazionali e il rapporto tra generazioni, influenzando l&apos;immaginario collettivo.
             </p>
 
             <p>
-              <span className="font-halenoir-bold">Storie, fabbriche, territori</span>: un intreccio di voci che rivela come, dietro ogni prodotto, ci siano persone, scelte e visione. Quest&apos;anno il Festival si amplia e accoglie nuove collaborazioni di rilievo, tra cui il Premio Biella Letteratura e Industria e l&apos;Archivio Storico Olivetti.
+              Questa seconda edizione di <span className="font-halenoir-bold">FNI - Festival della Narrazione Industriale</span>, vuole stabilire nuove sinergie in grado di creare una rete culturale sul tema del lavoro industriale. Prestigiose le partnership con il <span className="font-halenoir-bold">Premio Biella Letteratura e Industria</span> e l&apos;<span className="font-halenoir-bold">Associazione Archivio Storico Olivetti</span>, pilastro nazionale degli archivi d&apos;impresa.
             </p>
           </div>
 
           {/* Colonna Destra */}
           <div className="text-[#282828] text-xl md:text-2xl leading-relaxed space-y-6">
             <p>
-              L&apos;<span className="font-halenoir-bold">Umanesimo Industriale</span>
-              {' '}rappresenta una visione che mette le persone al centro dell&apos;impresa, superando la logica dei soli risultati per restituire valore e significato al lavoro. È un{' '}
-              <span className="font-halenoir-bold">modello che genera cultura</span>
-              {' '}e, insieme, ispira un dialogo costante tra fare e pensare, tra produzione e creatività. Parlare di industria significa parlare di futuro: un futuro costruito attraverso visione e relazioni.
+              Le iniziative previste offrono una ricca pluralità di proposte, palcoscenico di pregio per la mostra dedicata alla <span className="font-halenoir-bold">Biblioteca Olivetti</span> e non solo: prezioso il punto di vista di un osservatore come <span className="font-halenoir-bold">Beppe Severgnini</span> sulla cultura e sulla società statunitense, il laboratorio di narrazione d&apos;impresa <span className="font-halenoir-bold">&quot;Lo scrittore residente&quot;</span>, il laboratorio universitario <span className="font-halenoir-bold">&quot;Raccontare il lavoro&quot;</span>, che coinvolgerà studenti dell&apos;Ateneo di Parma con imprese del territorio, e letture teatralizzate.
             </p>
 
             <p>
-              Incontri, libri, dialoghi e idee: il Festival della Narrazione Industriale{' '}
-              <span className="font-halenoir-bold">è il luogo in cui si racconta il lavoro che trasforma il mondo</span>, con uno sguardo aperto e rivolto al domani.
+              Il filo conduttore tematico di quest&apos;anno è l&apos;<span className="font-halenoir-bold">Umanesimo Industriale</span>, ispirato alla visione olivettiana. L&apos;obiettivo è riaffermare l&apos;individuo al centro della progettazione del lavoro, in una filosofia d&apos;impresa che promuove la crescita personale e professionale e assume un ruolo attivo e responsabile verso l&apos;intera società.
             </p>
           </div>
         </div>

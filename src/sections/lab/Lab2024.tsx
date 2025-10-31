@@ -258,15 +258,15 @@ export default function Lab2024() {
           {/* Colonna sinistra - Testo */}
           <div className="font-halenoir-regular text-[#f7f4f4] text-[18px] md:text-[19px] lg:text-[20px] leading-[25px] space-y-5">
             <p className="font-halenoir-bold text-white uppercase">
-              Pilogen Carezza e il "Progetto Corrispondenza"
+              PILOGEN CAREZZA: "CORRISPONDENZE"
             </p>
 
             <p>
-              Il progetto vincitore ha raccontato la storia ultracentenaria della famiglia Pignacca, fondatrice di Pilogen Carezza, azienda leader nel settore della cosmesi naturale, nota per un approccio che coniuga tradizione e innovazione. Con una storia che affonda le radici nel 1898, Pilogen Carezza rappresenta l'eccellenza del Made in Italy, offrendo cosmetici di alta qualità che riflettono cura, ricerca e attenzione ai dettagli.
+              Progetto vincitore di questa edizione 2024, ha interpretato la storia della famiglia Pignacca, fondatrice di Pilogen Carezza Srl, azienda leader nel settore della cosmesi naturale. Con una storia che fonda le sue radici fin dal 1898, Pilogen Carezza rappresenta un&apos;eccellenza del Made in Italy, specializzata nella produzione di prodotti cosmetici di alta qualità che riflettono cura, ricerca e attenzione ai dettagli.
             </p>
 
             <p>
-              Il gruppo ha scelto di raccontare l'azienda attraverso il suo straordinario percorso storico, valorizzando un patrimonio archiviale di oltre 600 lettere ricevute nel tempo dai clienti. Reinterpretando immagini d'epoca, il gruppo ha narrato il "tempo del benessere" che Pilogen Carezza garantisce ai propri clienti. La strategia comunicativa ha messo in dialogo passato e presente, realizzando contenuti digitali e analogici, capaci di confrontare l'antico con il contemporaneo e di rendere tangibile la continuità tra tradizione e innovazione.
+              Il gruppo di lavoro universitario ha scelto di raccontare l&apos;azienda attraverso il suo straordinario percorso storico, valorizzando un patrimonio archiviale di oltre 600 lettere ricevute nel tempo dai clienti. Reinterpretando immagini d&apos;epoca, il gruppo ha narrato il "tempo del benessere": la strategia comunicativa ha messo in relazione passato e presente, producendo contenuti capaci di trasmettere un talento imprenditoriale unico.
             </p>
           </div>
 

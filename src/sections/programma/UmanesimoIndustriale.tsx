@@ -13,7 +13,7 @@ export default function UmanesimoIndustriale() {
   return (
     <section className="relative w-full bg-fni-red py-16 md:py-20 lg:py-24">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[28%_1fr] gap-8 lg:gap-12 xl:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-[40%_1fr] lg:grid-cols-[35%_1fr] xl:grid-cols-[28%_1fr] gap-8 lg:gap-12 xl:gap-16">
           {/* Colonna sinistra: Icona + Titolo */}
           <div className="space-y-4 md:space-y-6">
             {/* Logo F-N-I */}
@@ -35,11 +35,11 @@ export default function UmanesimoIndustriale() {
           {/* Colonna destra: Testo descrittivo */}
           <div className="font-halenoir-regular text-white text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
             <p className="mb-6 md:mb-8">
-              Il tema di questa seconda edizione è l&apos;<span className="font-halenoir-bold">Umanesimo industriale</span>: un approccio che, promosso tra gli altri anche da Adriano Olivetti, imprenditore e innovatore sociale, <span className="font-halenoir-bold">pone l&apos;individuo al centro della progettazione del lavoro industriale</span>.
+              Il ruolo della narrazione d&apos;autore, in particolar modo quella letteraria e giornalistica, rappresenta uno strumento fondamentale per analizzare e interpretare il mondo dell&apos;industria. Non si limita a descriverla, ma riflette profondamente su come le sue evoluzioni plasmino le trasformazioni sociali, i modelli relazionali e il rapporto tra generazioni, influenzando l&apos;immaginario collettivo.
             </p>
 
             <p>
-              Non si tratta solo di produzione, ma di favorire la crescita personale e professionale dei lavoratori, in una filosofia d&apos;impresa in cui l&apos;industria svolge un ruolo attivo, responsabile e propositivo nei confronti della società.
+              Il filo conduttore tematico di quest&apos;anno è l&apos;<span className="font-halenoir-bold">Umanesimo Industriale</span>, ispirato alla visione olivettiana. L&apos;obiettivo è riaffermare l&apos;individuo al centro della progettazione del lavoro, in una filosofia d&apos;impresa che promuove la crescita personale e professionale e assume un ruolo attivo e responsabile verso l&apos;intera società.
             </p>
           </div>
         </div>

@@ -68,12 +68,15 @@ export default function InfoEdizione() {
 
         {/* CTA Button */}
         <div className="flex justify-center">
-          <button
-            className="font-halenoir-regular text-fni-white text-lg md:text-xl uppercase px-6 py-2 border-[3px] border-fni-white hover:bg-fni-white hover:text-fni-red transition-all duration-300"
+          <a
+            href="/pdf/PROGRAMMA A4.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block font-halenoir-regular text-fni-white text-lg md:text-xl uppercase px-6 py-2 border-[3px] border-fni-white hover:bg-fni-white hover:text-fni-red transition-all duration-300"
             aria-label="Scopri il programma del festival"
           >
             SCOPRI IL PROGRAMMA
-          </button>
+          </a>
         </div>
       </div>
     </section>

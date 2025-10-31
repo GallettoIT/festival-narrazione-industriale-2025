@@ -5,6 +5,7 @@ import useEmblaCarousel from 'embla-carousel-react';
 import Autoplay from 'embla-carousel-autoplay';
 import { ospiti } from '@/data/ospiti';
 import Image from 'next/image';
+import Link from 'next/link';
 
 /**
  * Ospiti Slider Section - Festival Narrazione Industriale
@@ -80,8 +81,8 @@ export default function OspitiSlider() {
                     key={ospite.id}
                     className="flex-none w-full sm:w-1/2 lg:w-1/3 xl:w-1/4 min-w-0 pr-6 md:pr-8"
                   >
-                    {/* Card Ospite */}
-                    <div className="group cursor-pointer">
+                    {/* Card Ospite - Clickable Link */}
+                    <Link href="/ospiti" className="group cursor-pointer block">
                       {/* Immagine - Mobile uniforme, Desktop dinamico */}
                       <div className={`relative w-full aspect-[348/380] ${aspectRatioDesktop} mb-4 md:mb-6 overflow-hidden rounded-lg`}>
                         <Image
@@ -99,12 +100,12 @@ export default function OspitiSlider() {
                         <p className="font-halenoir-bold text-fni-red text-xl md:text-2xl uppercase leading-tight">
                           {ospite.nome}
                         </p>
-                        {/* Ruolo - Grigio normale */}
-                        <p className="font-halenoir-regular text-[#282828] text-base md:text-lg">
+                        {/* Ruolo - Grigio normale uppercase */}
+                        <p className="font-halenoir-regular text-[#282828] text-base md:text-lg uppercase">
                           {ospite.ruolo}
                         </p>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 );
               })}

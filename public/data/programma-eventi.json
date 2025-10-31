@@ -98,7 +98,7 @@
       "mese": "NOVEMBRE",
       "eventi": [
         {
-          "ora": "11:00",
+          "ora": "11.00",
           "durata": 120,
           "luogo": "PALAZZO SORAGNA\nUNIONE PARMENSE DEGLI INDUSTRIALI",
           "indirizzoCompleto": "Palazzo Soragna, Unione Parmense degli Industriali, Strada XXII Luglio 30, 43121 Parma PR",
@@ -110,7 +110,7 @@
           "durata": 90,
           "luogo": "TEATRO EUROPA",
           "indirizzoCompleto": "Teatro Europa, Viale Basetti 12a, 43121 Parma PR",
-          "descrizione": "Racconto di racconti: La chiave a stella tratto dal romanzo di Primo Levi.\nReading a cura di Carlo Varotti."
+          "descrizione": "Racconto di racconti: La chiave a stella di Primo Levi, di Carlo Varotti.\nVoce fuori campo: Saverio Mazzoni.\nImmagini e musiche: Alessandro Pirotti."
         }
       ]
     }

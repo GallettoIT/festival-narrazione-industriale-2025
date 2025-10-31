@@ -13,7 +13,7 @@ export default function UmanesimoIndustrialeOspiti() {
   return (
     <section className="relative w-full bg-fni-red py-16 md:py-20 lg:py-24">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[28%_1fr] gap-8 lg:gap-12 xl:gap-16">
+        <div className="grid grid-cols-1 md:grid-cols-[40%_1fr] lg:grid-cols-[35%_1fr] xl:grid-cols-[28%_1fr] gap-8 lg:gap-12 xl:gap-16">
           {/* Colonna sinistra: Icona + Titolo */}
           <div className="space-y-4 md:space-y-6">
             {/* Logo F-N-I */}
@@ -41,7 +41,7 @@ export default function UmanesimoIndustrialeOspiti() {
 
             {/* Testo descrittivo */}
             <p>
-              Partendo da questa celebre visione di Adriano Olivetti, <span className="font-halenoir-bold">il Festival della Narrazione Industriale</span>, giunto alla seconda edizione, propone <span className="font-halenoir-bold">un percorso corale e articolato sulla responsabilità sociale dell&apos;industria e sulla concreta possibilità di un lavoro umanista e umanizzato</span>. Al contempo, offre uno sguardo sul presente, mostrando come le nuove generazioni reinterpretino quel messaggio, arricchendolo di significati contemporanei.
+              Sono queste celebri parole, tratte dalla visione del mondo industriale di Adriano Olivetti, che ispirano il Festival della Narrazione Industriale 2025. Giunto alla seconda edizione, il Festival propone un percorso corale e articolato sulla responsabilità sociale dell&apos;industria e sulla concreta possibilità di un lavoro umanista e umanizzato. Al contempo, offre uno sguardo sul presente, mostrando come le nuove generazioni possano reinterpretare questo potente messaggio, arricchendolo di significati contemporanei.
             </p>
           </div>
         </div>
