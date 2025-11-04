@@ -106,8 +106,8 @@ export default function LayoutFNI() {
           <ContentBlock
             word="FESTIVAL"
             title="PERCHÉ UN FESTIVAL?"
-            text="Perché raccontare l'industria è raccontare il Paese. Un Festival per dare voce alle imprese, alla loro storia, al loro futuro."
-            image="/images/industriale-img1.png"
+            text="Perché raccontare l'industria è raccontare il nostro Paese."
+            image="/images/whyfestival.jpg"
             imageAlt="Industria storica"
             alignment="start"
             delay={0}
@@ -158,13 +158,13 @@ export default function LayoutFNI() {
               PERCHÉ UN FESTIVAL?
             </h3>
             <p className="font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] leading-relaxed">
-              Perché raccontare l'industria è raccontare il Paese. Un Festival per dare voce alle imprese, alla loro storia, al loro futuro.
+              Perché raccontare l'industria è raccontare il nostro Paese.
             </p>
           </div>
 
           <div className="relative w-full aspect-[649/371] overflow-hidden rounded-lg">
             <Image
-              src="/images/industriale-img1.png"
+              src="/images/whyfestival.jpg"
               alt="Industria storica"
               fill
               className="object-cover"

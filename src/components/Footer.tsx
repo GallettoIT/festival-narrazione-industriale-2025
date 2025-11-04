@@ -9,15 +9,62 @@ export default function Footer() {
     email: '',
     privacyAccepted: false
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
     if (!formData.privacyAccepted) {
-      alert('Per iscriverti alla newsletter devi accettare la Privacy Policy');
+      setSubmitStatus({
+        type: 'error',
+        message: 'Per iscriverti alla newsletter devi accettare la Privacy Policy'
+      });
       return;
     }
-    // TODO: Implement newsletter subscription
-    console.log('Newsletter subscription:', formData);
+
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      const response = await fetch('/api/newsletter-subscribe.php', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(data.error || 'Errore durante l\'iscrizione');
+      }
+
+      // Success
+      setSubmitStatus({
+        type: 'success',
+        message: 'Iscrizione completata con successo! Grazie per esserti iscritto alla nostra newsletter.'
+      });
+
+      // Reset form
+      setFormData({
+        name: '',
+        email: '',
+        privacyAccepted: false
+      });
+
+    } catch (error) {
+      setSubmitStatus({
+        type: 'error',
+        message: error instanceof Error ? error.message : 'Errore durante l\'iscrizione. Riprova più tardi.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -143,14 +190,27 @@ export default function Footer() {
                   </label>
                 </div>
 
+                {/* Status Message */}
+                {submitStatus.type && (
+                  <div className={`p-4 rounded-md ${
+                    submitStatus.type === 'success'
+                      ? 'bg-green-50 text-green-800 border border-green-200'
+                      : 'bg-red-50 text-red-800 border border-red-200'
+                  }`}>
+                    <p className="font-halenoir-regular text-[14px] md:text-[16px] lg:text-[18px]">
+                      {submitStatus.message}
+                    </p>
+                  </div>
+                )}
+
                 {/* Submit Button */}
                 <div className="flex justify-start mt-2 md:mt-3">
                   <button
                     type="submit"
                     className="inline-block font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] uppercase border border-[#282828] px-4 md:px-5 lg:px-6 py-1.5 md:py-2 lg:py-2.5 hover:bg-[#282828] hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
-                    disabled={!formData.privacyAccepted}
+                    disabled={!formData.privacyAccepted || isSubmitting}
                   >
-                    INVIA
+                    {isSubmitting ? 'INVIO IN CORSO...' : 'INVIA'}
                   </button>
                 </div>
               </form>

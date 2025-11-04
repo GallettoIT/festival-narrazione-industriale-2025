@@ -13,11 +13,11 @@ import Image from 'next/image';
 export default function ChiSiamoHero() {
   return (
     <>
-      {/* Titolo [CHI SIAMO] */}
+      {/* Titolo FNI - FESTIVAL DELLA NARRAZIONE INDUSTRIALE */}
       <section className="relative w-full bg-white py-12 md:py-16 lg:py-20">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           <h1 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl lg:text-[64px] uppercase">
-            [CHI SIAMO]
+            FNI - FESTIVAL DELLA NARRAZIONE INDUSTRIALE
           </h1>
         </div>
       </section>

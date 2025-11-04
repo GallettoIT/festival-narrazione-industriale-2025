@@ -17,20 +17,15 @@ export default function IlProgetto() {
 
           <div className="space-y-6 md:space-y-8 text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed">
             <p>
-              Il <span className="font-halenoir-bold">Festival della Narrazione Industriale</span> nasce con l'obiettivo di{' '}
-              <span className="font-halenoir-bold">esplorare il rapporto profondo e dinamico tra industria e società</span>, mostrando non solo l'aspetto produttivo, ma anche il ruolo culturale che l'impresa riveste.
+              <span className="font-halenoir-bold">FNI - Festival della Narrazione Industriale</span> nasce con l&apos;obiettivo di <span className="font-halenoir-bold">esplorare il legame profondo tra industria e società</span>, superando una visione puramente produttiva per valorizzare il ruolo culturale che l&apos;impresa riveste nelle comunità e nella vita delle persone. L&apos;idea è quella di proporre una riflessione corale sul microcosmo industriale italiano, un universo pervasivo capace di influenzare la società e le nostre vite.
             </p>
 
             <p>
-              L'industria richiede oggi un modo nuovo di essere raccontata. Le moderne realtà produttive, in particolare le neofabbriche ad alta tecnologia, si configurano come{' '}
-              <span className="font-halenoir-bold">"mani che pensano"</span>, vivendo una stagione produttiva che unisce innovazione e cultura. Esse{' '}
-              <span className="font-halenoir-bold">generano percorsi di crescita che collegano memoria e futuro</span>, coniugando la consapevolezza della propria storia con i valori dell'innovazione continua. In questo contesto, l'innovazione diventa un processo globale, essenziale per affrontare le sfide contemporanee che il Festival si propone di indagare e narrare.
+              Come scritto da Elio Vittorini, <span className="italic">«La verità industriale risiede nella catena di effetti che il mondo delle fabbriche mette in moto»</span>. Per cogliere questa <span className="italic">catena di effetti</span> sociali, culturali e antropologici, il <span className="font-halenoir-bold">Festival</span> indaga una molteplicità di esperienze e di modelli di racconto, suggerendo percorsi di arricchimento collettivi che colleghino la memoria del nostro passato industriale all&apos;esperienza odierna e alla proiezione futura restituita dalle nuove generazioni. La narrazione industriale diviene così strumento capace di ricomporre l&apos;esperienza lavorativa e quella extra-lavorativa, e di restituire non solo la parte tangibile della fabbrica, ma anche quella intangibile, morale, etica ed emotiva.
             </p>
 
             <p>
-              Attraverso le sue iniziative, il Festival mette in luce{' '}
-              <span className="font-halenoir-bold">come la cultura d'impresa costituisca un valore fondamentale per il tessuto economico e sociale di un Paese.</span>{' '}
-              Essa agisce come un "motore immateriale" in grado di generare innovazione, sviluppo e responsabilità, promuovendo progresso sostenibile. Il Festival invita a valorizzare l'inventiva in sinergia con l'innovazione tecnologica, creando connessioni con altri settori, come arte e cultura, e favorendo una diffusione sempre più ampia delle storie e delle narrazioni che l'industria sa offrire.
+              Attraverso iniziative diffuse, il <span className="font-halenoir-bold">Festival</span> mette in luce come la cultura industriale costituisca un valore fondamentale per il tessuto economico e sociale di un Paese. Questa energia culturale agisce come <span className="font-halenoir-bold">&quot;motore immateriale&quot;</span> in grado di generare innovazione, sviluppo e responsabilità, ed è proprio per valorizzare questa sinergia che il <span className="font-halenoir-bold">Festival</span> propone una pluralità di modelli di racconto. L&apos;obiettivo è creare esperienze coinvolgenti, dinamiche ed educative riunendo autori, imprenditori, accademici e studenti per favorire la connessione tra cultura e industria in quella che rappresenta un&apos;opportunità condivisa di conoscenza e di arricchimento.
             </p>
           </div>
         </div>

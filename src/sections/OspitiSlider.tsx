@@ -101,7 +101,7 @@ export default function OspitiSlider() {
                           {ospite.nome}
                         </p>
                         {/* Ruolo - Grigio normale uppercase */}
-                        <p className="font-halenoir-regular text-[#282828] text-base md:text-lg uppercase">
+                        <p className="font-halenoir-regular text-[#282828] text-sm md:text-base lg:text-lg uppercase leading-snug break-words">
                           {ospite.ruolo}
                         </p>
                       </div>

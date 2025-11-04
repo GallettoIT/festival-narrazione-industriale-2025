@@ -1,0 +1,72 @@
+# Festival Narrazione Industriale - Apache Configuration
+
+# Enable mod_rewrite
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  RewriteBase /
+
+  # Custom 404 page
+  ErrorDocument 404 /404.html
+
+  # Forza HTTPS (opzionale - decommentare se vuoi forzare HTTPS)
+  # RewriteCond %{HTTPS} off
+  # RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+
+  # Trailing slash redirect (mantiene consistenza con Next.js export)
+  # Redireziona /pagina a /pagina/
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_URI} !(.*)/$
+  RewriteCond %{REQUEST_URI} !\.(css|js|jpg|jpeg|png|gif|svg|webp|ico|pdf|json|xml|txt|woff|woff2|ttf|eot)$
+  RewriteRule ^(.*)$ $1/ [L,R=301]
+</IfModule>
+
+# Security headers
+<IfModule mod_headers.c>
+  # Prevent clickjacking
+  Header always set X-Frame-Options "SAMEORIGIN"
+
+  # XSS Protection
+  Header always set X-XSS-Protection "1; mode=block"
+
+  # Prevent MIME sniffing
+  Header always set X-Content-Type-Options "nosniff"
+
+  # Referrer Policy
+  Header always set Referrer-Policy "strict-origin-when-cross-origin"
+</IfModule>
+
+# Compressione Gzip
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/plain text/xml text/css text/javascript application/javascript application/json
+</IfModule>
+
+# Cache control per file statici
+<IfModule mod_expires.c>
+  ExpiresActive On
+
+  # Immagini - 1 anno
+  ExpiresByType image/jpeg "access plus 1 year"
+  ExpiresByType image/png "access plus 1 year"
+  ExpiresByType image/gif "access plus 1 year"
+  ExpiresByType image/svg+xml "access plus 1 year"
+  ExpiresByType image/webp "access plus 1 year"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Font - 1 anno
+  ExpiresByType font/woff "access plus 1 year"
+  ExpiresByType font/woff2 "access plus 1 year"
+  ExpiresByType font/ttf "access plus 1 year"
+  ExpiresByType font/eot "access plus 1 year"
+
+  # CSS e JavaScript - 1 mese
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
+
+  # HTML - 1 ora
+  ExpiresByType text/html "access plus 1 hour"
+
+  # JSON e XML - 1 giorno
+  ExpiresByType application/json "access plus 1 day"
+  ExpiresByType application/xml "access plus 1 day"
+  ExpiresByType text/xml "access plus 1 day"
+</IfModule>

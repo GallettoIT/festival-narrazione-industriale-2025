@@ -17,7 +17,7 @@ import Image from 'next/image';
  */
 
 const menuItems = [
-  { label: 'CHI SIAMO', href: '/chi-siamo' },
+  { label: 'FNI', href: '/chi-siamo' },
   { label: 'PROGRAMMA', href: '/programma' },
   { label: 'OSPITI', href: '/ospiti' },
   { label: 'EDIZIONI', href: '/edizioni' },

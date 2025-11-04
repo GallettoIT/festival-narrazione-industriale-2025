@@ -55,11 +55,8 @@ export default function HeroSection() {
 
           {/* Tagline - Testo pulito senza linee decorative */}
           <div className="max-w-4xl mx-auto text-center mb-12">
-            <p className="font-halenoir-regular text-fni-red text-base md:text-xl lg:text-2xl leading-relaxed mb-2">
-              L&apos;umanesimo industriale guida il racconto di questa edizione. Storie, fabbrica e territori si intrecciano con voci autorevoli.
-            </p>
             <p className="font-halenoir-regular text-fni-red text-base md:text-xl lg:text-2xl leading-relaxed">
-              Il Festival della Narrazione Industriale accende il pensiero sul futuro.
+              «Io penso la fabbrica per l&apos;uomo, non l&apos;uomo per la fabbrica» (Adriano Olivetti). L&apos;umanesimo industriale guida il racconto di questa edizione: un intreccio di storie, fabbrica e territori che, attraverso voci autorevoli, definisce nuovi sguardi al futuro.
             </p>
           </div>
         </div>

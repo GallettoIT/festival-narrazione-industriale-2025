@@ -69,6 +69,9 @@ export const metadata: Metadata = {
     apple: '/icon.svg',
   },
   manifest: '/manifest.json',
+  verification: {
+    google: '6JBVYxCmMgNt-qXIyfTf6JCRVlyEq6wMY2j9iEzj-10',
+  },
 }
 
 export default function RootLayout({
@@ -107,6 +110,26 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{
             __html: JSON.stringify(organizationSchema),
+          }}
+        />
+
+        {/* Matomo Analytics */}
+        <Script
+          id="matomo-analytics"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _paq = window._paq = window._paq || [];
+              _paq.push(['trackPageView']);
+              _paq.push(['enableLinkTracking']);
+              (function() {
+                var u="https://developer.unsocials.com/matomo/";
+                _paq.push(['setTrackerUrl', u+'matomo.php']);
+                _paq.push(['setSiteId', '19']);
+                var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+                g.async=true; g.src=u+'matomo.js'; s.parentNode.insertBefore(g,s);
+              })();
+            `,
           }}
         />
       </head>

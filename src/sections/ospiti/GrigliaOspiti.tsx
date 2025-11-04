@@ -46,7 +46,7 @@ export default function GrigliaOspiti() {
                     <h3 className="font-halenoir-bold text-fni-red text-[16px] sm:text-[18px] uppercase leading-[1.15] tracking-tight">
                       {ospite.nome}
                     </h3>
-                    <p className="font-halenoir-regular text-[#282828] text-[13px] sm:text-[15px] uppercase leading-[1.2] tracking-tight opacity-90">
+                    <p className="font-halenoir-regular text-[#282828] text-[13px] sm:text-[15px] uppercase leading-[1.3] tracking-tight opacity-90 break-words">
                       {ospite.ruolo}
                     </p>
                   </div>
@@ -112,7 +112,7 @@ export default function GrigliaOspiti() {
                           <h3 className="font-halenoir-bold text-fni-red text-[23px] xl:text-[25px] uppercase leading-[1.15] tracking-tight">
                             {ospite.nome}
                           </h3>
-                          <p className="font-halenoir-regular text-[#282828] text-[19px] xl:text-[21px] uppercase leading-[1.2] tracking-tight opacity-90">
+                          <p className="font-halenoir-regular text-[#282828] text-[17px] xl:text-[19px] uppercase leading-[1.3] tracking-tight opacity-90 break-words">
                             {ospite.ruolo}
                           </p>
                         </div>
