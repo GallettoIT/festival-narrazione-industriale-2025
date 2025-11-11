@@ -87,6 +87,11 @@ export default function EdizioniPage() {
         name: 'Festival della Narrazione Industriale',
         url: 'https://www.festivalnarrazioneindustriale.it',
       },
+      offers: {
+        '@type': 'Offer',
+        price: '0',
+        priceCurrency: 'EUR',
+      },
     },
   }
 

@@ -34,7 +34,8 @@ export default function GrigliaOspiti() {
                       src={ospite.immagine}
                       alt={ospite.altImmagine || ospite.nome}
                       fill
-                      className="object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      style={{ objectPosition: ospite.objectPosition || 'center 20%' }}
                       sizes="(max-width: 640px) 100px, 120px"
                     />
                   </div>
@@ -99,7 +100,8 @@ export default function GrigliaOspiti() {
                             src={ospite.immagine}
                             alt={ospite.altImmagine || ospite.nome}
                             fill
-                            className="object-cover object-[center_20%] transition-transform duration-500 group-hover:scale-105"
+                            className="object-cover transition-transform duration-500 group-hover:scale-105"
+                            style={{ objectPosition: ospite.objectPosition || 'center 20%' }}
                             sizes="(max-width: 1280px) 220px, (max-width: 1536px) 240px, 280px"
                           />
                         </div>
@@ -134,7 +136,7 @@ export default function GrigliaOspiti() {
 
               {/* Separatore desktop (eccetto ultima riga) */}
               {rigaIndex < array.length - 1 && (
-                <div className="mt-16 lg:mt-20 pt-16 lg:pt-20 border-t border-gray-200/60" />
+                <div className="mt-12 lg:mt-14 pt-12 lg:pt-14 border-t border-gray-200/60" />
               )}
             </div>
           ))}

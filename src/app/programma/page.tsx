@@ -69,6 +69,14 @@ export default function ProgrammaPage() {
     },
     url: 'https://www.festivalnarrazioneindustriale.it/programma',
     inLanguage: 'it-IT',
+    offers: {
+      '@type': 'Offer',
+      url: 'https://www.festivalnarrazioneindustriale.it/programma',
+      price: '0',
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      validFrom: '2025-10-01',
+    },
   }
 
   return (

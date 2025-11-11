@@ -11,7 +11,7 @@ import Image from 'next/image';
 
 export default function LabStats() {
   return (
-    <section className="relative w-full bg-white py-16 md:py-20 lg:py-24">
+    <section className="relative w-full bg-white py-10 md:py-14 lg:py-16">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         {/* Layout Desktop: 4 colonne */}
         <div className="hidden lg:grid lg:grid-cols-[351px_351px_348px_343px] gap-8 xl:gap-10 justify-center">

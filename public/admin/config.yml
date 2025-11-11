@@ -1,0 +1,77 @@
+# Decap CMS Configuration
+# Festival Narrazione Industriale - News & Stampa
+
+# Backend Configuration
+backend:
+  name: git-gateway
+  branch: main # Branch principale
+  commit_messages:
+    create: 'Crea nuova news: "{{slug}}"'
+    update: 'Aggiorna news: "{{slug}}"'
+    delete: 'Elimina news: "{{slug}}"'
+    uploadMedia: 'Upload immagine: "{{path}}"'
+    deleteMedia: 'Elimina immagine: "{{path}}"'
+    openAuthoring: '{{message}}'
+
+# Editorial Workflow
+# Ogni modifica crea un branch separato per review
+publish_mode: editorial_workflow
+
+# Media Storage
+media_folder: "public/images/news"
+public_folder: "/images/news"
+
+# Locale
+locale: 'it'
+
+# Collections
+collections:
+  # News Articles
+  - name: "news"
+    label: "News e Articoli"
+    label_singular: "News"
+    folder: "src/content/news"
+    create: true # Permetti creazione
+    delete: true # Permetti eliminazione
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    format: "frontmatter"
+    extension: "md"
+    editor:
+      preview: true
+    fields:
+      - { label: "Titolo", name: "title", widget: "string", required: true, hint: "Titolo dell'articolo (tutto maiuscolo)" }
+      - { label: "Slug", name: "slug", widget: "string", required: true, hint: "URL della news (es: festival-2024-successo)" }
+      - { label: "Data Pubblicazione", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: true }
+      - { label: "Immagine in Evidenza", name: "featuredImage", widget: "image", required: true, hint: "Immagine principale (min 1920x1080px)" }
+      - { label: "Alt Immagine", name: "featuredImageAlt", widget: "string", required: true, hint: "Descrizione immagine per accessibilità" }
+      - { label: "Sommario", name: "summary", widget: "text", required: true, hint: "Breve riassunto (1-2 righe, 36px nel design)" }
+      - { label: "Estratto", name: "excerpt", widget: "text", required: true, hint: "Testo anteprima per card (3-4 righe, 20px nel design)" }
+      - { label: "Contenuto", name: "body", widget: "markdown", required: true, hint: "Contenuto completo dell'articolo" }
+      - { label: "Autore", name: "author", widget: "string", required: false }
+      - { label: "Ruolo Autore", name: "authorRole", widget: "string", required: false }
+      - { label: "Categoria", name: "category", widget: "select", required: false, options: ["Festival", "LAB", "Ospiti", "Partner", "Stampa", "Generale"] }
+      - { label: "Pubblicato", name: "published", widget: "boolean", default: true, hint: "Disattiva per nascondere la news dal sito" }
+
+  # Press Area / Rassegna Stampa
+  - name: "press"
+    label: "Press Area"
+    label_singular: "Rassegna Stampa"
+    folder: "src/content/press"
+    create: true
+    delete: true
+    slug: "{{year}}-{{month}}-rassegna-stampa"
+    format: "frontmatter"
+    extension: "md"
+    editor:
+      preview: false
+    fields:
+      - { label: "Titolo", name: "title", widget: "string", required: true }
+      - { label: "Anno", name: "year", widget: "string", required: true }
+      - { label: "File PDF Rassegna", name: "pdfFile", widget: "file", required: true, hint: "Upload PDF rassegna stampa" }
+      - { label: "Descrizione", name: "description", widget: "text", required: false }
+      - { label: "Pubblicato", name: "published", widget: "boolean", default: true }
+
+# Site Settings
+site_url: https://festivalnarrazioneindustriale.it
+display_url: https://festivalnarrazioneindustriale.it
+logo_url: https://festivalnarrazioneindustriale.it/images/logo-fni.svg

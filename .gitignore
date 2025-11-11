@@ -31,3 +31,11 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# documentation guides (keep only README.md)
+QUICK_START.md
+GITHUB_DEPLOY_SETUP.md
+DECAP_CMS_SETUP.md
+SETUP_SECRETS.md
+READY_TO_DEPLOY.md
+deploy-ftp.sh

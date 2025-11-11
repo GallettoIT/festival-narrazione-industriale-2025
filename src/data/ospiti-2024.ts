@@ -12,6 +12,7 @@ export interface Ospite2024 {
   immagine: string;
   altImmagine?: string;
   altezza: 'alta' | 'bassa';
+  objectPosition?: string;
 }
 
 export const ospiti2024: Ospite2024[] = [
@@ -82,10 +83,11 @@ export const ospiti2024: Ospite2024[] = [
   {
     id: 'signaroldi-luca',
     nome: 'LUCA SIGNAROLDI',
-    ruolo: 'Communication specialist, direttore creativo di unsocials',
+    ruolo: 'Communication Specialist & Stories Designer',
     immagine: '/images/ospiti-2024/ospite-signaroldi-luca.png',
     altImmagine: 'Luca Signaroldi',
-    altezza: 'alta'
+    altezza: 'alta',
+    objectPosition: 'center top'
   },
   {
     id: 'divico-dario',

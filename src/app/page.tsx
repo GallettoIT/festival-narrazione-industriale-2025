@@ -80,6 +80,14 @@ export default function Home() {
     image: 'https://www.festivalnarrazioneindustriale.it/images/og-image.jpg',
     url: 'https://www.festivalnarrazioneindustriale.it',
     keywords: 'festival narrazione industriale, festival parma 2025, umanesimo industriale, adriano olivetti, narrazione impresa, cultura industriale, festival novembre parma, economia cultura, storytelling aziendale, eventi parma 2025',
+    offers: {
+      '@type': 'Offer',
+      url: 'https://www.festivalnarrazioneindustriale.it/programma',
+      price: '0',
+      priceCurrency: 'EUR',
+      availability: 'https://schema.org/InStock',
+      validFrom: '2025-10-01',
+    },
   }
 
   return (

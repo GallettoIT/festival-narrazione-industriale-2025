@@ -38,7 +38,7 @@ export default function Edizione2024() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full bg-white py-16 md:py-20 lg:py-24"
+      className="relative w-full bg-white py-10 md:py-14 lg:py-16"
       data-section="edizione-2024"
     >
       <div className="max-w-7xl mx-auto px-6 lg:px-8">

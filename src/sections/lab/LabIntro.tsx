@@ -32,7 +32,7 @@ export default function LabIntro() {
           </div>
 
           {/* Colonna destra: Testo descrittivo */}
-          <div className="font-halenoir-regular text-white text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
+          <div className="font-halenoir-regular text-white text-[15px] lg:text-[18px] xl:text-[20px] leading-normal">
             <p className="mb-6 md:mb-8">
               Il LAB "Raccontare il lavoro" è il laboratorio di comunicazione d'impresa promosso dall'Università di Parma in collaborazione con il GIA Gruppo Imprese Artigiane di Parma, all'interno del progetto "Unipr4Talents: talentuosi si diventa", finanziato dalla Regione Emilia-Romagna tramite il Bando Talenti.
             </p>

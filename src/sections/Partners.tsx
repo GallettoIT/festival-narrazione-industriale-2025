@@ -61,7 +61,7 @@ function PartnerLogo({ src, alt, width = 150, height = 60, className = '' }: Log
 export default function Partners() {
   return (
     <section
-      className="relative w-full bg-[#f7f4f4] py-16 md:py-24 lg:py-32"
+      className="relative w-full bg-[#f7f4f4] py-10 md:py-14 lg:py-16"
       data-section="partners"
     >
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
@@ -71,7 +71,7 @@ export default function Partners() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="font-halenoir-regular text-fni-red text-4xl md:text-5xl uppercase mb-12 md:mb-16"
+          className="font-halenoir-regular text-fni-red text-4xl md:text-5xl uppercase mb-8 md:mb-12"
         >
           [PARTNER]
         </motion.h2>

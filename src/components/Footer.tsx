@@ -69,67 +69,26 @@ export default function Footer() {
 
   return (
     <footer className="w-full">
-      {/* Section 1: Press Area */}
-      <section className="bg-[#e0e0e0] py-16 md:py-24 lg:py-32">
-        <div className="max-w-container-fni mx-auto px-6 md:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr_auto] gap-8 lg:gap-12 xl:gap-16 items-center">
-            {/* Left: PRESS AREA Title */}
-            <div className="text-center lg:text-left">
-              <h2 className="font-halenoir-bold text-fni-red text-[32px] md:text-[40px] lg:text-[48px] uppercase leading-none">
-                PRESS AREA
-              </h2>
-            </div>
-
-            {/* Center: Content + Button */}
-            <div className="flex flex-col gap-4 lg:gap-5 items-center lg:items-start">
-              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed text-center lg:text-left">
-                Resta aggiornato sulle notizie del Festival della Narrazione Industriale
-              </p>
-              <div className="flex justify-center lg:justify-start">
-                <a
-                  href="#"
-                  className="inline-block font-halenoir-regular text-fni-red text-[18px] md:text-[20px] lg:text-[24px] uppercase border-[3px] border-fni-red px-4 md:px-5 lg:px-6 py-1.5 md:py-2 lg:py-2.5 hover:bg-fni-red hover:text-white transition-colors duration-300"
-                >
-                  NEWS E STAMPA
-                </a>
-              </div>
-            </div>
-
-            {/* Right: Logo Stella */}
-            <div className="flex justify-center lg:justify-end">
-              <div className="relative w-[60px] h-[60px] lg:w-[80px] lg:h-[80px]">
-                <Image
-                  src="/images/footer/logo-stella.svg"
-                  alt="FNI"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 2: Newsletter */}
-      <section className="bg-white py-16 md:py-24 lg:py-32">
+      {/* Section 1: Newsletter - Compatta */}
+      <section className="bg-[#e0e0e0] py-10 md:py-14 lg:py-16">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-[1fr_1.2fr] gap-8 lg:gap-20 xl:gap-24">
             {/* Left: Newsletter Title + Info */}
-            <div className="flex flex-col gap-4 lg:gap-6">
-              <h2 className="font-halenoir-regular text-[#282828] text-[28px] md:text-[36px] lg:text-[40px] leading-tight">
-                Iscriviti alla newsletter
+            <div className="flex flex-col gap-3 lg:gap-4">
+              <h2 className="font-halenoir-bold text-fni-red text-[24px] md:text-[28px] lg:text-[32px] uppercase leading-tight">
+                Newsletter
               </h2>
-              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-relaxed">
-                Resta sempre aggiornato sulle novità del Festival della Narrazione Industriale
+              <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[17px] xl:text-[18px] leading-relaxed">
+                Resta aggiornato sulle novità del Festival
               </p>
             </div>
 
             {/* Right: Form */}
             <div>
-              <form onSubmit={handleSubmit} className="flex flex-col gap-5 md:gap-6 lg:gap-7">
+              <form onSubmit={handleSubmit} className="flex flex-col gap-4 md:gap-5">
                 {/* Name Field */}
-                <div className="flex flex-col gap-1.5">
-                  <label htmlFor="name" className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px]">
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="name" className="font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] lg:text-[19px]">
                     Nome / Cognome
                   </label>
                   <input
@@ -137,14 +96,14 @@ export default function Footer() {
                     id="name"
                     value={formData.name}
                     onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-                    className="bg-transparent border-b border-[#282828] pb-2 pt-1 font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] lg:text-[20px] focus:outline-none focus:border-fni-red transition-colors placeholder:text-[#28282866]"
+                    className="bg-transparent border-b border-[#282828] pb-1.5 pt-0.5 font-halenoir-regular text-[#282828] text-[15px] md:text-[17px] lg:text-[18px] focus:outline-none focus:border-fni-red transition-colors placeholder:text-[#28282866]"
                     required
                   />
                 </div>
 
                 {/* Email Field */}
-                <div className="flex flex-col gap-1.5">
-                  <label htmlFor="email" className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px]">
+                <div className="flex flex-col gap-1">
+                  <label htmlFor="email" className="font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] lg:text-[19px]">
                     Email
                   </label>
                   <input
@@ -152,22 +111,22 @@ export default function Footer() {
                     id="email"
                     value={formData.email}
                     onChange={(e) => setFormData({ ...formData, email: e.target.value })}
-                    className="bg-transparent border-b border-[#282828] pb-2 pt-1 font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] lg:text-[20px] focus:outline-none focus:border-fni-red transition-colors placeholder:text-[#28282866]"
+                    className="bg-transparent border-b border-[#282828] pb-1.5 pt-0.5 font-halenoir-regular text-[#282828] text-[15px] md:text-[17px] lg:text-[18px] focus:outline-none focus:border-fni-red transition-colors placeholder:text-[#28282866]"
                     required
                   />
                 </div>
 
                 {/* Privacy Policy Checkbox */}
-                <div className="flex items-start gap-3 mt-2">
+                <div className="flex items-start gap-2.5 mt-1">
                   <input
                     type="checkbox"
                     id="privacy"
                     checked={formData.privacyAccepted}
                     onChange={(e) => setFormData({ ...formData, privacyAccepted: e.target.checked })}
-                    className="mt-1 w-5 h-5 border-2 border-[#282828] rounded-none accent-fni-red cursor-pointer focus:ring-2 focus:ring-fni-red focus:ring-offset-2"
+                    className="mt-0.5 w-4 h-4 border-2 border-[#282828] rounded-none accent-fni-red cursor-pointer focus:ring-2 focus:ring-fni-red focus:ring-offset-2"
                     required
                   />
-                  <label htmlFor="privacy" className="font-halenoir-regular text-[#282828] text-[14px] md:text-[16px] lg:text-[18px] leading-relaxed cursor-pointer">
+                  <label htmlFor="privacy" className="font-halenoir-regular text-[#282828] text-[13px] md:text-[14px] lg:text-[15px] leading-relaxed cursor-pointer">
                     Accetto la{' '}
                     <a
                       href="https://www.iubenda.com/privacy-policy/17171870"
@@ -192,25 +151,25 @@ export default function Footer() {
 
                 {/* Status Message */}
                 {submitStatus.type && (
-                  <div className={`p-4 rounded-md ${
+                  <div className={`p-3 rounded-md ${
                     submitStatus.type === 'success'
                       ? 'bg-green-50 text-green-800 border border-green-200'
                       : 'bg-red-50 text-red-800 border border-red-200'
                   }`}>
-                    <p className="font-halenoir-regular text-[14px] md:text-[16px] lg:text-[18px]">
+                    <p className="font-halenoir-regular text-[13px] md:text-[14px] lg:text-[15px]">
                       {submitStatus.message}
                     </p>
                   </div>
                 )}
 
                 {/* Submit Button */}
-                <div className="flex justify-start mt-2 md:mt-3">
+                <div className="flex justify-start mt-1">
                   <button
                     type="submit"
-                    className="inline-block font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[24px] uppercase border border-[#282828] px-4 md:px-5 lg:px-6 py-1.5 md:py-2 lg:py-2.5 hover:bg-[#282828] hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+                    className="inline-block font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] lg:text-[20px] uppercase border-2 border-[#282828] px-4 md:px-5 lg:px-6 py-1.5 md:py-2 hover:bg-[#282828] hover:text-white transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                     disabled={!formData.privacyAccepted || isSubmitting}
                   >
-                    {isSubmitting ? 'INVIO IN CORSO...' : 'INVIA'}
+                    {isSubmitting ? 'INVIO...' : 'INVIA'}
                   </button>
                 </div>
               </form>
@@ -219,12 +178,12 @@ export default function Footer() {
         </div>
       </section>
 
-      {/* Section 3: Info & Contact */}
-      <section className="bg-[#f7f4f4] py-12 md:py-16 lg:py-20">
+      {/* Section 2: Info & Contact - Compatta */}
+      <section className="bg-[#f7f4f4] py-8 md:py-10 lg:py-12">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
-          <div className="grid grid-cols-1 gap-16 lg:gap-20 xl:gap-24">
+          <div className="grid grid-cols-1 gap-6 lg:gap-8">
             {/* Top Row: Logo + Association Info */}
-            <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-6 lg:gap-8 xl:gap-10 items-start">
+            <div className="grid grid-cols-1 lg:grid-cols-[auto_1fr] gap-4 lg:gap-6 items-start">
               {/* Logo */}
               <div className="flex items-start">
                 <Image
@@ -232,12 +191,12 @@ export default function Footer() {
                   alt="Festival Narrazione Industriale"
                   width={183}
                   height={67}
-                  className="w-[150px] lg:w-[183px] h-auto object-contain object-left"
+                  className="w-[130px] lg:w-[160px] h-auto object-contain object-left"
                 />
               </div>
 
               {/* Association Info */}
-              <div className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
+              <div className="font-halenoir-regular text-[#282828] text-[14px] lg:text-[16px] xl:text-[17px] leading-normal">
                 <p>FESTIVAL NARRAZIONE INDUSTRIALE A.P.S</p>
                 <p>VIA STRASBURGO, 23/A</p>
                 <p>P.IVA 03106750346</p>
@@ -245,7 +204,7 @@ export default function Footer() {
             </div>
 
             {/* Bottom Row: Social Icons + Contact Email */}
-            <div className="flex flex-col lg:grid lg:grid-cols-[auto_1fr_auto] gap-8 lg:gap-12 xl:gap-16 lg:items-center">
+            <div className="flex flex-col lg:grid lg:grid-cols-[auto_1fr_auto] gap-5 lg:gap-8 lg:items-center">
               {/* Social Icons */}
               <div className="flex gap-3 justify-start">
                 <a
@@ -287,8 +246,8 @@ export default function Footer() {
               <div className="hidden lg:block"></div>
 
               {/* Contact Email + Credits */}
-              <div className="flex flex-col gap-3 lg:text-right">
-                <p className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
+              <div className="flex flex-col gap-2 lg:text-right">
+                <p className="font-halenoir-regular text-[#282828] text-[14px] lg:text-[16px] xl:text-[17px] leading-normal">
                   Per info <a
                     href="mailto:segreteria@festivalnarrazioneindustriale.it"
                     className="hover:text-fni-red transition-colors"
@@ -296,7 +255,7 @@ export default function Footer() {
                     segreteria@festivalnarrazioneindustriale.it
                   </a>
                 </p>
-                <p className="font-halenoir-regular text-[#282828] text-[14px] lg:text-[16px] xl:text-[18px] leading-normal">
+                <p className="font-halenoir-regular text-[#282828] text-[13px] lg:text-[14px] xl:text-[15px] leading-normal">
                   credit:{' '}
                   <a
                     href="https://unsocials.com"

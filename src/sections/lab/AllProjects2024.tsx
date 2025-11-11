@@ -8,7 +8,7 @@ import Image from 'next/image';
 
 export default function AllProjects2024() {
   return (
-    <section className="relative w-full bg-white py-16 md:py-20 lg:py-24">
+    <section className="relative w-full bg-white py-10 md:py-14 lg:py-16">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         {/* Titolo sezione */}
         <h2 className="font-halenoir-bold text-fni-red text-[25px] md:text-[28px] lg:text-[32px] uppercase mb-12 md:mb-16 lg:mb-20">

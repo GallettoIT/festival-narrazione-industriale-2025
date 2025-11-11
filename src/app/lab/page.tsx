@@ -7,6 +7,7 @@ import LabIntro from '@/sections/lab/LabIntro';
 import LabStats from '@/sections/lab/LabStats';
 import Lab2024 from '@/sections/lab/Lab2024';
 import AllProjects2024 from '@/sections/lab/AllProjects2024';
+import LabDocenti2024 from '@/sections/lab/LabDocenti2024';
 import Script from 'next/script';
 
 /**
@@ -19,7 +20,7 @@ import Script from 'next/script';
  * - Statistiche (studenti, imprese, docenti)
  * - LAB 2024 con progetto vincitore
  * - Tutti i progetti 2024
- * - Press Area
+ * - Docenti LAB 2024
  */
 
 export const metadata: Metadata = {
@@ -102,6 +103,9 @@ export default function LabPage() {
 
       {/* Tutti i Progetti 2024 */}
       <AllProjects2024 />
+
+      {/* Docenti LAB 2024 */}
+      <LabDocenti2024 />
 
       <Footer />
     </main>

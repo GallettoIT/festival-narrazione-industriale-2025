@@ -21,10 +21,10 @@ export default function EdizioniHero() {
 
         {/* Video Hero */}
         <div className="relative w-full">
-          {/* YouTube Video Embed */}
+          {/* YouTube Video Embed - Autoplay attivo (muted per policy browser) */}
           <div className="relative w-full aspect-[16/9] md:aspect-[2.35/1] lg:aspect-[2.64/1] overflow-hidden bg-[#282828]">
             <iframe
-              src="https://www.youtube.com/embed/cSXnj-FI8qA?rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1"
+              src="https://www.youtube.com/embed/cSXnj-FI8qA?autoplay=1&mute=1&rel=0&modestbranding=1&autohide=1&showinfo=0&controls=1&playlist=cSXnj-FI8qA"
               title="Festival Narrazione Industriale 2024 - Parma"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen

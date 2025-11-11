@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 
 /**
  * Hero Section - Festival Narrazione Industriale
@@ -21,10 +22,10 @@ export default function HeroSection() {
       data-section="hero"
     >
       {/* Logo F-N-I Grande e Tagline */}
-      <div className="relative w-full pt-12 md:pt-20">
+      <div className="relative w-full pt-10 md:pt-14 lg:pt-16">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           {/* Logo FNI con linee - Codice per proporzioni corrette */}
-          <div className="relative mb-8">
+          <div className="relative mb-6 md:mb-8">
             <div className="flex items-center justify-between gap-4 md:gap-8 lg:gap-12">
               <div className="flex-1 flex items-center gap-4 md:gap-8 lg:gap-16">
                 {/* F */}
@@ -66,11 +67,14 @@ export default function HeroSection() {
       {/* Desktop: margini laterali + bottom | Mobile: full-width, no margini */}
       <div className="max-w-container-fni mx-auto px-0 md:px-8 mb-0 md:mb-12 lg:mb-16">
         <div className="relative w-full h-[450px] sm:h-[600px] md:h-[725px] overflow-hidden">
-          {/* Background Image - Scaricata da Figma */}
-          <img
-            src="/images/hero-robot.jpg"
+          {/* Background Image - Ottimizzata in WebP per performance */}
+          <Image
+            src="/images/hero-robot.webp"
             alt="Robot industriale"
-            className="absolute inset-0 w-full h-full object-cover"
+            fill
+            priority
+            className="object-cover"
+            sizes="(max-width: 768px) 100vw, (max-width: 1536px) calc(100vw - 64px), 1472px"
           />
 
           {/* Overlay Content */}

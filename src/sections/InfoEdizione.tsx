@@ -15,12 +15,12 @@
 export default function InfoEdizione() {
   return (
     <section
-      className="relative w-full bg-fni-red py-16 md:py-24 lg:py-32"
+      className="relative w-full bg-fni-red py-10 md:py-14 lg:py-16"
       data-section="info-edizione"
     >
       <div className="max-w-container-fni mx-auto px-8">
         {/* Layout 3 Colonne - Mobile: centrato stack | Desktop: 3 colonne */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 lg:gap-16 mb-8 md:mb-10">
 
           {/* Colonna Sinistra - Edizione e Tema */}
           <div className="text-fni-white flex flex-col justify-center text-center md:text-left">

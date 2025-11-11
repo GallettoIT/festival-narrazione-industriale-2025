@@ -20,6 +20,7 @@ const menuItems = [
   { label: 'FNI', href: '/chi-siamo' },
   { label: 'PROGRAMMA', href: '/programma' },
   { label: 'OSPITI', href: '/ospiti' },
+  { label: 'NEWS E STAMPA', href: '/news-stampa' },
   { label: 'EDIZIONI', href: '/edizioni' },
   { label: 'LAB', href: '/lab' },
   { label: 'CONTATTI', href: '/contatti' },

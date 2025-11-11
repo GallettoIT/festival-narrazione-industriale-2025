@@ -145,7 +145,7 @@ export default function Lab2024() {
   }, []);
 
   return (
-    <section ref={sectionRef} className="relative w-full bg-[#282828] py-16 md:py-20 lg:py-24 overflow-hidden">
+    <section ref={sectionRef} className="relative w-full bg-[#282828] py-10 md:py-14 lg:py-16 overflow-hidden">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         {/* Titolo sezione - ROSSO come da Figma */}
         <h2 className="font-halenoir-bold text-fni-red text-[32px] md:text-[40px] lg:text-[48px] uppercase mb-8 md:mb-12">
@@ -169,10 +169,10 @@ export default function Lab2024() {
           }}
         >
           <div className="flex gap-4 md:gap-6 lg:gap-8 pb-8 md:pb-12 lg:pb-16" style={{ width: 'max-content' }}>
-            {/* Galleria immagini orizzontale */}
+            {/* Galleria immagini orizzontale - Ottimizzate in WebP */}
             <div className="relative w-[280px] sm:w-[350px] md:w-[450px] lg:w-[508px] h-[190px] sm:h-[235px] md:h-[300px] lg:h-[341px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-7.png"
+                src="/images/lab/pilogen-7.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"
@@ -182,7 +182,7 @@ export default function Lab2024() {
 
             <div className="relative w-[263px] md:w-[332px] h-[395px] md:h-[498px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-3.png"
+                src="/images/lab/pilogen-3.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"
@@ -192,7 +192,7 @@ export default function Lab2024() {
 
             <div className="relative w-[400px] md:w-[508px] h-[268px] md:h-[338px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-2.png"
+                src="/images/lab/pilogen-2.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"
@@ -202,7 +202,7 @@ export default function Lab2024() {
 
             <div className="relative w-[63px] md:w-[80px] h-[390px] md:h-[493px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-6.png"
+                src="/images/lab/pilogen-6.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"
@@ -213,7 +213,7 @@ export default function Lab2024() {
             {/* Nuove immagini al posto della freccia */}
             <div className="relative w-[400px] md:w-[508px] h-[270px] md:h-[341px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-5.png"
+                src="/images/lab/pilogen-5.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"
@@ -223,7 +223,7 @@ export default function Lab2024() {
 
             <div className="relative w-[260px] md:w-[328px] h-[390px] md:h-[492px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-1746.png"
+                src="/images/lab/pilogen-1746.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"
@@ -233,7 +233,7 @@ export default function Lab2024() {
 
             <div className="relative w-[400px] md:w-[508px] h-[270px] md:h-[341px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-8.png"
+                src="/images/lab/pilogen-8.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"
@@ -243,7 +243,7 @@ export default function Lab2024() {
 
             <div className="relative w-[263px] md:w-[332px] h-[395px] md:h-[498px] flex-shrink-0 overflow-hidden rounded-lg">
               <Image
-                src="/images/lab/pilogen-4.png"
+                src="/images/lab/pilogen-4.webp"
                 alt="Pilogen Carezza"
                 fill
                 className="object-cover object-center"

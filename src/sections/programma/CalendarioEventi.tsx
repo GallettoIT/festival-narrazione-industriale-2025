@@ -70,7 +70,7 @@ export default function CalendarioEventi() {
 
   if (loading || !programmaData) {
     return (
-      <section className="relative w-full bg-[#f7f4f4] pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-24 lg:pb-32">
+      <section className="relative w-full bg-[#f7f4f4] pt-10 md:pt-14 lg:pt-16 pb-12 md:pb-16 lg:pb-20">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           <p className="font-halenoir-regular text-[#282828] text-center">Caricamento programma...</p>
         </div>
@@ -106,8 +106,8 @@ export default function CalendarioEventi() {
             <div key={idx} className="space-y-2">
               {/* Ora con icona calendario */}
               <div className="flex items-center justify-between">
-                <p className="font-halenoir-bold text-[#282828] text-[20px] uppercase leading-[28px]">
-                  ORE {evento.ora}
+                <p className="font-halenoir-bold text-[#282828] text-[18px] leading-relaxed">
+                  Ore {evento.ora}
                 </p>
                 <AddToCalendarButton
                   title={`${evento.descrizione.split('\n')[0]} - Festival Narrazione Industriale`}
@@ -118,14 +118,14 @@ export default function CalendarioEventi() {
                 />
               </div>
 
-              <p className="font-halenoir-bold text-[#282828] text-[20px] uppercase leading-[28px] whitespace-pre-line">
+              <p className="font-halenoir-bold text-[#282828] text-[18px] leading-relaxed whitespace-pre-line">
                 {evento.luogo}
               </p>
-              <p className="font-halenoir-regular text-[#282828] text-[20px] uppercase leading-[28px] whitespace-pre-line">
+              <p className="font-halenoir-regular text-[#282828] text-[18px] leading-relaxed whitespace-pre-line">
                 {evento.descrizione}
               </p>
               {evento.note && (
-                <p className="font-halenoir-light text-[#282828] text-[20px] leading-[28px] whitespace-pre-line">
+                <p className="font-halenoir-light text-[#282828] text-[18px] leading-relaxed whitespace-pre-line">
                   {evento.note}
                 </p>
               )}
@@ -142,7 +142,7 @@ export default function CalendarioEventi() {
   const secondaMetà = programmaData.eventi.slice(middleIndex);
 
   return (
-    <section className="relative w-full bg-[#f7f4f4] pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-24 lg:pb-32">
+    <section className="relative w-full bg-[#f7f4f4] pt-10 md:pt-14 lg:pt-16 pb-12 md:pb-16 lg:pb-20">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         {/* Layout calendario
             Mobile: singola colonna in ordine cronologico

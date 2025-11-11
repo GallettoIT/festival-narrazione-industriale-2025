@@ -33,7 +33,7 @@ export default function UmanesimoIndustriale() {
           </div>
 
           {/* Colonna destra: Testo descrittivo */}
-          <div className="font-halenoir-regular text-white text-[15px] lg:text-[18px] xl:text-[22px] leading-normal">
+          <div className="font-halenoir-regular text-white text-[15px] lg:text-[18px] xl:text-[20px] leading-normal">
             <p className="mb-6 md:mb-8">
               Il ruolo della narrazione d&apos;autore, in particolar modo quella letteraria e giornalistica, rappresenta uno strumento fondamentale per analizzare e interpretare il mondo dell&apos;industria. Non si limita a descriverla, ma riflette profondamente su come le sue evoluzioni plasmino le trasformazioni sociali, i modelli relazionali e il rapporto tra generazioni, influenzando l&apos;immaginario collettivo.
             </p>

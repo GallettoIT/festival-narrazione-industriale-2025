@@ -19,21 +19,21 @@
 export default function Focus2025() {
   return (
     <section
-      className="relative w-full bg-[#f7f4f4] py-16 md:py-24 lg:py-32"
+      className="relative w-full bg-[#f7f4f4] py-10 md:py-14 lg:py-16"
       data-section="focus-2025"
     >
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
 
         {/* Titolo */}
-        <h2 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl uppercase mb-12 md:mb-16">
+        <h2 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl uppercase mb-8 md:mb-12">
           [FOCUS 2025]
         </h2>
 
         {/* Layout 2 colonne di testo */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 mb-12 md:mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 xl:gap-20 mb-8 md:mb-10">
 
           {/* Colonna Sinistra */}
-          <div className="text-[#282828] text-xl md:text-2xl leading-relaxed space-y-6">
+          <div className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[20px] leading-relaxed space-y-6 md:space-y-8">
             <p>
               Il ruolo della narrazione d&apos;autore rappresenta uno strumento fondamentale per analizzare e interpretare il mondo dell&apos;industria. Non si limita a descriverla, ma riflette profondamente su come le sue evoluzioni plasmino le trasformazioni sociali, i modelli relazionali e il rapporto tra generazioni, influenzando l&apos;immaginario collettivo.
             </p>
@@ -44,7 +44,7 @@ export default function Focus2025() {
           </div>
 
           {/* Colonna Destra */}
-          <div className="text-[#282828] text-xl md:text-2xl leading-relaxed space-y-6">
+          <div className="font-halenoir-regular text-[#282828] text-[15px] lg:text-[18px] xl:text-[20px] leading-relaxed space-y-6 md:space-y-8">
             <p>
               Il programma esplora questa visione attraverso eventi di pregio come la mostra <span className="font-halenoir-bold">&quot;Il sistema culturale Olivetti&quot;</span>, il prezioso il punto di vista di un osservatore quale <span className="font-halenoir-bold">Beppe Severgnini</span> sulla cultura e sulla società statunitense, l&apos;innovativa esperienza dello &quot;Scrittore di Fabbrica&quot; con il drammaturgo <span className="font-halenoir-bold">Emanuele Aldrovandi</span>, e la restituzione del laboratorio universitario <span className="font-halenoir-bold">&quot;Raccontare l&apos;impresa&quot;</span>. La chiusura, affidata al reading di <span className="font-halenoir-bold">Carlo Varotti</span> <span className="italic">&quot;La chiave a stella&quot;</span> di Primo Levi.
             </p>

@@ -6,22 +6,12 @@ import Image from 'next/image';
  * Chi Siamo Hero Section
  *
  * Sezione hero della pagina Chi Siamo con:
- * - Titolo [CHI SIAMO]
  * - Background rosso con GIF del logo FNI (16:9 su desktop, 9:16 su mobile)
  */
 
 export default function ChiSiamoHero() {
   return (
     <>
-      {/* Titolo FNI - FESTIVAL DELLA NARRAZIONE INDUSTRIALE */}
-      <section className="relative w-full bg-white py-12 md:py-16 lg:py-20">
-        <div className="max-w-container-fni mx-auto px-6 md:px-8">
-          <h1 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl lg:text-[64px] uppercase">
-            FNI - FESTIVAL DELLA NARRAZIONE INDUSTRIALE
-          </h1>
-        </div>
-      </section>
-
       {/* Hero section con GIF - Full width con altezza ridotta */}
       <section className="relative w-full bg-fni-red overflow-hidden">
         {/* GIF orizzontale 16:9 - visibile solo su lg+ */}

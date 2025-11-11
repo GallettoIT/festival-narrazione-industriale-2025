@@ -20,6 +20,7 @@ export interface Ospite {
   altImmagine?: string;  // Testo alt per accessibilità
   altezza: 'alta' | 'bassa';  // Variante altezza card (dinamismo visivo)
   descrizioneEstesa?: string;  // Biografia dettagliata per pagina ospiti
+  objectPosition?: string;  // Posizionamento immagine custom (es: 'center', 'top', 'center 20%')
 }
 
 export const ospiti: Ospite[] = [
@@ -48,6 +49,7 @@ export const ospiti: Ospite[] = [
     immagine: '/images/ospiti-photos/ospite-accornero-cristina.jpg',
     altImmagine: 'Cristina Accornero',
     altezza: 'alta',
+    objectPosition: 'center',
     descrizioneEstesa: `Ha conseguito il dottorato di ricerca in Storia presso l'EHESS di Parigi. I suoi ambiti di ricerca comprendono la storia industriale, sociale e urbana. Ha svolto attività di collaborazione didattica e di ricerca presso il Dipartimento di Studi Storici dell'Università di Torino, il Politecnico di Torino e importanti istituzioni culturali torinesi. Collabora con l'Associazione Archivio Storico Olivetti (Ivrea). È autrice di numerosi saggi e volumi.`,
   },
   {

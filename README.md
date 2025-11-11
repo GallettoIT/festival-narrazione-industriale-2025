@@ -1,79 +1,173 @@
-# Festival Narrazione Industriale - Modern Site
+# Festival della Narrazione Industriale - Website
 
-Questo progetto contiene la versione moderna del sito web per il Festival Narrazione Industriale, sviluppata con tecnologie moderne per poi essere integrata in WordPress.
+Sito web ufficiale del Festival della Narrazione Industriale di Parma.
 
-## Tecnologie
+**Live**: [festivalnarrazioneindustriale.it](https://festivalnarrazioneindustriale.it)
 
-- **Next.js 14** - Framework React con App Router
-- **TypeScript** - Type safety
-- **Tailwind CSS** - Utility-first CSS framework
-- **Framer Motion** - Animazioni
+---
+
+## 🚀 Tech Stack
+
+- **Framework**: Next.js 14.2.33 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **CMS**: Decap CMS (git-based)
+- **Hosting**: Register.it
+- **Deploy**: GitHub Actions (automatico)
+- **Analytics**: Matomo
 - **Font Custom**: Halenoir (Regular, Light, Bold)
 
-## Struttura del Progetto
+## 📁 Struttura Progetto
 
 ```
 fni-modern-site/
 ├── src/
-│   ├── app/              # Next.js App Router
-│   │   ├── layout.tsx    # Layout principale
-│   │   └── page.tsx      # Homepage
-│   ├── components/       # Componenti riutilizzabili
-│   ├── sections/         # Sezioni della homepage
-│   ├── styles/           # Stili globali
-│   │   └── globals.css   # CSS globale con font
-│   └── assets/
-│       └── fonts/        # Font Halenoir
-└── public/               # File statici
-
+│   ├── app/                    # Next.js App Router pages
+│   │   ├── page.tsx           # Homepage
+│   │   ├── chi-siamo/         # About
+│   │   ├── programma/         # Program
+│   │   ├── ospiti/            # Guests
+│   │   ├── news-stampa/       # News & Press ✨ NEW
+│   │   ├── edizioni/          # Editions
+│   │   ├── lab/               # Lab
+│   │   └── contatti/          # Contacts
+│   ├── components/            # Reusable components
+│   ├── sections/              # Page sections
+│   │   └── news/              # News sections ✨ NEW
+│   ├── data/                  # Data files
+│   │   └── news.ts            # News data ✨ NEW
+│   └── content/               # CMS content (Markdown)
+│       └── news/              # News articles ✨ NEW
+├── public/
+│   ├── images/                # Static images
+│   └── admin/                 # Decap CMS ✨ NEW
+├── .github/
+│   └── workflows/
+│       └── deploy.yml         # Auto-deploy ✨ NEW
+└── out/                       # Build output
 ```
 
-## Installazione
+## 🛠️ Sviluppo Locale
+
+### Setup
 
 ```bash
+# Clone repository
+git clone https://github.com/tuouser/fni-modern-site.git
+cd fni-modern-site
+
+# Install dependencies
 npm install
+
+# Run dev server
+npm run dev
 ```
 
-## Comandi
+Apri [http://localhost:3000](http://localhost:3000)
+
+### Build Produzione
 
 ```bash
-# Sviluppo
-npm run dev
-
-# Build
+# Build static site
 npm run build
 
-# Start produzione
-npm start
-
-# Export statico (per WordPress)
-npm run export
+# Output in /out directory
 ```
 
-## Integrazione WordPress
+## 📰 Gestione News ✨ NEW
 
-Dopo lo sviluppo, il sito può essere esportato come HTML statico e integrato in WordPress tramite:
-1. Content Blocks di Uncode
-2. Custom Post Types
-3. Shortcodes personalizzati
+### Per Utenti Non Tecnici
 
-## Sezioni Homepage
+1. Vai su `/admin`
+2. Login (Netlify Identity o GitHub)
+3. Gestisci news (Crea/Modifica/Elimina)
+4. Ogni modifica = commit GitHub automatica
+5. Deploy automatico in 3-5 minuti
 
-1. Hero con Logo Animato FNI
-2. Info Edizione 2025
-3. Focus 2025
-4. Slider Ospiti
-5. Layout F-N-I (Perché?)
-6. Edizione 2024 Stats
-7. Partners
-8. Press Area
-9. Newsletter
-10. Footer
+### Formato News (Markdown)
 
-## Prossimi Step
+```markdown
+---
+title: "TITOLO NEWS"
+slug: "titolo-news"
+date: "2024-03-15"
+featuredImage: "/images/news/image.jpg"
+summary: "Breve riassunto"
+published: true
+---
 
-1. ✅ Setup progetto base
-2. ⏳ Analisi design Figma tramite MCP
-3. ⏳ Estrazione colori e spaziature
-4. ⏳ Sviluppo componenti sezione per sezione
-5. ⏳ Integrazione con WordPress
+Contenuto in Markdown...
+```
+
+---
+
+## 🚀 Deploy Automatico ✨ NEW
+
+### Come Funziona
+
+```
+Commit su main
+    ↓
+GitHub Actions
+    ├─ Build Next.js
+    ├─ Test output
+    └─ Deploy FTP → Register
+    ↓
+Sito Live (3-5 min)
+```
+
+### Setup Deploy
+
+1. Configura **4 GitHub Secrets**:
+   - `FTP_SERVER`
+   - `FTP_USERNAME`
+   - `FTP_PASSWORD`
+   - `FTP_REMOTE_DIR`
+
+2. Commit su `main` → Deploy automatico
+
+**📚 Documentazione**: Vedi `GITHUB_DEPLOY_SETUP.md`
+
+---
+
+## 📄 Pagine Sito
+
+- **/** - Homepage
+- **/chi-siamo** - Chi siamo
+- **/programma** - Programma 2024
+- **/ospiti** - Ospiti
+- **/news-stampa** - News & Press ✨ NEW
+- **/news-stampa/[slug]** - Articolo dettaglio ✨ NEW
+- **/edizioni** - Edizioni passate
+- **/lab** - Lab Industriale
+- **/contatti** - Contatti
+- **/admin** - CMS Panel ✨ NEW
+
+---
+
+## 📚 Documentazione
+
+- **[QUICK_START.md](./QUICK_START.md)** - Setup veloce (5 min)
+- **[GITHUB_DEPLOY_SETUP.md](./GITHUB_DEPLOY_SETUP.md)** - Deploy automatico completo
+- **[DECAP_CMS_SETUP.md](./DECAP_CMS_SETUP.md)** - CMS gestione news
+
+---
+
+## 🎨 Design System
+
+**Colori**: `#e94d34` (red), `#282828` (dark), `#f7f4f4` (gray)
+**Font**: Halenoir Expanded (Regular, Bold)
+**Breakpoints**: sm (640px), md (768px), lg (1024px), xl (1280px)
+
+---
+
+## 📞 Contatti
+
+- **Email**: segreteria@festivalnarrazioneindustriale.it
+- **Website**: [festivalnarrazioneindustriale.it](https://festivalnarrazioneindustriale.it)
+- **Social**: Facebook | Instagram | LinkedIn
+
+---
+
+**Versione**: 2.0.0 (News & CMS Integration)
+**Ultimo aggiornamento**: Novembre 2024

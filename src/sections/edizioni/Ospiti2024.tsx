@@ -30,7 +30,8 @@ export default function Ospiti2024() {
               src={ospite.immagine}
               alt={ospite.altImmagine || ospite.nome}
               fill
-              className="object-cover object-center transition-transform duration-500 group-hover:scale-105"
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+              style={{ objectPosition: ospite.objectPosition || 'center' }}
               sizes="(max-width: 768px) 140px, (max-width: 1024px) 170px, (max-width: 1280px) 200px, 230px"
             />
           </div>
@@ -41,7 +42,7 @@ export default function Ospiti2024() {
           <h3 className="font-halenoir-bold text-fni-red text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] uppercase leading-tight mb-1">
             {ospite.nome}
           </h3>
-          <p className="font-halenoir-regular text-[#282828] text-[18px] md:text-[20px] lg:text-[22px] xl:text-[24px] uppercase leading-normal">
+          <p className="font-halenoir-regular text-[#282828] text-[16px] md:text-[18px] lg:text-[19px] xl:text-[20px] leading-normal">
             {ospite.ruolo}
           </p>
         </div>

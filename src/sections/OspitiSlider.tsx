@@ -52,13 +52,13 @@ export default function OspitiSlider() {
 
   return (
     <section
-      className="relative w-full bg-fni-white py-16 md:py-24 lg:py-32"
+      className="relative w-full bg-fni-white py-10 md:py-14 lg:py-16"
       data-section="ospiti"
     >
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
 
         {/* Titolo - Allineato a sinistra */}
-        <h2 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl uppercase mb-12 md:mb-16">
+        <h2 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl uppercase mb-8 md:mb-12">
           [OSPITI]
         </h2>
 
@@ -89,7 +89,8 @@ export default function OspitiSlider() {
                           src={ospite.immagine}
                           alt={ospite.altImmagine || ospite.nome}
                           fill
-                          className="object-cover object-top group-hover:scale-105 transition-transform duration-500"
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                          style={{ objectPosition: ospite.objectPosition || 'top' }}
                           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, (max-width: 1280px) 33vw, 25vw"
                         />
                       </div>

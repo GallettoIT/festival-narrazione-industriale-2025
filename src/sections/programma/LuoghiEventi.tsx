@@ -59,7 +59,7 @@ export default function LuoghiEventi() {
   }, []);
 
   return (
-    <section className="relative w-full bg-white pt-12 md:pt-16 lg:pt-20 pb-16 md:pb-24 lg:pb-32">
+    <section className="relative w-full bg-white pt-10 md:pt-14 lg:pt-16 pb-12 md:pb-16 lg:pb-20">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         {/* Titolo */}
         <h2 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl uppercase mb-12 md:mb-16">
