@@ -1,0 +1,233 @@
+name: 🚀 Deploy to Register Hosting
+
+# Trigger: Push su main branch o workflow manuale
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - '**.md'
+      - '.gitignore'
+      - 'LICENSE'
+  workflow_dispatch: # Permette deploy manuale da GitHub UI
+
+# Variabili globali
+env:
+  NODE_VERSION: '18'
+  DEPLOY_TIMEOUT: '300' # 5 minuti timeout deploy
+
+# Permessi necessari
+permissions:
+  contents: read
+  actions: write
+
+jobs:
+  # Job 1: Build del sito Next.js
+  build:
+    name: 🔨 Build Next.js Site
+    runs-on: ubuntu-latest
+
+    steps:
+      # Step 1: Checkout repository
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Full history per informazioni complete
+
+      # Step 2: Setup Node.js con cache
+      - name: 🟢 Setup Node.js ${{ env.NODE_VERSION }}
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      # Step 3: Verifica versioni
+      - name: 📊 Display versions
+        run: |
+          echo "Node version: $(node --version)"
+          echo "NPM version: $(npm --version)"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+
+      # Step 4: Install dependencies (con cache)
+      - name: 📦 Install dependencies
+        run: npm ci --prefer-offline --no-audit
+
+      # Step 5: Build Next.js (static export)
+      - name: 🏗️ Build Next.js static site
+        run: npm run build
+        env:
+          NODE_ENV: production
+          NEXT_TELEMETRY_DISABLED: 1
+
+      # Step 6: Verifica build output
+      - name: ✅ Verify build output
+        run: |
+          echo "Checking build output..."
+          if [ ! -d "out" ]; then
+            echo "❌ Error: /out directory not found!"
+            exit 1
+          fi
+
+          echo "Build directory size:"
+          du -sh out/
+
+          echo "Files count:"
+          find out -type f | wc -l
+
+          echo "Main pages check:"
+          ls -lh out/*.html || echo "No HTML files in root"
+          ls -lh out/news-stampa/ || echo "News stampa directory not found"
+
+      # Step 7: Upload artifacts per debugging (opzionale)
+      - name: 📤 Upload build artifacts
+        uses: actions/upload-artifact@v4
+        with:
+          name: build-output
+          path: out/
+          retention-days: 7
+
+      # Step 8: Cache build per prossimi deploy
+      - name: 💾 Cache build output
+        uses: actions/cache@v4
+        with:
+          path: out/
+          key: build-${{ github.sha }}
+
+  # Job 2: Deploy su Register via FTP
+  deploy:
+    name: 🚢 Deploy to Register
+    needs: build
+    runs-on: ubuntu-latest
+
+    # Timeout totale deploy: 10 minuti
+    timeout-minutes: 10
+
+    steps:
+      # Step 1: Checkout repository
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+
+      # Step 2: Setup Node.js
+      - name: 🟢 Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: 'npm'
+
+      # Step 3: Install e Build (ricrea per deploy)
+      - name: 📦 Install and Build
+        run: |
+          npm ci --prefer-offline --no-audit
+          npm run build
+        env:
+          NODE_ENV: production
+
+      # Step 4: Pre-deploy verification
+      - name: 🔍 Pre-deploy verification
+        run: |
+          echo "=== PRE-DEPLOY CHECKS ==="
+          echo "Build directory exists: $([ -d 'out' ] && echo '✅ YES' || echo '❌ NO')"
+          echo "Index.html exists: $([ -f 'out/index.html' ] && echo '✅ YES' || echo '❌ NO')"
+          echo "News page exists: $([ -d 'out/news-stampa' ] && echo '✅ YES' || echo '❌ NO')"
+          echo ""
+          echo "=== FILES TO DEPLOY ==="
+          find out -type f | head -20
+          echo "..."
+          echo "Total files: $(find out -type f | wc -l)"
+
+      # Step 5: Deploy via FTP
+      - name: 🚀 Deploy to Register FTP
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
+        with:
+          server: ${{ secrets.FTP_SERVER }}
+          username: ${{ secrets.FTP_USERNAME }}
+          password: ${{ secrets.FTP_PASSWORD }}
+          local-dir: ./out/
+          server-dir: ${{ secrets.FTP_REMOTE_DIR }}
+          protocol: ftps # Usa FTPS per sicurezza
+          port: 21
+
+          # Opzioni avanzate
+          timeout: 300000 # 5 minuti timeout
+          log-level: verbose
+          dangerous-clean-slate: false # NON cancellare tutto prima
+
+          # Escludi file non necessari
+          exclude: |
+            **/.git*
+            **/.git*/**
+            **/node_modules/**
+            **/.DS_Store
+            **/.env*
+            **/Thumbs.db
+            **/*.log
+            **/.next/**
+            **/coverage/**
+
+      # Step 6: Post-deploy verification
+      - name: ✅ Post-deploy verification
+        run: |
+          echo "=== DEPLOY COMPLETED ==="
+          echo "✅ Files uploaded to Register hosting"
+          echo "📅 Deploy date: $(date)"
+          echo "🔖 Commit: ${{ github.sha }}"
+          echo "👤 Author: ${{ github.actor }}"
+          echo "🌐 Site: https://festivalnarrazioneindustriale.it"
+
+      # Step 7: Test site availability (optional)
+      - name: 🔍 Test site availability
+        continue-on-error: true # Non bloccare se il test fallisce
+        run: |
+          echo "Testing site availability..."
+          sleep 30 # Aspetta 30 secondi per propagazione
+
+          # Test homepage
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://festivalnarrazioneindustriale.it)
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ Homepage is accessible (HTTP $HTTP_CODE)"
+          else
+            echo "⚠️ Homepage returned HTTP $HTTP_CODE"
+          fi
+
+          # Test news page
+          HTTP_CODE=$(curl -s -o /dev/null -w "%{http_code}" https://festivalnarrazioneindustriale.it/news-stampa/)
+          if [ "$HTTP_CODE" = "200" ]; then
+            echo "✅ News page is accessible (HTTP $HTTP_CODE)"
+          else
+            echo "⚠️ News page returned HTTP $HTTP_CODE"
+          fi
+
+  # Job 3: Notify deployment status
+  notify:
+    name: 📬 Notification
+    needs: [build, deploy]
+    runs-on: ubuntu-latest
+    if: always() # Esegui sempre, anche se ci sono errori
+
+    steps:
+      - name: 📊 Deployment Summary
+        run: |
+          echo "==================================="
+          echo "   DEPLOYMENT SUMMARY"
+          echo "==================================="
+          echo ""
+          echo "Repository: ${{ github.repository }}"
+          echo "Branch: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo "Author: ${{ github.actor }}"
+          echo "Workflow: ${{ github.workflow }}"
+          echo "Run ID: ${{ github.run_id }}"
+          echo ""
+          echo "Build Status: ${{ needs.build.result }}"
+          echo "Deploy Status: ${{ needs.deploy.result }}"
+          echo ""
+          if [ "${{ needs.build.result }}" = "success" ] && [ "${{ needs.deploy.result }}" = "success" ]; then
+            echo "✅ DEPLOYMENT SUCCESSFUL!"
+            echo "🌐 Site: https://festivalnarrazioneindustriale.it"
+          else
+            echo "❌ DEPLOYMENT FAILED"
+            echo "Check logs for details"
+          fi
+          echo ""
+          echo "==================================="
