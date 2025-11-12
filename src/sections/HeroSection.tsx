@@ -22,7 +22,7 @@ export default function HeroSection() {
       data-section="hero"
     >
       {/* Logo F-N-I Grande e Tagline */}
-      <div className="relative w-full pt-10 md:pt-14 lg:pt-16">
+      <div className="relative w-full ">
         <div className="max-w-container-fni mx-auto px-6 md:px-8">
           {/* Logo FNI con linee - Codice per proporzioni corrette */}
           <div className="relative mb-6 md:mb-8">

@@ -27,7 +27,7 @@ export default function NewsGrid({ articles }: NewsGridProps) {
     <section className="w-full bg-white py-8 md:py-12 lg:py-14">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         {/* Grid 2 colonne */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-10 xl:gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10 xl:gap-12">
           {articles.map((article) => (
             <Link
               key={article.slug}

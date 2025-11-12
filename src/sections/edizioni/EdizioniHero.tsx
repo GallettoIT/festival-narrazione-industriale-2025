@@ -12,7 +12,7 @@
 
 export default function EdizioniHero() {
   return (
-    <section className="relative w-full bg-white py-12 md:py-16 lg:py-20">
+    <section className="relative w-full bg-white pt-6 md:pt-8 lg:pt-10 pb-12 md:pb-16 lg:pb-20">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
         {/* Titolo */}
         <h1 className="font-halenoir-regular text-fni-red text-4xl md:text-5xl lg:text-[64px] uppercase mb-8 md:mb-12 lg:mb-16">

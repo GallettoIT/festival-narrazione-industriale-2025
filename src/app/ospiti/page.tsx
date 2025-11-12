@@ -54,7 +54,7 @@ export default function OspitiPage() {
   }
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pt-20 md:pt-24">
       {/* Structured Data - Speaker List Schema */}
       <Script
         id="speaker-list-schema"

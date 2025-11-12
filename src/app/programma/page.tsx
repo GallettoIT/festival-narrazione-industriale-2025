@@ -80,7 +80,7 @@ export default function ProgrammaPage() {
   }
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pt-20 md:pt-24">
       {/* Structured Data - EventSeries Schema */}
       <Script
         id="event-series-schema"

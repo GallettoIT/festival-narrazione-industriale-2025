@@ -91,7 +91,7 @@ export default function Home() {
   }
 
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen pt-20 md:pt-24">
       {/* Structured Data - Event Schema */}
       <Script
         id="event-schema"

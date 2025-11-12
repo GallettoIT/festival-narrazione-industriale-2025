@@ -96,7 +96,7 @@ export default function EdizioniPage() {
   }
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pt-20 md:pt-24">
       {/* Structured Data - CollectionPage Schema */}
       <Script
         id="editions-collection-schema"

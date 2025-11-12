@@ -147,9 +147,7 @@ export default function RootLayout({
       </head>
       <body>
         <Header />
-        <div className="pt-20 md:pt-24">
-          {children}
-        </div>
+        {children}
 
         {/* Netlify Identity Redirect Script */}
         <Script

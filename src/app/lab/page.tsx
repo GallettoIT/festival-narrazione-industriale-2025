@@ -69,7 +69,7 @@ export default function LabPage() {
   }
 
   return (
-    <main className="min-h-screen bg-white">
+    <main className="min-h-screen bg-white pt-20 md:pt-24">
       {/* Structured Data - Course Schema */}
       <Script
         id="lab-course-schema"
