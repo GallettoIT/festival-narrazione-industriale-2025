@@ -3,7 +3,6 @@ import { notFound } from 'next/navigation';
 import NewsArticleHero from '@/sections/news/NewsArticleHero';
 import NewsArticleContent from '@/sections/news/NewsArticleContent';
 import OtherNewsCTA from '@/sections/news/OtherNewsCTA';
-import PressArea from '@/sections/news/PressArea';
 import Footer from '@/components/Footer';
 import { getNewsBySlug } from '@/data/news';
 
@@ -88,9 +87,6 @@ export default function NewsArticlePage({ params }: { params: { slug: string } }
 
         {/* CTA Altre News */}
         <OtherNewsCTA />
-
-        {/* Press Area */}
-        <PressArea />
       </main>
 
       {/* Footer */}

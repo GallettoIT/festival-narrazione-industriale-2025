@@ -1,7 +1,6 @@
 import type { Metadata } from 'next';
 import NewsStampaHero from '@/sections/news/NewsStampaHero';
 import NewsGrid from '@/sections/news/NewsGrid';
-import PressArea from '@/sections/news/PressArea';
 import Footer from '@/components/Footer';
 import { getAllNews } from '@/data/news';
 
@@ -38,9 +37,6 @@ export default function NewsStampaPage() {
 
         {/* News Grid */}
         <NewsGrid articles={allNews} />
-
-        {/* Press Area */}
-        <PressArea />
       </main>
 
       {/* Footer */}
