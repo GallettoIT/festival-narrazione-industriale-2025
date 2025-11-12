@@ -6,9 +6,6 @@
   <meta name="robots" content="noindex" />
   <title>Admin | Festival Narrazione Industriale</title>
 
-  <!-- Decap CMS -->
-  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
-
   <!-- Identity Widget for Netlify Identity -->
   <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 
@@ -21,6 +18,8 @@
 
     body {
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+      margin: 0;
+      padding: 0;
     }
 
     /* Custom CMS branding */
@@ -30,9 +29,11 @@
   </style>
 </head>
 <body>
-  <!-- Decap CMS renders here -->
+  <!-- Decap CMS App -->
+  <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+
   <script>
-    // Redirect to home if logged out
+    // Netlify Identity redirect handler
     if (window.netlifyIdentity) {
       window.netlifyIdentity.on("init", user => {
         if (!user) {
@@ -42,29 +43,6 @@
         }
       });
     }
-
-    // Custom preview styles
-    CMS.registerPreviewStyle("/admin/preview.css");
-
-    // Preview template for news
-    var NewsPreview = createClass({
-      render: function() {
-        var entry = this.props.entry;
-        var title = entry.getIn(['data', 'title']);
-        var date = entry.getIn(['data', 'date']);
-        var summary = entry.getIn(['data', 'summary']);
-        var body = this.props.widgetFor('body');
-
-        return h('div', {"className": "news-preview"},
-          h('h1', {"style": {"color": "#e94d34", "fontSize": "48px", "textTransform": "uppercase"}}, title),
-          h('p', {"style": {"color": "#282828", "fontSize": "24px"}}, new Date(date).toLocaleDateString('it-IT')),
-          h('p', {"style": {"fontSize": "36px", "lineHeight": "1.5"}}, summary),
-          h('div', {"style": {"fontSize": "20px", "lineHeight": "1.8", "textAlign": "justify"}}, body)
-        );
-      }
-    });
-
-    CMS.registerPreviewTemplate("news", NewsPreview);
   </script>
 </body>
 </html>

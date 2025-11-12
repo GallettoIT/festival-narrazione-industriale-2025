@@ -1,0 +1,10 @@
+# Force correct MIME type for YAML config files
+<Files "config.yml">
+  AddType text/yaml .yml
+  AddType application/x-yaml .yml
+</Files>
+
+# Enable CORS for CMS assets
+<IfModule mod_headers.c>
+  Header set Access-Control-Allow-Origin "*"
+</IfModule>
