@@ -34,7 +34,7 @@ export default function NewsArticleContent({ article }: NewsArticleContentProps)
 
             {/* Contenuto articolo */}
             <div
-              className="font-halenoir-regular text-fni-dark text-base md:text-lg lg:text-xl leading-relaxed text-justify space-y-6"
+              className="font-halenoir-regular text-fni-dark text-sm md:text-base lg:text-lg leading-relaxed space-y-4"
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
 
@@ -72,16 +72,18 @@ export default function NewsArticleContent({ article }: NewsArticleContentProps)
               />
             </div>
 
-            {/* Immagine Secondaria (se disponibile) */}
-            <div className="relative w-full h-[400px] md:h-[500px] lg:h-[807px] overflow-hidden">
-              <Image
-                src={article.featuredImage}
-                alt={article.featuredImageAlt}
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 650px"
-              />
-            </div>
+            {/* Immagine Secondaria (solo se articleImage è specificato) */}
+            {article.articleImage && (
+              <div className="relative w-full h-[400px] md:h-[500px] lg:h-[807px] overflow-hidden">
+                <Image
+                  src={article.featuredImage}
+                  alt={article.featuredImageAlt}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 650px"
+                />
+              </div>
+            )}
           </div>
         </div>
       </div>

@@ -32,10 +32,10 @@ export default function NewsGrid({ articles }: NewsGridProps) {
             <Link
               key={article.slug}
               href={`/news-stampa/${article.slug}`}
-              className="group flex flex-col gap-3 md:gap-4"
+              className="group flex flex-col gap-2.5 md:gap-3"
             >
-              {/* Featured Image - Ridotta */}
-              <div className="relative w-full h-[200px] md:h-[220px] lg:h-[240px] overflow-hidden">
+              {/* Featured Image - Più piccola */}
+              <div className="relative w-full h-[180px] md:h-[200px] lg:h-[220px] overflow-hidden rounded-sm">
                 <Image
                   src={article.featuredImage}
                   alt={article.featuredImageAlt}
@@ -45,28 +45,28 @@ export default function NewsGrid({ articles }: NewsGridProps) {
                 />
               </div>
 
-              {/* Content - Testi ridotti */}
-              <div className="flex flex-col gap-1.5 md:gap-2">
+              {/* Content - Testi più piccoli */}
+              <div className="flex flex-col gap-1 md:gap-1.5">
                 {/* Data News */}
-                <p className="font-halenoir-regular text-fni-dark text-sm md:text-base uppercase tracking-wide">
+                <p className="font-halenoir-regular text-fni-dark text-xs md:text-sm uppercase tracking-wide">
                   {formatNewsDateShort(article.date)}
                 </p>
 
                 {/* Titolo */}
-                <h2 className="font-halenoir-bold text-fni-red text-xl md:text-2xl lg:text-3xl uppercase leading-tight group-hover:opacity-80 transition-opacity">
+                <h2 className="font-halenoir-bold text-fni-red text-lg md:text-xl lg:text-2xl uppercase leading-tight group-hover:opacity-80 transition-opacity">
                   {article.title}
                 </h2>
 
                 {/* Linea decorativa */}
-                <div className="w-full h-[2px] bg-fni-red my-1" />
+                <div className="w-full h-[1.5px] bg-fni-red my-0.5" />
 
                 {/* Sommario */}
-                <p className="font-halenoir-regular text-fni-dark text-base md:text-lg leading-relaxed">
+                <p className="font-halenoir-regular text-fni-dark text-sm md:text-base leading-relaxed">
                   {article.summary}
                 </p>
 
                 {/* Excerpt */}
-                <p className="font-halenoir-regular text-fni-dark text-sm md:text-base leading-relaxed line-clamp-3">
+                <p className="font-halenoir-regular text-fni-dark text-xs md:text-sm leading-relaxed line-clamp-3">
                   {article.excerpt}
                 </p>
               </div>
