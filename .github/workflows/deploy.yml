@@ -6,7 +6,8 @@ on:
     branches:
       - main
     paths-ignore:
-      - '**.md'
+      - 'README.md'
+      - 'docs/**'
       - '.gitignore'
       - 'LICENSE'
   workflow_dispatch: # Permette deploy manuale da GitHub UI
