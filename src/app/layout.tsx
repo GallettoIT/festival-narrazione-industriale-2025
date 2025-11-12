@@ -138,12 +138,37 @@ export default function RootLayout({
             `,
           }}
         />
+
+        {/* Netlify Identity Widget - Per autenticazione CMS */}
+        <Script
+          src="https://identity.netlify.com/v1/netlify-identity-widget.js"
+          strategy="afterInteractive"
+        />
       </head>
       <body>
         <Header />
         <div className="pt-20 md:pt-24">
           {children}
         </div>
+
+        {/* Netlify Identity Redirect Script */}
+        <Script
+          id="netlify-identity-redirect"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              if (window.netlifyIdentity) {
+                window.netlifyIdentity.on("init", user => {
+                  if (!user) {
+                    window.netlifyIdentity.on("login", () => {
+                      document.location.href = "/admin/";
+                    });
+                  }
+                });
+              }
+            `,
+          }}
+        />
       </body>
     </html>
   )
