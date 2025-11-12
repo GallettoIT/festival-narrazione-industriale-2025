@@ -2,8 +2,10 @@
 title: "Gazzetta di Parma: L'uomo al centro: l'impresa guarda all'umanesimo"
 slug: festival-2025
 date: 2025-10-29
-featuredImage: /images/news/immagine-interna.jpg
-featuredImageAlt: "Gazzetta di Parma: L'uomo al centro: l'impresa guarda all'umanesimo"
+featuredImage: /images/news/immagine-anteprima.jpg
+featuredImageAlt: Anteprima festival edizione 2025
+articleImage: /images/news/immagine-interna.jpg
+articleImageAlt: "Gazzetta di Parma: L'uomo al centro: l'impresa guarda all'umanesimo"
 summary: Sulle orme di Adriano Olivetti Cinque giorni di incontri dal 24 novembre
 excerpt: «Io penso la fabbrica per l'uomo, non l'uomo per la fabbrica». A questa
   visione di Adriano Olivetti è dedicato il Festival della Narrazione
