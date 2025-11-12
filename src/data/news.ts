@@ -3,14 +3,21 @@
  *
  * Interfacce TypeScript e dati per gli articoli di news
  * Integrazione con Decap CMS per gestione contenuti
+ *
+ * Le news vengono generate da file markdown tramite lo script scripts/generate-news.js
+ * che viene eseguito prima del build per convertire i file MD in JSON.
  */
+
+import generatedNews from './news-generated.json';
 
 export interface NewsArticle {
   slug: string;
   title: string;
   date: string; // Format: YYYY-MM-DD
-  featuredImage: string;
+  featuredImage: string; // Immagine per card/anteprima
   featuredImageAlt: string;
+  articleImage?: string; // Immagine nell'articolo (opzionale)
+  articleImageAlt?: string;
   summary: string;
   excerpt: string; // Testo breve per card
   content: string; // HTML o Markdown
@@ -28,25 +35,10 @@ export interface NewsImage {
 
 /**
  * News Articles
- * Le news vengono gestite tramite Decap CMS e salvate in src/content/news/
- * Questo array verrà popolato dinamicamente dal CMS
- *
- * NOTA: Manteniamo una news placeholder per permettere il build statico.
- * Questa verrà rimossa quando il CMS sarà attivo e popolerà l'array dinamicamente.
+ * Le news vengono caricate dal file JSON generato a build time
+ * dai file markdown in src/content/news/ gestiti tramite Decap CMS
  */
-export const newsArticles: NewsArticle[] = [
-  {
-    slug: '_placeholder',
-    title: 'News in arrivo',
-    date: '2025-01-01',
-    featuredImage: '/images/news/hero-news.jpg',
-    featuredImageAlt: 'Festival Narrazione Industriale',
-    summary: 'Le news del festival saranno disponibili a breve',
-    excerpt: 'Le news del festival saranno disponibili a breve.',
-    content: '<p>Le news del festival saranno disponibili a breve.</p>',
-    published: false, // Non pubblicata, quindi non apparirà nell'elenco
-  },
-];
+export const newsArticles: NewsArticle[] = generatedNews;
 
 /**
  * Utility Functions

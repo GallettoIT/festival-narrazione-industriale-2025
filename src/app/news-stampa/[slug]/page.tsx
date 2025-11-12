@@ -4,7 +4,7 @@ import NewsArticleHero from '@/sections/news/NewsArticleHero';
 import NewsArticleContent from '@/sections/news/NewsArticleContent';
 import OtherNewsCTA from '@/sections/news/OtherNewsCTA';
 import Footer from '@/components/Footer';
-import { getNewsBySlug } from '@/data/news';
+import { getNewsBySlug, newsArticles } from '@/data/news';
 
 // Allow dynamic params to be empty during static export
 export const dynamicParams = false;
@@ -13,11 +13,8 @@ export const dynamicParams = false;
  * Generate static params for all news articles
  * Includes all articles (published and unpublished) for static generation
  */
-export function generateStaticParams() {
-  // Import directly to get ALL articles, not just published ones
-  const { newsArticles } = require('@/data/news');
-
-  return newsArticles.map((article: any) => ({
+export async function generateStaticParams() {
+  return newsArticles.map((article) => ({
     slug: article.slug,
   }));
 }

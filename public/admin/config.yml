@@ -42,10 +42,12 @@ collections:
       - { label: "Titolo", name: "title", widget: "string", required: true, hint: "Titolo dell'articolo (tutto maiuscolo)" }
       - { label: "Slug", name: "slug", widget: "string", required: true, hint: "URL della news (es: festival-2024-successo)" }
       - { label: "Data Pubblicazione", name: "date", widget: "datetime", format: "YYYY-MM-DD", date_format: "DD/MM/YYYY", time_format: false, required: true }
-      - { label: "Immagine in Evidenza", name: "featuredImage", widget: "image", required: true, hint: "Immagine principale (min 1920x1080px)" }
-      - { label: "Alt Immagine", name: "featuredImageAlt", widget: "string", required: true, hint: "Descrizione immagine per accessibilità" }
-      - { label: "Sommario", name: "summary", widget: "text", required: true, hint: "Breve riassunto (1-2 righe, 36px nel design)" }
-      - { label: "Estratto", name: "excerpt", widget: "text", required: true, hint: "Testo anteprima per card (3-4 righe, 20px nel design)" }
+      - { label: "Immagine Anteprima (Card)", name: "featuredImage", widget: "image", required: true, hint: "Immagine per card anteprima (min 1200x800px)" }
+      - { label: "Alt Immagine Anteprima", name: "featuredImageAlt", widget: "string", required: true, hint: "Descrizione immagine anteprima per accessibilità" }
+      - { label: "Immagine Articolo", name: "articleImage", widget: "image", required: false, hint: "Immagine principale nell'articolo (opzionale, se vuota usa l'immagine anteprima)" }
+      - { label: "Alt Immagine Articolo", name: "articleImageAlt", widget: "string", required: false, hint: "Descrizione immagine articolo per accessibilità" }
+      - { label: "Sommario", name: "summary", widget: "text", required: true, hint: "Breve riassunto (1-2 righe)" }
+      - { label: "Estratto", name: "excerpt", widget: "text", required: true, hint: "Testo anteprima per card (3-4 righe)" }
       - { label: "Contenuto", name: "body", widget: "markdown", required: true, hint: "Contenuto completo dell'articolo" }
       - { label: "Autore", name: "author", widget: "string", required: false }
       - { label: "Ruolo Autore", name: "authorRole", widget: "string", required: false }

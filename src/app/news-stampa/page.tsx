@@ -5,15 +5,30 @@ import Footer from '@/components/Footer';
 import { getAllNews } from '@/data/news';
 
 export const metadata: Metadata = {
-  title: 'News e Stampa | Festival Narrazione Industriale',
-  description: 'Tutte le news, gli aggiornamenti e la rassegna stampa del Festival della Narrazione Industriale di Parma.',
+  title: 'News e Stampa',
+  description: 'Tutte le novità, gli aggiornamenti e la rassegna stampa del Festival della Narrazione Industriale. Resta aggiornato sugli eventi, le iniziative e le collaborazioni del festival.',
+  keywords: [
+    'news festival narrazione industriale',
+    'stampa festival parma',
+    'rassegna stampa festival',
+    'novità festival 2025',
+    'aggiornamenti festival',
+    'comunicati stampa',
+    'eventi parma news'
+  ],
   openGraph: {
     title: 'News e Stampa | Festival Narrazione Industriale',
-    description: 'Tutte le news, gli aggiornamenti e la rassegna stampa del Festival della Narrazione Industriale di Parma.',
-    url: 'https://festivalnarrazioneindustriale.it/news-stampa',
-    siteName: 'Festival Narrazione Industriale',
-    locale: 'it_IT',
+    description: 'Tutte le novità, gli aggiornamenti e la rassegna stampa del Festival della Narrazione Industriale.',
+    url: 'https://www.festivalnarrazioneindustriale.it/news-stampa',
     type: 'website',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'News e Stampa - Festival Narrazione Industriale',
+      },
+    ],
   },
 };
 

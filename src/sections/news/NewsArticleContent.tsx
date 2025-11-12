@@ -19,6 +19,10 @@ interface NewsArticleContentProps {
 }
 
 export default function NewsArticleContent({ article }: NewsArticleContentProps) {
+  // Usa articleImage se disponibile, altrimenti featuredImage
+  const mainImage = article.articleImage || article.featuredImage;
+  const mainImageAlt = article.articleImageAlt || article.featuredImageAlt;
+
   return (
     <section className="w-full bg-white py-12 md:py-16 lg:py-20">
       <div className="max-w-container-fni mx-auto px-6 md:px-8">
@@ -57,11 +61,11 @@ export default function NewsArticleContent({ article }: NewsArticleContentProps)
 
           {/* Colonna Destra - Immagini */}
           <div className="flex flex-col gap-8 lg:gap-12">
-            {/* Featured Image Grande */}
+            {/* Immagine Articolo Principale */}
             <div className="relative w-full h-[400px] md:h-[500px] lg:h-[658px] overflow-hidden">
               <Image
-                src={article.featuredImage}
-                alt={article.featuredImageAlt}
+                src={mainImage}
+                alt={mainImageAlt}
                 fill
                 className="object-cover"
                 sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 650px"
