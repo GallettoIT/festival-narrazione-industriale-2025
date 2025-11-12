@@ -4,6 +4,7 @@ import NewsArticleHero from '@/sections/news/NewsArticleHero';
 import NewsArticleContent from '@/sections/news/NewsArticleContent';
 import OtherNewsCTA from '@/sections/news/OtherNewsCTA';
 import PressArea from '@/sections/news/PressArea';
+import Footer from '@/components/Footer';
 import { getNewsBySlug } from '@/data/news';
 
 // Allow dynamic params to be empty during static export
@@ -77,18 +78,23 @@ export default function NewsArticlePage({ params }: { params: { slug: string } }
   }
 
   return (
-    <main className="w-full min-h-screen bg-white pt-20 md:pt-24">
-      {/* Hero Section con info articolo */}
-      <NewsArticleHero article={article} />
+    <>
+      <main className="w-full min-h-screen bg-white pt-20 md:pt-24">
+        {/* Hero Section con info articolo */}
+        <NewsArticleHero article={article} />
 
-      {/* Contenuto articolo */}
-      <NewsArticleContent article={article} />
+        {/* Contenuto articolo */}
+        <NewsArticleContent article={article} />
 
-      {/* CTA Altre News */}
-      <OtherNewsCTA />
+        {/* CTA Altre News */}
+        <OtherNewsCTA />
 
-      {/* Press Area */}
-      <PressArea />
-    </main>
+        {/* Press Area */}
+        <PressArea />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }

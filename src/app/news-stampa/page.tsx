@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import NewsStampaHero from '@/sections/news/NewsStampaHero';
 import NewsGrid from '@/sections/news/NewsGrid';
 import PressArea from '@/sections/news/PressArea';
+import Footer from '@/components/Footer';
 import { getAllNews } from '@/data/news';
 
 export const metadata: Metadata = {
@@ -30,15 +31,20 @@ export default function NewsStampaPage() {
   const allNews = getAllNews();
 
   return (
-    <main className="w-full min-h-screen bg-white pt-20 md:pt-24">
-      {/* Hero Section */}
-      <NewsStampaHero />
+    <>
+      <main className="w-full min-h-screen bg-white pt-20 md:pt-24">
+        {/* Hero Section */}
+        <NewsStampaHero />
 
-      {/* News Grid */}
-      <NewsGrid articles={allNews} />
+        {/* News Grid */}
+        <NewsGrid articles={allNews} />
 
-      {/* Press Area */}
-      <PressArea />
-    </main>
+        {/* Press Area */}
+        <PressArea />
+      </main>
+
+      {/* Footer */}
+      <Footer />
+    </>
   );
 }

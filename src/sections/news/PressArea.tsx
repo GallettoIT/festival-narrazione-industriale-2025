@@ -56,18 +56,6 @@ export default function PressArea() {
                 NEWS E STAMPA
               </Link>
             </div>
-
-            {/* Sponsor Logo (opzionale) */}
-            <div className="flex justify-start lg:justify-end mt-4">
-              <div className="relative w-[80px] h-[80px] opacity-70">
-                <Image
-                  src="/images/sponsors/unicredit-logo.svg"
-                  alt="Unicredit"
-                  fill
-                  className="object-contain"
-                />
-              </div>
-            </div>
           </div>
         </div>
       </div>
