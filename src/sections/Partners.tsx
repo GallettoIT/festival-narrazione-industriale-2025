@@ -101,12 +101,18 @@ export default function Partners() {
 
         {/* 3. MAIN SPONSOR */}
         <PartnerCategory title="MAIN SPONSOR" id="main-sponsor">
-          <div className="flex items-center justify-start">
+          <div className="flex items-center justify-start gap-12 lg:gap-16">
             <PartnerLogo
               src="/images/partners/MAIN SPONSOR/BARILLA.svg"
               alt="Barilla"
               width={220}
               height={80}
+            />
+            <PartnerLogo
+              src="/images/partners/SPONSOR/UPI.svg"
+              alt="Unione Parmense Industriali"
+              width={200}
+              height={85}
             />
           </div>
         </PartnerCategory>
@@ -121,8 +127,7 @@ export default function Partners() {
             <PartnerLogo src="/images/partners/SPONSOR/GIA.svg" alt="GIA" width={160} height={75} />
             <PartnerLogo src="/images/partners/SPONSOR/MONTEPARMA.svg" alt="Fondazione Monteparma" width={230} height={85} />
             <PartnerLogo src="/images/partners/SPONSOR/OPEM.svg" alt="Opem" width={150} height={65} />
-            <PartnerLogo src="/images/partners/SPONSOR/UPI.svg" alt="Unione Parmense Industriali" width={150} height={65} />
-            <PartnerLogo src="/images/partners/SPONSOR/VERLINGUE.svg" alt="Verlingue" width={250} height={60} />
+            <PartnerLogo src="/images/partners/SPONSOR/VERLINGUE.svg" alt="Verlingue" width={280} height={65} />
           </div>
         </PartnerCategory>
 
