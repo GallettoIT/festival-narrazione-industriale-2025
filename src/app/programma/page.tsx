@@ -114,7 +114,7 @@ export default function ProgrammaPage() {
         bgColor="bg-[#272828]"
         buttonText="SCARICA IL PROGRAMMA"
         buttonColor="border-fni-red text-fni-red hover:bg-fni-red hover:text-white"
-        href="#"
+        href="/pdf/PROGRAMMA A4.pdf"
       />
 
       {/* Mappa luoghi eventi */}
