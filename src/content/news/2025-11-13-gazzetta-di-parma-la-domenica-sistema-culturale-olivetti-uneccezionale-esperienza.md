@@ -5,11 +5,8 @@ slug: sistema-culturale-olivetti
 date: 2025-11-09
 featuredImage: /images/news/news-9-novembre.jpg
 featuredImageAlt: sistema-culturale-olivetti
-summary: >-
-  Festival della narrazione industriale - 2ª edizione | Apertura e mostra lunedì
-  24 novembre, all’Oratorio Novo
-
-  TESTO 
+summary: Festival della narrazione industriale - 2ª edizione | Apertura e mostra
+  lunedì 24 novembre, all’Oratorio Novo
 excerpt: >-
   «La fabbrica non può guardare solo all'indice dei profitti. Deve distribuire
   ricchezza, cultura, servizi, democrazia. Io penso la fabbrica per l'uomo, non
