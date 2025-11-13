@@ -46,6 +46,9 @@ export default function ProgrammaPage() {
     description: 'Programma completo del Festival della Narrazione Industriale 2025. Tema: Per un Umanesimo Industriale. Eventi di cinema, letteratura e arte.',
     startDate: '2025-11-24',
     endDate: '2025-11-29',
+    eventStatus: 'https://schema.org/EventScheduled',
+    eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+    image: 'https://www.festivalnarrazioneindustriale.it/images/og-image.jpg',
     location: {
       '@type': 'Place',
       name: 'Parma',
@@ -60,6 +63,10 @@ export default function ProgrammaPage() {
       '@type': 'Organization',
       name: 'Festival della Narrazione Industriale',
       url: 'https://www.festivalnarrazioneindustriale.it',
+    },
+    performer: {
+      '@type': 'Organization',
+      name: 'Festival della Narrazione Industriale',
     },
     eventSchedule: {
       '@type': 'Schedule',
