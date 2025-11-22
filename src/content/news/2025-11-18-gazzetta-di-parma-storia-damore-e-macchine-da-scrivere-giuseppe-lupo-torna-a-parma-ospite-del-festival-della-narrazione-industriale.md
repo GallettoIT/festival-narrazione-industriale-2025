@@ -3,7 +3,7 @@ title: Gazzetta di Parma, "Storia d'amore e macchine da scrivere" Giuseppe Lupo
   torna a Parma ospite del Festival della Narrazione industriale
 slug: Storia-d-amore-e-macchine-da-scrivere
 date: 2025-11-16
-featuredImage: /images/news/20251116-copertina.jpg
+featuredImage: /images/news/20251116_02-copertina_02.jpg
 featuredImageAlt: Giuseppe Lupo
 articleImage: /images/news/20251116.jpg
 articleImageAlt: Storia d'amore e macchine da scrivere
